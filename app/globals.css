@@ -1,26 +1,28 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
+/*
+ * Brand tokens — intentional duplication of the main app's design system.
+ * Do NOT extract to a shared package. See CLAUDE.md.
+ */
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
+  --color-accent:       #2D5F4C;
+  --color-accent-soft:  #EBF2EE;
+  --color-accent-hover: #235240;
+  --color-fg:           #1A1A1A;
+  --color-muted:        #595956;
+  --color-border:       #E5E3DD;
+  --color-page:         #FAFAF7;
+  --color-card:         #FFFFFF;
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --font-display: var(--font-geist-sans);
+  --font-body:    var(--font-geist-sans);
+
+  --spacing-page: 1120px;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background-color: #FAFAF7;
+  color: #1A1A1A;
+  font-family: var(--font-geist-sans), system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
 }
