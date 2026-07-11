@@ -35,7 +35,7 @@ export function WhatsFree() {
         <div className="text-center mb-12">
           <h2 className="text-section-title text-fg mb-4">Everything&apos;s free. No catch.</h2>
           <p className="text-body text-muted max-w-xl mx-auto">
-            Every feature on At Ease Learning is available to every student at no cost. Always.
+            Every feature on At Ease Tutoring is available to every student at no cost. Always.
           </p>
         </div>
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">

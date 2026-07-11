@@ -18,7 +18,7 @@ const tiers = [
     cta: null as null | { href: string; label: string },
   },
   {
-    label: "At Ease Learning",
+    label: "At Ease Tutoring",
     price: "Free",
     unit: "forever",
     note: "No credit card. No premium tier.",

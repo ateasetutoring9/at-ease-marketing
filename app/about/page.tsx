@@ -22,7 +22,7 @@ export default function AboutPage() {
 
           <div className="mt-10 space-y-8 text-base leading-relaxed text-muted">
             <p>
-              At Ease Learning started from a straightforward observation: quality
+              At Ease Tutoring started from a straightforward observation: quality
               exam preparation in Western Australia is expensive, and that cost
               falls unevenly. A student in a well-resourced school with access to
               tutors and revision materials has a structural advantage over one

@@ -10,12 +10,12 @@ export function Header() {
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
             src="/logo.png"
-            alt="At Ease Learning"
+            alt="At Ease Tutoring"
             width={36}
             height={36}
             className="rounded-full"
           />
-          <span className="font-medium text-fg text-base">At Ease Learning</span>
+          <span className="font-medium text-fg text-base">At Ease Tutoring</span>
         </Link>
         <nav className="flex items-center gap-3">
           <Button variant="ghost" size="sm" href="/pricing/">

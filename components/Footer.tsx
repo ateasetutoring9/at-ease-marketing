@@ -10,12 +10,12 @@ export function Footer() {
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
               src="/logo.png"
-              alt="At Ease Learning"
+              alt="At Ease Tutoring"
               width={32}
               height={32}
               className="rounded-full"
             />
-            <span className="font-display font-medium text-fg">At Ease Learning</span>
+            <span className="font-display font-medium text-fg">At Ease Tutoring</span>
           </Link>
           <p className="text-small text-muted max-w-xs text-center md:text-left">
             Free, high-quality education for Year 7–12 Australian students.
@@ -43,7 +43,7 @@ export function Footer() {
         </nav>
       </div>
       <p className="mt-10 text-center text-small text-muted">
-        © {new Date().getFullYear()} At Ease Learning. All rights reserved.
+        © {new Date().getFullYear()} At Ease Tutoring. All rights reserved.
       </p>
     </footer>
   );

@@ -16,14 +16,14 @@ import { FAQ } from "./_components/FAQ";
 import { FinalCTA } from "./_components/FinalCTA";
 
 export const metadata: Metadata = {
-  title: "At Ease Learning — Free Education for Year 7–12",
+  title: "At Ease Tutoring — Free Education for Year 7–12",
   description:
     "Free, high-quality education for Year 7–12 Australian students — lectures, worksheets, and instant feedback, all in one place.",
   openGraph: {
-    title: "At Ease Learning — Free Education for Year 7–12",
+    title: "At Ease Tutoring — Free Education for Year 7–12",
     description:
       "Free, high-quality education for Year 7–12 Australian students — lectures, worksheets, and instant feedback, all in one place.",
-    url: "https://www.ateaselearning.com",
+    url: "https://www.ateasetutoring.com",
   },
 };
 

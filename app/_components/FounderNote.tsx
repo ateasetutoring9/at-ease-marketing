@@ -9,7 +9,7 @@ export function FounderNote() {
             </div>
             <div className="text-center">
               <p className="text-small font-semibold text-fg">Founder</p>
-              <p className="text-small text-muted">At Ease Learning</p>
+              <p className="text-small text-muted">At Ease Tutoring</p>
             </div>
           </div>
           <div>
@@ -19,7 +19,7 @@ export function FounderNote() {
                 Every student deserves access to the same quality of education — regardless of whether their family can afford a private tutor.
               </p>
               <p>
-                We built At Ease Learning because we kept seeing the same pattern: students who understood the concepts but needed just a bit more practice and feedback to get over the line. That kind of support is expensive to get privately. It shouldn&apos;t be.
+                We built At Ease Tutoring because we kept seeing the same pattern: students who understood the concepts but needed just a bit more practice and feedback to get over the line. That kind of support is expensive to get privately. It shouldn&apos;t be.
               </p>
               <p>
                 If you&apos;re a founding member, you get to influence what subjects and topics we build out first. We read every piece of feedback. Your experience matters to us.

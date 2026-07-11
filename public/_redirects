@@ -1,4 +1,4 @@
-/dashboard/*  https://app.ateaselearning.com/dashboard/:splat  301
-/login        https://app.ateaselearning.com/login             301
-/signup       https://app.ateaselearning.com/signup            301
-/topics/*     https://app.ateaselearning.com/topics/:splat     301
+/dashboard/*  https://app.ateasetutoring.com/dashboard/:splat  301
+/login        https://app.ateasetutoring.com/login             301
+/signup       https://app.ateasetutoring.com/signup            301
+/topics/*     https://app.ateasetutoring.com/topics/:splat     301
