@@ -3,66 +3,48 @@ import { APP_URL } from "@/lib/constants";
 
 export function Footer() {
   return (
-    <footer className="mt-auto border-t border-border bg-page px-4 py-10">
-      <div className="mx-auto max-w-[1120px]">
-        <div className="flex flex-col gap-8 md:flex-row md:justify-between">
-          <div className="max-w-xs">
-            <p className="font-semibold text-fg">At Ease Learning</p>
-            <p className="mt-2 text-sm leading-relaxed text-muted">
-              Free, curriculum-aligned learning for Western Australian students
-              in Years 7–12.
-            </p>
-          </div>
-          <nav className="flex flex-wrap gap-x-10 gap-y-3 text-sm">
-            <div className="flex flex-col gap-3">
-              <span className="font-medium text-fg">Platform</span>
-              <Link
-                href="/pricing/"
-                className="text-muted transition-colors hover:text-fg"
-              >
-                Pricing
-              </Link>
-              <Link
-                href="/about/"
-                className="text-muted transition-colors hover:text-fg"
-              >
-                About
-              </Link>
-              <Link
-                href="/contact/"
-                className="text-muted transition-colors hover:text-fg"
-              >
-                Contact
-              </Link>
-            </div>
-            <div className="flex flex-col gap-3">
-              <span className="font-medium text-fg">Account</span>
-              <a
-                href={APP_URL}
-                className="text-muted transition-colors hover:text-fg"
-              >
-                Log in
-              </a>
-              <a
-                href={`${APP_URL}/signup`}
-                className="text-muted transition-colors hover:text-fg"
-              >
-                Sign up free
-              </a>
-              <a
-                href={`${APP_URL}/browse`}
-                className="text-muted transition-colors hover:text-fg"
-              >
-                Browse subjects
-              </a>
-            </div>
-          </nav>
+    <footer className="py-12 px-4 border-t border-border bg-page">
+      <div className="max-w-page mx-auto flex flex-col md:flex-row items-center md:items-start justify-between gap-8">
+        <div className="flex flex-col items-center md:items-start gap-3">
+          <Link href="/" className="flex items-center gap-2.5">
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src="/logo.png"
+              alt="At Ease Learning"
+              width={32}
+              height={32}
+              className="rounded-full"
+            />
+            <span className="font-display font-medium text-fg">At Ease Learning</span>
+          </Link>
+          <p className="text-small text-muted max-w-xs text-center md:text-left">
+            Free, high-quality education for Year 7–12 Australian students.
+          </p>
         </div>
-        <p className="mt-10 text-center text-xs text-muted">
-          © {new Date().getFullYear()} At Ease Learning. All rights reserved.
-          WACE and SCSA aligned content.
-        </p>
+        <nav className="flex flex-wrap justify-center md:justify-end gap-x-8 gap-y-3">
+          <Link href="/pricing/" className="text-small text-muted hover:text-fg transition-colors">
+            Pricing
+          </Link>
+          <Link href="/about/" className="text-small text-muted hover:text-fg transition-colors">
+            About
+          </Link>
+          <Link href="/contact/" className="text-small text-muted hover:text-fg transition-colors">
+            Contact
+          </Link>
+          <a href={`${APP_URL}/browse`} className="text-small text-muted hover:text-fg transition-colors">
+            Browse subjects
+          </a>
+          <a href={`${APP_URL}/login`} className="text-small text-muted hover:text-fg transition-colors">
+            Log in
+          </a>
+          <a href={`${APP_URL}/signup`} className="text-small text-muted hover:text-fg transition-colors">
+            Sign up
+          </a>
+        </nav>
       </div>
+      <p className="mt-10 text-center text-small text-muted">
+        © {new Date().getFullYear()} At Ease Learning. All rights reserved.
+      </p>
     </footer>
   );
 }
