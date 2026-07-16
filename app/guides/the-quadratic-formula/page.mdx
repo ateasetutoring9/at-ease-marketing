@@ -1,0 +1,100 @@
+import { JsonLd } from "@/components/JsonLd";
+import { BrowseGuidesLink } from "@/components/BrowseGuidesLink";
+import { GuideCTA } from "@/components/GuideCTA";
+import { SITE_URL, SITE_NAME, OG_IMAGE } from "@/lib/constants";
+
+export const metadata = {
+  title: "The Quadratic Formula, Explained",
+  description:
+    "A clear, step-by-step guide to the quadratic formula and the discriminant, for WA Year 10 Maths students — plus a free interactive lecture and practice worksheet.",
+  alternates: {
+    canonical: "/guides/the-quadratic-formula/",
+  },
+  openGraph: {
+    title: `The Quadratic Formula, Explained — ${SITE_NAME}`,
+    description:
+      "A clear, step-by-step guide to the quadratic formula and the discriminant, for WA Year 10 Maths students.",
+    images: [OG_IMAGE],
+  },
+};
+
+export const articleJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "Article",
+  headline: "The Quadratic Formula, Explained",
+  description:
+    "A clear, step-by-step guide to the quadratic formula and the discriminant, for WA Year 10 Maths students.",
+  author: {
+    "@type": "EducationalOrganization",
+    name: SITE_NAME,
+    url: SITE_URL,
+  },
+  publisher: {
+    "@type": "EducationalOrganization",
+    name: SITE_NAME,
+    logo: {
+      "@type": "ImageObject",
+      url: `${SITE_URL}/logo.png`,
+    },
+  },
+  mainEntityOfPage: `${SITE_URL}/guides/the-quadratic-formula/`,
+};
+
+<JsonLd data={articleJsonLd} />
+
+# The Quadratic Formula, Explained
+
+Some quadratics factorise in a few seconds. Others just don't — the numbers don't cooperate, and guessing two factors that multiply and add to the right values stops being realistic. That's what the **quadratic formula** is for: it solves *any* quadratic equation, no factorising required.
+
+For an equation in the form `ax² + bx + c = 0`:
+
+`x = (−b ± √(b² − 4ac)) / (2a)`
+
+The `±` is doing real work here — it's why a quadratic can have two different answers, one from `+` and one from `−`.
+
+## Working through an example
+
+Take `x² + 2x − 8 = 0`. Matching it to `ax² + bx + c = 0` gives `a = 1`, `b = 2`, `c = −8`.
+
+**Step 1 — find the discriminant.** This is the part under the square root, `b² − 4ac`:
+
+`b² − 4ac = (2)² − 4(1)(−8) = 4 + 32 = 36`
+
+**Step 2 — take the square root.** `√36 = 6`.
+
+**Step 3 — substitute into the formula:**
+
+`x = (−2 ± 6) / 2`
+
+**Step 4 — split into the two cases:**
+
+- `x = (−2 + 6) / 2 = 2`
+- `x = (−2 − 6) / 2 = −4`
+
+So the solutions are `x = 2` and `x = −4`. You can check this by factorising the same equation as `(x − 2)(x + 4) = 0` — same two answers, different route.
+
+## The discriminant tells you what's coming
+
+That `b² − 4ac` piece is called the **discriminant**, and it's worth calculating before you go any further, because it tells you how many real solutions to expect:
+
+- **Positive** (`> 0`) — two real solutions, like the example above.
+- **Zero** (`= 0`) — exactly one real solution (the two `±` cases land on the same number).
+- **Negative** (`< 0`) — no real solutions, because you can't take the square root of a negative number.
+
+Checking the discriminant first is a good habit — if it's negative, you know immediately there's nothing more to solve for.
+
+## When to reach for the formula
+
+Factorising is usually faster when the numbers are small and cooperative. The quadratic formula is the reliable fallback when they're not — it works on every quadratic, including the ones with awkward or non-integer solutions that factorising would never find cleanly.
+
+## In short
+
+- The quadratic formula, `x = (−b ± √(b² − 4ac)) / (2a)`, solves any equation of the form `ax² + bx + c = 0`.
+- The discriminant `b² − 4ac` tells you how many real solutions exist before you finish the calculation: positive means two, zero means one, negative means none.
+- Reach for it when an equation won't factorise easily.
+
+---
+
+<GuideCTA />
+
+<BrowseGuidesLink />

@@ -1,14 +1,19 @@
 import type { Metadata } from "next";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
-import { APP_URL, SITE_NAME } from "@/lib/constants";
+import { JsonLd } from "@/components/JsonLd";
+import { APP_URL, SITE_NAME, OG_IMAGE } from "@/lib/constants";
 
 export const metadata: Metadata = {
   title: "Pricing",
   description: `${SITE_NAME} is free for all students. See what's included and what we plan to offer for families who want additional support.`,
+  alternates: {
+    canonical: "/pricing/",
+  },
   openGraph: {
     title: `Pricing — ${SITE_NAME}`,
     description: `${SITE_NAME} is free for all students in Years 7–12.`,
+    images: [OG_IMAGE],
   },
 };
 
@@ -27,11 +32,44 @@ const comingFeatures = [
   "Priority email support",
 ];
 
+const faqs = [
+  {
+    q: "Is it really free?",
+    a: "Yes. Every subject, every year level, every lecture and worksheet. No credit card, no trial, no expiry date.",
+  },
+  {
+    q: "Will it stay free?",
+    a: "The core platform — the lectures, worksheets, and progress tracking — is permanently free. A paid tutoring tier is coming, but it won't gate any of the existing content.",
+  },
+  {
+    q: "Is this aligned to the WA curriculum?",
+    a: "Yes. Content is written against SCSA learning area descriptions and, where applicable, ATAR course outlines. If you spot something out of scope, please let us know.",
+  },
+  {
+    q: "Can parents use it?",
+    a: "Yes. Create a parent account and link it to your child's account to see their progress — topics attempted, scores, last session.",
+  },
+];
+
+const faqJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: faqs.map(({ q, a }) => ({
+    "@type": "Question",
+    name: q,
+    acceptedAnswer: {
+      "@type": "Answer",
+      text: a,
+    },
+  })),
+};
+
 export default function PricingPage() {
   return (
     <>
       <Header />
       <main className="flex-1 px-4 py-16">
+        <JsonLd data={faqJsonLd} />
         <div className="mx-auto max-w-[1120px]">
           <div className="mb-14 text-center">
             <h1 className="text-4xl font-semibold text-fg">Pricing</h1>
@@ -151,24 +189,7 @@ export default function PricingPage() {
               Common questions
             </h2>
             <div className="space-y-6">
-              {[
-                {
-                  q: "Is it really free?",
-                  a: "Yes. Every subject, every year level, every lecture and worksheet. No credit card, no trial, no expiry date.",
-                },
-                {
-                  q: "Will it stay free?",
-                  a: "The core platform — the lectures, worksheets, and progress tracking — is permanently free. A paid tutoring tier is coming, but it won't gate any of the existing content.",
-                },
-                {
-                  q: "Is this aligned to the WA curriculum?",
-                  a: "Yes. Content is written against SCSA learning area descriptions and, where applicable, ATAR course outlines. If you spot something out of scope, please let us know.",
-                },
-                {
-                  q: "Can parents use it?",
-                  a: "Yes. Create a parent account and link it to your child's account to see their progress — topics attempted, scores, last session.",
-                },
-              ].map(({ q, a }) => (
+              {faqs.map(({ q, a }) => (
                 <div key={q} className="border-b border-border pb-6">
                   <p className="font-medium text-fg">{q}</p>
                   <p className="mt-2 text-sm leading-relaxed text-muted">{a}</p>

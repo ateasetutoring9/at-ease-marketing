@@ -1,14 +1,18 @@
 import type { Metadata } from "next";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
-import { APP_URL, SITE_NAME } from "@/lib/constants";
+import { APP_URL, SITE_NAME, OG_IMAGE } from "@/lib/constants";
 
 export const metadata: Metadata = {
   title: "About",
   description: `Why we built ${SITE_NAME} and what we believe about how students learn.`,
+  alternates: {
+    canonical: "/about/",
+  },
   openGraph: {
     title: `About — ${SITE_NAME}`,
     description: `Why we built ${SITE_NAME} and what we believe about how students learn.`,
+    images: [OG_IMAGE],
   },
 };
 

@@ -1,0 +1,103 @@
+import { JsonLd } from "@/components/JsonLd";
+import { BrowseGuidesLink } from "@/components/BrowseGuidesLink";
+import { GuideCTA } from "@/components/GuideCTA";
+import { SITE_URL, SITE_NAME, OG_IMAGE } from "@/lib/constants";
+
+export const metadata = {
+  title: "Pythagoras' Theorem, Explained",
+  description:
+    "A clear, step-by-step guide to finding a missing side of a right-angled triangle using Pythagoras' theorem, for WA Year 8 Maths students.",
+  alternates: {
+    canonical: "/guides/pythagoras-theorem/",
+  },
+  openGraph: {
+    title: `Pythagoras' Theorem, Explained — ${SITE_NAME}`,
+    description:
+      "A clear, step-by-step guide to Pythagoras' theorem, for WA Year 8 Maths students.",
+    images: [OG_IMAGE],
+  },
+};
+
+export const articleJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "Article",
+  headline: "Pythagoras' Theorem, Explained",
+  description:
+    "A clear, step-by-step guide to Pythagoras' theorem, for WA Year 8 Maths students.",
+  author: {
+    "@type": "EducationalOrganization",
+    name: SITE_NAME,
+    url: SITE_URL,
+  },
+  publisher: {
+    "@type": "EducationalOrganization",
+    name: SITE_NAME,
+    logo: {
+      "@type": "ImageObject",
+      url: `${SITE_URL}/logo.png`,
+    },
+  },
+  mainEntityOfPage: `${SITE_URL}/guides/pythagoras-theorem/`,
+};
+
+<JsonLd data={articleJsonLd} />
+
+# Pythagoras' Theorem, Explained
+
+Over 2000 years ago, the ancient Greeks worked out a rule connecting the three sides of any right-angled triangle. It's still one of the most useful facts in maths — used constantly for measuring distances you can't measure directly.
+
+## Naming the sides
+
+A **right-angled triangle** has one 90° corner. The side opposite that corner — always the longest side — is the **hypotenuse**. The other two sides are the shorter **legs**.
+
+## The theorem
+
+**Pythagoras' theorem** states that the square of the hypotenuse equals the sum of the squares of the other two sides:
+
+`a² + b² = c²`
+
+where `c` is the hypotenuse, and `a` and `b` are the two legs.
+
+## Finding the hypotenuse
+
+Say the two shorter sides are 8 and 15.
+
+**Step 1 — square both legs and add them:**
+
+`8² + 15² = 64 + 225 = 289`
+
+**Step 2 — take the square root:**
+
+`c = √289 = 17`
+
+So the hypotenuse is 17.
+
+## Finding a shorter side
+
+The formula rearranges just as easily when it's a leg you're missing instead. Say the hypotenuse is 10 and one leg is 6.
+
+**Step 1 — square the hypotenuse and the known leg:**
+
+`10² − 6² = 100 − 36 = 64`
+
+**Step 2 — take the square root:**
+
+`b = √64 = 8`
+
+So the missing leg is 8. Notice the only difference from finding the hypotenuse is that you subtract instead of add — you're always isolating the unknown square before rooting it.
+
+## Triples worth recognising
+
+Some right-angled triangles have whole-number sides that come up again and again: **3-4-5**, **6-8-10**, **8-15-17**, and **5-12-13**. Spotting one of these instantly can save you the calculation.
+
+## In short
+
+- The hypotenuse is the longest side, opposite the right angle.
+- `a² + b² = c²`.
+- Add the squares of the legs to find the hypotenuse; subtract to find a missing leg.
+
+---
+
+<GuideCTA />
+
+<BrowseGuidesLink />

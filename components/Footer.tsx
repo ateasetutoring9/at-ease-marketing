@@ -22,6 +22,9 @@ export function Footer() {
           </p>
         </div>
         <nav className="flex flex-wrap justify-center md:justify-end gap-x-8 gap-y-3">
+          <Link href="/guides/" className="text-small text-muted hover:text-fg transition-colors">
+            Guides
+          </Link>
           <Link href="/pricing/" className="text-small text-muted hover:text-fg transition-colors">
             Pricing
           </Link>

@@ -1,0 +1,84 @@
+import { JsonLd } from "@/components/JsonLd";
+import { BrowseGuidesLink } from "@/components/BrowseGuidesLink";
+import { GuideCTA } from "@/components/GuideCTA";
+import { SITE_URL, SITE_NAME, OG_IMAGE } from "@/lib/constants";
+
+export const metadata = {
+  title: "States of Matter, Explained",
+  description:
+    "How the particle model explains solids, liquids and gases — and what's really happening when something melts, freezes, or boils. For WA Year 7 Science students.",
+  alternates: {
+    canonical: "/guides/states-of-matter/",
+  },
+  openGraph: {
+    title: `States of Matter, Explained — ${SITE_NAME}`,
+    description:
+      "How the particle model explains solids, liquids and gases, for WA Year 7 Science students.",
+    images: [OG_IMAGE],
+  },
+};
+
+export const articleJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "Article",
+  headline: "States of Matter, Explained",
+  description:
+    "How the particle model explains solids, liquids and gases, for WA Year 7 Science students.",
+  author: {
+    "@type": "EducationalOrganization",
+    name: SITE_NAME,
+    url: SITE_URL,
+  },
+  publisher: {
+    "@type": "EducationalOrganization",
+    name: SITE_NAME,
+    logo: {
+      "@type": "ImageObject",
+      url: `${SITE_URL}/logo.png`,
+    },
+  },
+  mainEntityOfPage: `${SITE_URL}/guides/states-of-matter/`,
+};
+
+<JsonLd data={articleJsonLd} />
+
+# States of Matter, Explained
+
+Everything you can touch, pour or breathe — your desk, a glass of water, the air in the room — is **matter**. Matter is built from particles far too small to see, and the **particle model** explains solids, liquids and gases as nothing more than different ways those particles can be arranged and moving.
+
+## Picture a crowded room
+
+It helps to imagine particles as people in a room:
+
+- **Solid** — everyone stands shoulder to shoulder in fixed rows, only shuffling on the spot. Nobody can push past anyone else, so the whole crowd holds its shape.
+- **Liquid** — people are still close together, but they can squeeze past one another and drift around. The crowd can flow into whatever shape the room is.
+- **Gas** — people are scattered, moving fast in every direction, bouncing off the walls. They spread out to fill the entire space available.
+
+That's the whole model: same particles, three different arrangements and speeds.
+
+## Changing state means changing energy
+
+Nothing is added or removed when a substance changes state — only **heat energy**. Add energy and particles move faster and spread out further; remove it and they slow down and pack in closer.
+
+- **Melting** — solid → liquid (energy added)
+- **Freezing** — liquid → solid (energy removed)
+- **Evaporating / boiling** — liquid → gas (energy added)
+- **Condensing** — gas → liquid (energy removed)
+
+An ice cube melting isn't creating new water — the same particles are simply moving faster and breaking free of their fixed positions.
+
+## Why this model matters
+
+The particle model isn't just for describing states — it's the reasoning tool behind *why* solids hold their shape, why liquids find their own level, and why a smell spreads across a room. Anywhere you see matter behaving a certain way, the explanation traces back to how its particles are arranged and how much energy they have.
+
+## In short
+
+- All matter is made of tiny particles; solids, liquids and gases are just different arrangements and speeds of the same particles.
+- Solid: packed and fixed. Liquid: close but able to flow. Gas: spread out and fast.
+- Adding or removing heat energy drives every change of state — melting, freezing, evaporating, condensing.
+
+---
+
+<GuideCTA />
+
+<BrowseGuidesLink />

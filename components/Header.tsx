@@ -21,6 +21,9 @@ export function Header() {
           <Button variant="ghost" size="sm" href="/pricing/">
             Pricing
           </Button>
+          <Button variant="ghost" size="sm" href="/guides/">
+            Guides
+          </Button>
           <Button variant="ghost" size="sm" href="/about/">
             About
           </Button>

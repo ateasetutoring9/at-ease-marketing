@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
+import { SITE_URL, OG_IMAGE } from "@/lib/constants";
 import { FoundingBanner } from "./_components/FoundingBanner";
 import { Hero } from "./_components/Hero";
 import { WhatsFree } from "./_components/WhatsFree";
@@ -18,12 +19,16 @@ import { FinalCTA } from "./_components/FinalCTA";
 export const metadata: Metadata = {
   title: "At Ease Tutoring — Free Education for Year 7–12",
   description:
-    "Free, high-quality education for Year 7–12 Australian students — lectures, worksheets, and instant feedback, all in one place.",
+    "Free, high-quality education for Year 7–12 Western Australian students — lectures, worksheets, and instant feedback, all in one place.",
+  alternates: {
+    canonical: "/",
+  },
   openGraph: {
     title: "At Ease Tutoring — Free Education for Year 7–12",
     description:
-      "Free, high-quality education for Year 7–12 Australian students — lectures, worksheets, and instant feedback, all in one place.",
-    url: "https://www.ateasetutoring.com",
+      "Free, high-quality education for Year 7–12 Western Australian students — lectures, worksheets, and instant feedback, all in one place.",
+    url: SITE_URL,
+    images: [OG_IMAGE],
   },
 };
 

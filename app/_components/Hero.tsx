@@ -8,10 +8,10 @@ export function Hero() {
       <div className="max-w-reading mx-auto">
         <Eyebrow className="mb-5">100% free · No credit card · No ads</Eyebrow>
         <h1 className="text-hero text-fg mb-6">
-          Ace your studies.<br />Pay nothing.
+          Ace your WACE.<br />Pay nothing.
         </h1>
         <p className="text-body text-muted mb-10 max-w-xl mx-auto">
-          High-quality lectures, auto-graded worksheets, and instant feedback for Year 7–12 Australian students — completely free, forever.
+          High-quality lectures, auto-graded worksheets, and instant feedback for Year 7–12 Western Australian students — completely free, forever.
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <Button variant="primary" size="lg" href={`${APP_URL}/signup`}>

@@ -1,4 +1,5 @@
 import { ChevronDown } from "lucide-react";
+import { JsonLd } from "@/components/JsonLd";
 
 const faqs = [
   {
@@ -33,9 +34,23 @@ const faqs = [
   },
 ];
 
+const faqJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: faqs.map((faq) => ({
+    "@type": "Question",
+    name: faq.question,
+    acceptedAnswer: {
+      "@type": "Answer",
+      text: faq.answer,
+    },
+  })),
+};
+
 export function FAQ() {
   return (
     <section className="py-16 md:py-24 px-4">
+      <JsonLd data={faqJsonLd} />
       <div className="max-w-reading mx-auto">
         <div className="text-center mb-12">
           <h2 className="text-section-title text-fg mb-4">Frequently asked questions</h2>

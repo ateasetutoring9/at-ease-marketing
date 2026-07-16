@@ -1,0 +1,83 @@
+import { JsonLd } from "@/components/JsonLd";
+import { BrowseGuidesLink } from "@/components/BrowseGuidesLink";
+import { GuideCTA } from "@/components/GuideCTA";
+import { SITE_URL, SITE_NAME, OG_IMAGE } from "@/lib/constants";
+
+export const metadata = {
+  title: "Newton's Laws of Motion, Explained",
+  description:
+    "A clear guide to Newton's three laws of motion — inertia, F = ma, and action-reaction — with a worked example, for WA Year 10 Science students.",
+  alternates: {
+    canonical: "/guides/newtons-laws-of-motion/",
+  },
+  openGraph: {
+    title: `Newton's Laws of Motion, Explained — ${SITE_NAME}`,
+    description:
+      "A clear guide to inertia, F = ma, and action-reaction, for WA Year 10 Science students.",
+    images: [OG_IMAGE],
+  },
+};
+
+export const articleJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "Article",
+  headline: "Newton's Laws of Motion, Explained",
+  description:
+    "A clear guide to inertia, F = ma, and action-reaction, for WA Year 10 Science students.",
+  author: {
+    "@type": "EducationalOrganization",
+    name: SITE_NAME,
+    url: SITE_URL,
+  },
+  publisher: {
+    "@type": "EducationalOrganization",
+    name: SITE_NAME,
+    logo: {
+      "@type": "ImageObject",
+      url: `${SITE_URL}/logo.png`,
+    },
+  },
+  mainEntityOfPage: `${SITE_URL}/guides/newtons-laws-of-motion/`,
+};
+
+<JsonLd data={articleJsonLd} />
+
+# Newton's Laws of Motion, Explained
+
+Why does a car's passengers lurch forward when it brakes suddenly? Why does a swimmer move forward by pushing water backward? Sir Isaac **Newton** answered questions like these with three laws that still describe how forces and motion connect.
+
+## First law — inertia
+
+> An object stays at rest, or keeps moving at a constant velocity, **unless an unbalanced force acts on it**.
+
+This resistance to a change in motion is called **inertia**. It's why a seatbelt matters: when a car brakes, your body wants to keep moving forward at the same speed it was already travelling — the seatbelt is the unbalanced force that stops you from continuing in a straight line.
+
+## Second law — F = ma
+
+> The acceleration of an object depends on the force applied to it and its mass.
+
+`Force = mass × acceleration`, or `F = ma`.
+
+More force means more acceleration; more mass means less acceleration for the same force. Rearranging the formula lets you solve for whichever quantity you don't know.
+
+**Example:** a 5 kg object is pushed with a force of 15 N. What's its acceleration?
+
+`a = F / m = 15 / 5 = 3 m/s²`
+
+## Third law — action and reaction
+
+> For every action, there is an **equal and opposite reaction**.
+
+A swimmer pushes water backward with their hands and feet; the water pushes the swimmer forward with exactly the same force in the opposite direction. The same idea explains how a rocket launches — it pushes exhaust gas downward, and the gas pushes the rocket upward.
+
+## In short
+
+- **First law:** objects keep their state of motion unless an unbalanced force acts on them — this resistance is inertia.
+- **Second law:** `F = ma` — force equals mass times acceleration.
+- **Third law:** every action has an equal and opposite reaction.
+
+---
+
+<GuideCTA />
+
+<BrowseGuidesLink />

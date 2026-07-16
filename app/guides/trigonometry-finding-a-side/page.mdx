@@ -1,0 +1,103 @@
+import { JsonLd } from "@/components/JsonLd";
+import { BrowseGuidesLink } from "@/components/BrowseGuidesLink";
+import { GuideCTA } from "@/components/GuideCTA";
+import { SITE_URL, SITE_NAME, OG_IMAGE } from "@/lib/constants";
+
+export const metadata = {
+  title: "Trigonometry: Finding a Missing Side",
+  description:
+    "How to use SOH CAH TOA to find a missing side length in a right-angled triangle, with worked examples, for WA Year 9 Maths students.",
+  alternates: {
+    canonical: "/guides/trigonometry-finding-a-side/",
+  },
+  openGraph: {
+    title: `Trigonometry: Finding a Missing Side — ${SITE_NAME}`,
+    description:
+      "How to use SOH CAH TOA to find a missing side length in a right-angled triangle, for WA Year 9 Maths students.",
+    images: [OG_IMAGE],
+  },
+};
+
+export const articleJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "Article",
+  headline: "Trigonometry: Finding a Missing Side",
+  description:
+    "How to use SOH CAH TOA to find a missing side length in a right-angled triangle, for WA Year 9 Maths students.",
+  author: {
+    "@type": "EducationalOrganization",
+    name: SITE_NAME,
+    url: SITE_URL,
+  },
+  publisher: {
+    "@type": "EducationalOrganization",
+    name: SITE_NAME,
+    logo: {
+      "@type": "ImageObject",
+      url: `${SITE_URL}/logo.png`,
+    },
+  },
+  mainEntityOfPage: `${SITE_URL}/guides/trigonometry-finding-a-side/`,
+};
+
+<JsonLd data={articleJsonLd} />
+
+# Trigonometry: Finding a Missing Side
+
+Pythagoras' theorem connects the three sides of a right-angled triangle — but it needs you to know two of them already. **Trigonometry** goes further: given just one side and one angle, it can find any other side. That's what makes it possible to find the height of a tree from its shadow, without climbing it.
+
+## Naming the sides, relative to an angle
+
+Pick one of the non-right angles in the triangle. Relative to it:
+
+- the **hypotenuse** is the longest side, opposite the right angle,
+- the **opposite** side is the one across from your chosen angle,
+- the **adjacent** side is the one next to your chosen angle (that isn't the hypotenuse).
+
+## SOH CAH TOA
+
+Three ratios connect that angle to the triangle's sides:
+
+- **SOH:** `sin(angle) = Opposite / Hypotenuse`
+- **CAH:** `cos(angle) = Adjacent / Hypotenuse`
+- **TOA:** `tan(angle) = Opposite / Adjacent`
+
+Which one you use depends entirely on which two sides are involved — the one you know, and the one you want.
+
+## Example 1 — finding the opposite side
+
+A ladder leans against a wall, making a 30° angle with the ground. The ladder itself (the hypotenuse) is 10 metres. How high up the wall does it reach (the opposite side)?
+
+You know the angle and the hypotenuse, and want the opposite side — that's **SOH**:
+
+`opposite = hypotenuse × sin(angle) = 10 × sin(30°) = 10 × 0.5 = 5`
+
+The ladder reaches 5 metres up the wall.
+
+## Example 2 — finding the adjacent side
+
+Now say the same ladder makes a 60° angle with the ground, and is still 8 metres long. How far is its base from the wall (the adjacent side)?
+
+Angle and hypotenuse known, adjacent wanted — that's **CAH**:
+
+`adjacent = hypotenuse × cos(angle) = 8 × cos(60°) = 8 × 0.5 = 4`
+
+The base of the ladder is 4 metres from the wall.
+
+## Example 3 — finding a side without the hypotenuse
+
+If the hypotenuse isn't involved at all — say you know the adjacent side is 6 metres and the angle is 45°, and want the opposite side — use **TOA**:
+
+`opposite = adjacent × tan(angle) = 6 × tan(45°) = 6 × 1 = 6`
+
+## In short
+
+- Trigonometry relates an angle to the side lengths of a right-angled triangle.
+- Sides are named relative to your chosen angle: opposite, adjacent, hypotenuse.
+- SOH CAH TOA tells you which ratio to use: pick the one connecting the side you know to the side you want.
+
+---
+
+<GuideCTA />
+
+<BrowseGuidesLink />

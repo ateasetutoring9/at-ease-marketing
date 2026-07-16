@@ -1,0 +1,101 @@
+import { JsonLd } from "@/components/JsonLd";
+import { BrowseGuidesLink } from "@/components/BrowseGuidesLink";
+import { GuideCTA } from "@/components/GuideCTA";
+import { SITE_URL, SITE_NAME, OG_IMAGE } from "@/lib/constants";
+
+export const metadata = {
+  title: "What Is a Derivative?",
+  description:
+    "How the derivative arises as a limit of the difference quotient, with a worked first-principles example, for WACE Maths Methods (ATAR) students.",
+  alternates: {
+    canonical: "/guides/what-is-a-derivative/",
+  },
+  openGraph: {
+    title: `What Is a Derivative? — ${SITE_NAME}`,
+    description:
+      "How the derivative arises as a limit of the difference quotient, for WACE Maths Methods (ATAR) students.",
+    images: [OG_IMAGE],
+  },
+};
+
+export const articleJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "Article",
+  headline: "What Is a Derivative?",
+  description:
+    "How the derivative arises as a limit of the difference quotient, for WACE Maths Methods (ATAR) students.",
+  author: {
+    "@type": "EducationalOrganization",
+    name: SITE_NAME,
+    url: SITE_URL,
+  },
+  publisher: {
+    "@type": "EducationalOrganization",
+    name: SITE_NAME,
+    logo: {
+      "@type": "ImageObject",
+      url: `${SITE_URL}/logo.png`,
+    },
+  },
+  mainEntityOfPage: `${SITE_URL}/guides/what-is-a-derivative/`,
+};
+
+<JsonLd data={articleJsonLd} />
+
+# What Is a Derivative?
+
+An average rate of change describes what happened over an interval — a car's average speed over an hour, say. But how fast is something changing at a single **instant**? That question is what the **derivative** answers.
+
+## From secant to tangent
+
+Start with the difference quotient, `(f(x + h) − f(x)) / h` — the gradient of the line joining two points on a curve, a distance `h` apart. Now imagine `h` shrinking toward zero. The two points slide together, and that line pivots until it becomes the **tangent** — the line that just touches the curve at a single point.
+
+## The definition
+
+The **derivative** of `f` at `x` is the limit of the difference quotient as `h → 0`:
+
+`f'(x) = lim (h→0) [ (f(x + h) − f(x)) / h ]`
+
+Where this limit exists, it gives the **instantaneous rate of change** of `f` at that point — equivalently, the gradient of the tangent line there.
+
+## Working it out for f(x) = x²
+
+The definition looks abstract until you apply it. Take `f(x) = x²`.
+
+**Step 1 — write out `f(x + h)`:**
+
+`f(x + h) = (x + h)² = x² + 2xh + h²`
+
+**Step 2 — subtract `f(x)`:**
+
+`f(x + h) − f(x) = (x² + 2xh + h²) − x² = 2xh + h²`
+
+**Step 3 — divide by `h`:**
+
+`(2xh + h²) / h = 2x + h`
+
+**Step 4 — let `h → 0`:**
+
+`2x + h → 2x`
+
+So `f'(x) = 2x`. That's the general rule for squaring functions: the gradient of `f(x) = x²` at any point `x` is simply `2x`.
+
+## Notation
+
+The same idea is written a few different ways: `f'(x)`, `dy/dx`, `d/dx[f(x)]` — all meaning the instantaneous rate of change.
+
+## What the sign tells you
+
+A positive derivative means the function is increasing at that point; negative means decreasing; zero means the curve is momentarily flat — often a peak, trough, or point of inflection.
+
+## In short
+
+- The derivative is the limit of the difference quotient as `h → 0`.
+- It equals the instantaneous rate of change — the gradient of the tangent line.
+- For `f(x) = x²`, applying the definition directly gives `f'(x) = 2x`.
+
+---
+
+<GuideCTA />
+
+<BrowseGuidesLink />
