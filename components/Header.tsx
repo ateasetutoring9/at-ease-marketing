@@ -18,6 +18,9 @@ export function Header() {
           <span className="font-medium text-fg text-base">At Ease Tutoring</span>
         </Link>
         <nav className="flex items-center gap-3">
+          <Button variant="ghost" size="sm" href="/features/">
+            Features
+          </Button>
           <Button variant="ghost" size="sm" href="/pricing/">
             Pricing
           </Button>

@@ -5,6 +5,7 @@ import { SITE_URL, OG_IMAGE } from "@/lib/constants";
 import { FoundingBanner } from "./_components/FoundingBanner";
 import { Hero } from "./_components/Hero";
 import { WhatsFree } from "./_components/WhatsFree";
+import { FeaturesTeaser } from "./_components/FeaturesTeaser";
 import { HowItWorks } from "./_components/HowItWorks";
 import { CurriculumCoverage } from "./_components/CurriculumCoverage";
 import { SampleQuestion } from "./_components/SampleQuestion";
@@ -39,6 +40,7 @@ export default function Home() {
       <FoundingBanner />
       <Hero />
       <WhatsFree />
+      <FeaturesTeaser />
       <HowItWorks />
       <CurriculumCoverage />
       <SampleQuestion />
