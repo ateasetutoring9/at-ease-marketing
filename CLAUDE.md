@@ -31,7 +31,7 @@ At Ease Tutoring — static marketing site.
 | `/features/` | `app/features/page.tsx` | Feature grid grouped by Learning / Trust & Safety / Visibility / Access — covers both student and parent value in one unified list (not separate tracks) |
 | `/pricing/` | `app/pricing/page.tsx` | Pricing |
 | `/about/` | `app/about/page.tsx` | The founder letter (`components/FounderLetter.tsx`) — a `/why`-style page merged into `/about`; `/why` no longer exists, don't recreate it |
-| `/contact/` | `app/contact/page.tsx` | mailto: link only — no form, no JS, no API |
+| `/contact/` | `app/contact/page.tsx` | Renders `components/ContactRoutes.tsx` — grouped mailto: routes with pre-filled subjects, no form, no JS, no API |
 | `/guides/` | `app/guides/page.tsx` | Index of the guides content library, see below |
 | `/guides/<slug>/` | `app/guides/<slug>/page.mdx` | Individual study guides (MDX) |
 | `/sitemap.xml` | `app/sitemap.ts` | Static-exported; list every real route here manually |
@@ -107,6 +107,22 @@ fixtures could leak into the real build.
   reviews appear on the live site by itself. Something has to commit the
   updated file to this repo and trigger a new Cloudflare Pages build.
 
+## Contact routing (`/contact/`)
+
+`components/ContactRoutes.tsx` replaces a single mailto button with several
+`mailto:` links, each pre-filled with a different `subject` so enquiries
+arrive pre-sorted (e.g. "Lesson correction" vs. "Tutor application"). Still
+static, still no form — a `mailto:` link is not a form submission.
+
+- **`CONTACT_EMAIL`** lives in `lib/constants.ts` (`contact@ateasetutoring.com`)
+  and is the one place that address is defined. Import it — never hardcode
+  the address in a component, and check `app/layout.tsx`'s JSON-LD
+  `contactPoint` still points at the same constant if this ever changes again.
+- The trust-strip has two commented-out lines (ABN, WWCC check) in the JSX.
+  They're commented deliberately — an empty/fake ABN is worse than none. Don't
+  invent values to fill them in or delete the comments; leave them for
+  whoever has the real numbers.
+
 ## Intentional duplication
 
 `components/Button.tsx` and the brand tokens in `app/globals.css` deliberately
@@ -128,12 +144,17 @@ package would create a dependency that defeats the hard constraint above.
 
 ## Known gotchas
 
-- **Focus rings on `<button>` vs `<a>`:** the global `:focus-visible` base
-  rule in `globals.css` reliably colors the ring on `<a>`/`Link` elements, but
-  `<button>` elements in this stack don't pick up `outline-color` the same
-  way (confirmed by direct testing — `outline-style`/`width` apply, color
-  doesn't). Use Tailwind's `ring`/`ring-offset` utilities (box-shadow based)
-  for focus styling on `<button>` elements instead of `outline`.
+- **`getComputedStyle(...).outlineColor` is unreliable for verifying focus
+  rings** in this Playwright/headless-Chromium setup — it has repeatedly
+  reported the element's own text color (as if resolving `currentColor`)
+  even when a screenshot shows the ring rendering correctly in accent green
+  from the global `:focus-visible` base rule in `globals.css`. This affects
+  both `<a>` and `<button>` elements; an earlier version of this note wrongly
+  concluded `<button>` didn't pick up the color at all — it does. **Verify
+  focus rings with an actual screenshot of the focused element, not a
+  computed-style read.** (Tailwind `ring`/`ring-offset` utilities, used on
+  `TestimonialCarousel`'s arrow/dot buttons, also work fine and read
+  correctly via computed style if a non-screenshot check is ever needed.)
 - **Pasted/attached prose files:** content supplied via pasted or attached
   files has repeatedly arrived with mojibake corruption — typographic
   apostrophes and em-dashes collapsed to a stray `â`, middle dots as `Â·`

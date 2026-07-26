@@ -31,7 +31,7 @@ Emits a fully static site to `out/`, deployed on Cloudflare Pages.
 | `app/features/`, `app/pricing/`, `app/about/`, `app/contact/` | Core pages — `/about` is the founder letter, not a mission statement |
 | `app/guides/` | MDX study-guide content library — see below |
 | `app/_components/` | Homepage-only sections |
-| `components/` | Shared components (Header, Footer, UI primitives, FounderLetter*, TestimonialCarousel, ParentDashboardGallery, DashboardMock) |
+| `components/` | Shared components (Header, Footer, UI primitives, FounderLetter*, TestimonialCarousel, ParentDashboardGallery, DashboardMock, ContactRoutes) |
 | `lib/constants.ts` | Site-wide constants (URLs, site name/description, OG image) |
 | `lib/guides.ts` | Guide index data — add new guides here |
 | `lib/founder-letter.ts` | Single source of truth for all founder-letter prose — see below |
@@ -83,6 +83,15 @@ After editing this component, confirm fixtures can't leak into a real build:
 npm run build
 grep -ri "Wheatbelt\|Mandurah\|FIXTURE" out/   # must print nothing
 ```
+
+## Contact routing (`/contact/`)
+
+`components/ContactRoutes.tsx` renders several `mailto:` links (not a form),
+each with a different pre-filled subject so enquiries arrive pre-sorted.
+`CONTACT_EMAIL` in `lib/constants.ts` is the single source of truth for the
+address — import it rather than hardcoding the email anywhere. The trust
+strip's ABN/WWCC lines are intentionally commented out until real values
+exist; don't invent placeholder numbers.
 
 ## Regenerating placeholder images
 
