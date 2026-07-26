@@ -18,11 +18,6 @@ const faqs = [
       "Content is aligned to the Australian Curriculum v9 and mapped to the senior secondary frameworks of each state and territory, including VCE, HSC, QCE, ATAR, SACE, TCE, BSSS, and NTCET.",
   },
   {
-    question: "Are the tutors qualified?",
-    answer:
-      "All tutors hold a current Working With Children Check (WWCC) valid in their state or territory and have verified teaching or tutoring experience in their subject area.",
-  },
-  {
     question: "Can I use it on my phone or tablet?",
     answer:
       "Yes. The platform is fully responsive and works on all modern browsers across desktop, tablet, and mobile. No app to download.",

@@ -1,4 +1,4 @@
-import { TrendingUp, Users, ShieldCheck, CircleOff } from "lucide-react";
+import { TrendingUp, Users, CircleOff } from "lucide-react";
 import { Button } from "@/components/ui/Button";
 
 const highlights = [
@@ -11,11 +11,6 @@ const highlights = [
     icon: Users,
     title: "Parent dashboard",
     description: "Link your child's account to see their progress, for the parent.",
-  },
-  {
-    icon: ShieldCheck,
-    title: "WWCC-verified tutors",
-    description: "Every tutor is checked and verified before content goes live.",
   },
   {
     icon: CircleOff,
@@ -34,7 +29,7 @@ export function FeaturesTeaser() {
             A student gets free lectures and instant feedback at their own pace. A parent gets a clear window into how it's going — all in the same free account.
           </p>
         </div>
-        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-10">
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 mb-10">
           {highlights.map((h) => (
             <div key={h.title} className="flex flex-col items-center text-center gap-2">
               <div className="text-accent mb-1">

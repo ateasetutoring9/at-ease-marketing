@@ -9,7 +9,7 @@ import { FeaturesTeaser } from "./_components/FeaturesTeaser";
 import { HowItWorks } from "./_components/HowItWorks";
 import { CurriculumCoverage } from "./_components/CurriculumCoverage";
 import { SampleQuestion } from "./_components/SampleQuestion";
-import { MeetTutors } from "./_components/MeetTutors";
+import { ParentDashboardGallery } from "@/components/ParentDashboardGallery";
 import { Pricing } from "./_components/Pricing";
 import { Testimonials } from "./_components/Testimonials";
 import { TrustStrip } from "./_components/TrustStrip";
@@ -44,7 +44,7 @@ export default function Home() {
       <HowItWorks />
       <CurriculumCoverage />
       <SampleQuestion />
-      <MeetTutors />
+      <ParentDashboardGallery />
       <Pricing />
       <Testimonials />
       <TrustStrip />

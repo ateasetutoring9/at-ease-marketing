@@ -4,7 +4,6 @@ import {
   ClipboardCheck,
   Clock,
   BookOpen,
-  ShieldCheck,
   GraduationCap,
   CircleOff,
   Lock,
@@ -22,7 +21,7 @@ import { APP_URL, SITE_NAME, OG_IMAGE } from "@/lib/constants";
 
 export const metadata: Metadata = {
   title: "Features",
-  description: `Everything ${SITE_NAME} offers students and parents — free lectures, auto-graded worksheets, progress tracking, a parent dashboard, and WWCC-verified tutors.`,
+  description: `Everything ${SITE_NAME} offers students and parents — free lectures, auto-graded worksheets, progress tracking, and a parent dashboard.`,
   alternates: {
     canonical: "/features/",
   },
@@ -64,11 +63,6 @@ const groups = [
     title: "For trust and safety",
     description: "What makes this safe to hand to your child, and credible enough to actually study from.",
     features: [
-      {
-        icon: ShieldCheck,
-        title: "WWCC-Verified Tutors",
-        description: "Every tutor holds a current Working With Children Check and has verified teaching or tutoring experience in their subject.",
-      },
       {
         icon: GraduationCap,
         title: "WACE & SCSA Aligned",
