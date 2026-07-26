@@ -17,6 +17,7 @@ import {
   questions,
   whatThisIs,
 } from '@/lib/founder-letter';
+import Signature from '@/components/Signature';
 
 const personJsonLd = {
   '@context': 'https://schema.org',
@@ -51,27 +52,7 @@ export default function FounderLetter() {
           <p className="text-fg">&mdash; {founder.signOff}</p>
         </div>
 
-        {/* Signature */}
-        <div className="mt-12 flex items-center gap-4 border-t border-border pt-8">
-          {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img
-            src={founder.photo}
-            alt={`${founder.name}, who ${founder.credit}`}
-            width={256}
-            height={256}
-            loading="lazy"
-            decoding="async"
-            className="h-16 w-16 rounded-full object-cover"
-          />
-          <div>
-            <p className="text-small font-semibold text-fg">
-              {founder.name}
-            </p>
-            <p className="mt-0.5 text-small text-muted">
-              {founder.role} · {founder.location} · {founder.credit}
-            </p>
-          </div>
-        </div>
+        <Signature size={64} />
 
         {/* Facts, not a second run at the argument */}
         <section className="mt-16">

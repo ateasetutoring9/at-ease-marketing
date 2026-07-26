@@ -5,6 +5,7 @@
 
 import Link from 'next/link';
 import { founder, hook, letterShort } from '@/lib/founder-letter';
+import FounderAvatar from '@/components/FounderAvatar';
 
 export default function FounderLetterHome() {
   return (
@@ -12,16 +13,7 @@ export default function FounderLetterHome() {
       <div className="mx-auto max-w-reading">
         <div className="flex flex-col md:flex-row gap-10 items-start">
           <div className="flex-shrink-0">
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img
-              src={founder.photo}
-              alt={`${founder.name}, who ${founder.credit}`}
-              width={256}
-              height={256}
-              loading="lazy"
-              decoding="async"
-              className="h-24 w-24 rounded-full object-cover"
-            />
+            <FounderAvatar size={112} />
           </div>
 
           <div>

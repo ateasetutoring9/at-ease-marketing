@@ -19,7 +19,7 @@ export const founder = {
   role: 'Tutor',
   location: 'Perth, WA',
   credit: 'writes every lesson on this site',
-  photo: '/images/founder.jpg', // TODO: real photo, plain and well-lit
+  photo: '', // TODO: real photo — monogram shows until this is set
   /** Optional. Add any profile that corroborates the name, or leave empty. */
   sameAs: [] as readonly string[],
 } as const;
