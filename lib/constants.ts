@@ -1,4 +1,4 @@
-export const SITE_URL = "https://www.ateasetutoring.com";
+export const SITE_URL = "https://ateasetutoring.com";
 
 export const APP_URL = "https://app.ateasetutoring.com";
 
