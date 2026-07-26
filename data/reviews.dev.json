@@ -1,0 +1,50 @@
+[
+  {
+    "_warning": "FIXTURE DATA — NOT REAL REVIEWS. Never publish. Guarded by NODE_ENV in TestimonialCarousel.tsx.",
+    "id": "dev-1",
+    "rating": 5,
+    "body": "My son started Year 8 having quietly given up on maths, and I didn't realise how far back it went — he was missing things from Year 6. Being able to send him to the earlier topics without anyone making a thing of it is what fixed it. He's not top of the class but he stopped saying he's dumb.",
+    "yearLevel": 8,
+    "region": "Perth"
+  },
+  {
+    "_warning": "FIXTURE DATA — NOT REAL REVIEWS. Never publish.",
+    "id": "dev-2",
+    "rating": 5,
+    "body": "We're two hours from the nearest tutor and the online ones we tried kept cancelling on us. This gets used four or five nights a week now. What sold me was opening it and finding actual Western Australian content instead of American worksheets with dollars and Fahrenheit in them.",
+    "yearLevel": 9,
+    "region": "Wheatbelt"
+  },
+  {
+    "_warning": "FIXTURE DATA — NOT REAL REVIEWS. Never publish.",
+    "id": "dev-3",
+    "rating": 4,
+    "body": "Honestly I signed up expecting it to be free because it was thin. It isn't. My daughter's in Year 7 and the science has been the standout — she came home and explained something to me about cells, which has never happened before. The English side needs more work in my opinion.",
+    "yearLevel": 7,
+    "region": "Perth"
+  },
+  {
+    "_warning": "FIXTURE DATA — NOT REAL REVIEWS. Never publish.",
+    "id": "dev-4",
+    "rating": 5,
+    "body": "I was paying eighty dollars an hour for a tutor who was mostly just keeping him company while he did homework. This does the same job for nothing and he can do it at nine at night when he actually gets stuck, rather than waiting until Thursday.",
+    "yearLevel": 10,
+    "region": "Mandurah"
+  },
+  {
+    "_warning": "FIXTURE DATA — NOT REAL REVIEWS. Never publish.",
+    "id": "dev-5",
+    "rating": 5,
+    "body": "What I appreciate is what it doesn't do. No points, no streak he has to protect, nothing buzzing at him. He's already got three apps competing for his attention. This one just sits there and waits, which sounds like a small thing but it's the reason he'll still open it.",
+    "yearLevel": 9,
+    "region": "Perth"
+  },
+  {
+    "_warning": "FIXTURE DATA — NOT REAL REVIEWS. Never publish.",
+    "id": "dev-6",
+    "rating": 4,
+    "body": "Took my daughter a couple of weeks to stop resisting it. She's in Year 10 and picking her ATAR subjects next term, and being able to look ahead at what those courses actually involve has made that conversation much less of a guess for both of us.",
+    "yearLevel": 10,
+    "region": "Albany"
+  }
+]

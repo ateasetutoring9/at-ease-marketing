@@ -11,9 +11,9 @@ import { CurriculumCoverage } from "./_components/CurriculumCoverage";
 import { SampleQuestion } from "./_components/SampleQuestion";
 import { ParentDashboardGallery } from "@/components/ParentDashboardGallery";
 import { Pricing } from "./_components/Pricing";
-import { Testimonials } from "./_components/Testimonials";
+import TestimonialCarousel from "@/components/TestimonialCarousel";
 import { TrustStrip } from "./_components/TrustStrip";
-import { FounderNote } from "./_components/FounderNote";
+import FounderLetterHome from "@/components/FounderLetterHome";
 import { FAQ } from "./_components/FAQ";
 import { FinalCTA } from "./_components/FinalCTA";
 
@@ -46,9 +46,9 @@ export default function Home() {
       <SampleQuestion />
       <ParentDashboardGallery />
       <Pricing />
-      <Testimonials />
+      <TestimonialCarousel />
       <TrustStrip />
-      <FounderNote />
+      <FounderLetterHome />
       <FAQ />
       <FinalCTA />
       <Footer />
