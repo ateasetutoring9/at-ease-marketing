@@ -31,14 +31,13 @@ Emits a fully static site to `out/`, deployed on Cloudflare Pages.
 | `app/features/`, `app/pricing/`, `app/about/`, `app/contact/` | Core pages — `/about` is the founder letter, not a mission statement |
 | `app/guides/` | MDX study-guide content library — see below |
 | `app/_components/` | Homepage-only sections |
-| `components/` | Shared components (Header, Footer, UI primitives, FounderLetter*, TestimonialCarousel, ParentDashboardGallery, DashboardMock, ContactRoutes) |
+| `components/` | Shared components (Header, Footer, UI primitives, FounderLetter*, FounderAvatar, Signature, TestimonialCarousel, ParentDashboardGallery, DashboardMock, ContactRoutes) |
 | `lib/constants.ts` | Site-wide constants (URLs, site name/description, OG image) |
 | `lib/guides.ts` | Guide index data — add new guides here |
 | `lib/founder-letter.ts` | Single source of truth for all founder-letter prose — see below |
 | `data/reviews.json`, `data/reviews.dev.json` | Real vs. dev-fixture testimonial data — see below |
 | `app/sitemap.ts`, `app/robots.ts` | Static-exported sitemap/robots |
 | `scripts/generate-og-image.mjs` | Regenerates `public/og-image.png` |
-| `scripts/generate-founder-placeholder.mjs` | Regenerates the temporary `public/images/founder.jpg` |
 
 ## Adding a guide
 
@@ -66,6 +65,12 @@ new export to the lib file instead.
 - `founder.name` vs `founder.signOff` are intentionally different names doing
   different jobs (credential vs. sign-off voice) — not a bug.
 - `/why` was merged into `/about` and no longer exists as a route.
+- `founder.photo` is `''` — there's no photo yet, and `components/FounderAvatar.tsx`
+  shows a green "HM" initials monogram instead of a placeholder image. Set
+  `founder.photo` to a real path under `public/` when the photo exists; no
+  other code changes needed. `FounderAvatar` is the only place this branches —
+  `Signature.tsx` and `FounderLetterHome.tsx` both use it rather than
+  reimplementing the photo/monogram choice.
 
 ## Testimonials data (`data/`)
 
@@ -93,19 +98,20 @@ address — import it rather than hardcoding the email anywhere. The trust
 strip's ABN/WWCC lines are intentionally commented out until real values
 exist; don't invent placeholder numbers.
 
-## Regenerating placeholder images
+## Regenerating the OG image
 
 ```bash
 node scripts/generate-og-image.mjs           # public/og-image.png
-node scripts/generate-founder-placeholder.mjs # public/images/founder.jpg
 ```
 
-Both use `next/og`'s `ImageResponse` run standalone via Node (import as
+Uses `next/og`'s `ImageResponse` run standalone via Node (import as
 `next/og.js`, not `next/og`, outside the Next build) — the same technique
-works for any future static placeholder/social image. Re-run the OG image
-script after changing the logo, brand colors, or `SITE_NAME`/
-`SITE_DESCRIPTION`. Re-run (or just delete) the founder placeholder script
-once a real photo replaces `public/images/founder.jpg`.
+works for any future static placeholder/social image. Re-run after changing
+the logo, brand colors, or `SITE_NAME`/`SITE_DESCRIPTION`.
+
+(There used to be an equivalent script generating a placeholder founder
+photo — deleted in favor of the "HM" initials monogram in
+`components/FounderAvatar.tsx`, which needs no generated asset at all.)
 
 ## Deployment
 
