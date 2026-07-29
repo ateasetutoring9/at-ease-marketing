@@ -1,7 +1,10 @@
 import { JsonLd } from "@/components/JsonLd";
 import { BrowseGuidesLink } from "@/components/BrowseGuidesLink";
 import { GuideCTA } from "@/components/GuideCTA";
+import { Breadcrumb } from "@/components/Breadcrumb";
+import { RelatedGuides } from "@/components/RelatedGuides";
 import { SITE_URL, SITE_NAME, OG_IMAGE } from "@/lib/constants";
+import { guideBreadcrumbJsonLd } from "@/lib/breadcrumb";
 
 export const metadata = {
   title: "Trigonometry: Finding a Missing Side",
@@ -40,7 +43,21 @@ export const articleJsonLd = {
   mainEntityOfPage: `${SITE_URL}/guides/trigonometry-finding-a-side/`,
 };
 
+export const breadcrumbJsonLd = guideBreadcrumbJsonLd(
+  "Trigonometry: Finding a Missing Side",
+  "/guides/trigonometry-finding-a-side/"
+);
+
 <JsonLd data={articleJsonLd} />
+<JsonLd data={breadcrumbJsonLd} />
+
+<Breadcrumb
+  items={[
+    { label: "Home", href: "/" },
+    { label: "Guides", href: "/guides/" },
+    { label: "Trigonometry: Finding a Side" },
+  ]}
+/>
 
 # Trigonometry: Finding a Missing Side
 
@@ -97,6 +114,8 @@ If the hypotenuse isn't involved at all — say you know the adjacent side is 6 
 - SOH CAH TOA tells you which ratio to use: pick the one connecting the side you know to the side you want.
 
 ---
+
+<RelatedGuides currentHref="/guides/trigonometry-finding-a-side/" />
 
 <GuideCTA />
 

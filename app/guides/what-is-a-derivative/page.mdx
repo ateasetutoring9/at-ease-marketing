@@ -1,7 +1,10 @@
 import { JsonLd } from "@/components/JsonLd";
 import { BrowseGuidesLink } from "@/components/BrowseGuidesLink";
 import { GuideCTA } from "@/components/GuideCTA";
+import { Breadcrumb } from "@/components/Breadcrumb";
+import { RelatedGuides } from "@/components/RelatedGuides";
 import { SITE_URL, SITE_NAME, OG_IMAGE } from "@/lib/constants";
+import { guideBreadcrumbJsonLd } from "@/lib/breadcrumb";
 
 export const metadata = {
   title: "What Is a Derivative?",
@@ -40,7 +43,21 @@ export const articleJsonLd = {
   mainEntityOfPage: `${SITE_URL}/guides/what-is-a-derivative/`,
 };
 
+export const breadcrumbJsonLd = guideBreadcrumbJsonLd(
+  "What Is a Derivative?",
+  "/guides/what-is-a-derivative/"
+);
+
 <JsonLd data={articleJsonLd} />
+<JsonLd data={breadcrumbJsonLd} />
+
+<Breadcrumb
+  items={[
+    { label: "Home", href: "/" },
+    { label: "Guides", href: "/guides/" },
+    { label: "What Is a Derivative?" },
+  ]}
+/>
 
 # What Is a Derivative?
 
@@ -95,6 +112,8 @@ A positive derivative means the function is increasing at that point; negative m
 - For `f(x) = x²`, applying the definition directly gives `f'(x) = 2x`.
 
 ---
+
+<RelatedGuides currentHref="/guides/what-is-a-derivative/" />
 
 <GuideCTA />
 

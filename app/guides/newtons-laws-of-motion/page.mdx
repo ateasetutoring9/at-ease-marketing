@@ -1,7 +1,10 @@
 import { JsonLd } from "@/components/JsonLd";
 import { BrowseGuidesLink } from "@/components/BrowseGuidesLink";
 import { GuideCTA } from "@/components/GuideCTA";
+import { Breadcrumb } from "@/components/Breadcrumb";
+import { RelatedGuides } from "@/components/RelatedGuides";
 import { SITE_URL, SITE_NAME, OG_IMAGE } from "@/lib/constants";
+import { guideBreadcrumbJsonLd } from "@/lib/breadcrumb";
 
 export const metadata = {
   title: "Newton's Laws of Motion, Explained",
@@ -40,7 +43,21 @@ export const articleJsonLd = {
   mainEntityOfPage: `${SITE_URL}/guides/newtons-laws-of-motion/`,
 };
 
+export const breadcrumbJsonLd = guideBreadcrumbJsonLd(
+  "Newton's Laws of Motion, Explained",
+  "/guides/newtons-laws-of-motion/"
+);
+
 <JsonLd data={articleJsonLd} />
+<JsonLd data={breadcrumbJsonLd} />
+
+<Breadcrumb
+  items={[
+    { label: "Home", href: "/" },
+    { label: "Guides", href: "/guides/" },
+    { label: "Newton's Laws of Motion" },
+  ]}
+/>
 
 # Newton's Laws of Motion, Explained
 
@@ -77,6 +94,8 @@ A swimmer pushes water backward with their hands and feet; the water pushes the 
 - **Third law:** every action has an equal and opposite reaction.
 
 ---
+
+<RelatedGuides currentHref="/guides/newtons-laws-of-motion/" />
 
 <GuideCTA />
 

@@ -1,7 +1,10 @@
 import { JsonLd } from "@/components/JsonLd";
 import { BrowseGuidesLink } from "@/components/BrowseGuidesLink";
 import { GuideCTA } from "@/components/GuideCTA";
+import { Breadcrumb } from "@/components/Breadcrumb";
+import { RelatedGuides } from "@/components/RelatedGuides";
 import { SITE_URL, SITE_NAME, OG_IMAGE } from "@/lib/constants";
+import { guideBreadcrumbJsonLd } from "@/lib/breadcrumb";
 
 export const metadata = {
   title: "States of Matter, Explained",
@@ -40,7 +43,21 @@ export const articleJsonLd = {
   mainEntityOfPage: `${SITE_URL}/guides/states-of-matter/`,
 };
 
+export const breadcrumbJsonLd = guideBreadcrumbJsonLd(
+  "States of Matter, Explained",
+  "/guides/states-of-matter/"
+);
+
 <JsonLd data={articleJsonLd} />
+<JsonLd data={breadcrumbJsonLd} />
+
+<Breadcrumb
+  items={[
+    { label: "Home", href: "/" },
+    { label: "Guides", href: "/guides/" },
+    { label: "States of Matter" },
+  ]}
+/>
 
 # States of Matter, Explained
 
@@ -78,6 +95,8 @@ The particle model isn't just for describing states — it's the reasoning tool 
 - Adding or removing heat energy drives every change of state — melting, freezing, evaporating, condensing.
 
 ---
+
+<RelatedGuides currentHref="/guides/states-of-matter/" />
 
 <GuideCTA />
 

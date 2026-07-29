@@ -1,7 +1,10 @@
 import { JsonLd } from "@/components/JsonLd";
 import { BrowseGuidesLink } from "@/components/BrowseGuidesLink";
 import { GuideCTA } from "@/components/GuideCTA";
+import { Breadcrumb } from "@/components/Breadcrumb";
+import { RelatedGuides } from "@/components/RelatedGuides";
 import { SITE_URL, SITE_NAME, OG_IMAGE } from "@/lib/constants";
+import { guideBreadcrumbJsonLd } from "@/lib/breadcrumb";
 
 export const metadata = {
   title: "Pythagoras' Theorem, Explained",
@@ -40,7 +43,21 @@ export const articleJsonLd = {
   mainEntityOfPage: `${SITE_URL}/guides/pythagoras-theorem/`,
 };
 
+export const breadcrumbJsonLd = guideBreadcrumbJsonLd(
+  "Pythagoras' Theorem, Explained",
+  "/guides/pythagoras-theorem/"
+);
+
 <JsonLd data={articleJsonLd} />
+<JsonLd data={breadcrumbJsonLd} />
+
+<Breadcrumb
+  items={[
+    { label: "Home", href: "/" },
+    { label: "Guides", href: "/guides/" },
+    { label: "Pythagoras' Theorem" },
+  ]}
+/>
 
 # Pythagoras' Theorem, Explained
 
@@ -97,6 +114,8 @@ Some right-angled triangles have whole-number sides that come up again and again
 - Add the squares of the legs to find the hypotenuse; subtract to find a missing leg.
 
 ---
+
+<RelatedGuides currentHref="/guides/pythagoras-theorem/" />
 
 <GuideCTA />
 

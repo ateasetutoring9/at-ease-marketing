@@ -1,7 +1,10 @@
 import { JsonLd } from "@/components/JsonLd";
 import { BrowseGuidesLink } from "@/components/BrowseGuidesLink";
 import { GuideCTA } from "@/components/GuideCTA";
+import { Breadcrumb } from "@/components/Breadcrumb";
+import { RelatedGuides } from "@/components/RelatedGuides";
 import { SITE_URL, SITE_NAME, OG_IMAGE } from "@/lib/constants";
+import { guideBreadcrumbJsonLd } from "@/lib/breadcrumb";
 
 export const metadata = {
   title: "The Quadratic Formula, Explained",
@@ -40,7 +43,21 @@ export const articleJsonLd = {
   mainEntityOfPage: `${SITE_URL}/guides/the-quadratic-formula/`,
 };
 
+export const breadcrumbJsonLd = guideBreadcrumbJsonLd(
+  "The Quadratic Formula, Explained",
+  "/guides/the-quadratic-formula/"
+);
+
 <JsonLd data={articleJsonLd} />
+<JsonLd data={breadcrumbJsonLd} />
+
+<Breadcrumb
+  items={[
+    { label: "Home", href: "/" },
+    { label: "Guides", href: "/guides/" },
+    { label: "The Quadratic Formula" },
+  ]}
+/>
 
 # The Quadratic Formula, Explained
 
@@ -94,6 +111,8 @@ Factorising is usually faster when the numbers are small and cooperative. The qu
 - Reach for it when an equation won't factorise easily.
 
 ---
+
+<RelatedGuides currentHref="/guides/the-quadratic-formula/" />
 
 <GuideCTA />
 
