@@ -4,6 +4,7 @@ import { useState } from "react";
 import Link from "next/link";
 import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/Button";
+import { ThemeToggle } from "@/components/ThemeToggle";
 import { APP_URL } from "@/lib/constants";
 
 const navLinks = [
@@ -38,6 +39,7 @@ export function Header() {
               {link.label}
             </Button>
           ))}
+          <ThemeToggle />
           <Button variant="ghost" size="sm" href={`${APP_URL}/login`}>
             Log in
           </Button>
@@ -46,15 +48,18 @@ export function Header() {
           </Button>
         </nav>
 
-        <button
-          type="button"
-          className="lg:hidden p-2 -mr-2 text-fg"
-          aria-label={open ? "Close menu" : "Open menu"}
-          aria-expanded={open}
-          onClick={() => setOpen((v) => !v)}
-        >
-          {open ? <X className="w-6 h-6" aria-hidden="true" /> : <Menu className="w-6 h-6" aria-hidden="true" />}
-        </button>
+        <div className="flex items-center gap-1 lg:hidden">
+          <ThemeToggle />
+          <button
+            type="button"
+            className="p-2 -mr-2 text-fg"
+            aria-label={open ? "Close menu" : "Open menu"}
+            aria-expanded={open}
+            onClick={() => setOpen((v) => !v)}
+          >
+            {open ? <X className="w-6 h-6" aria-hidden="true" /> : <Menu className="w-6 h-6" aria-hidden="true" />}
+          </button>
+        </div>
       </div>
 
       {open && (

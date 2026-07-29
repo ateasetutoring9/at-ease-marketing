@@ -53,6 +53,12 @@ export const metadata: Metadata = {
   },
 };
 
+// Runs before first paint so the page never flashes the wrong theme. Reads
+// the explicit choice from localStorage if the user has toggled before,
+// otherwise falls back to the OS preference. Static export has no server-side
+// way to know this ahead of time, so it has to happen client-side, this early.
+const themeInitScript = `(function(){try{var t=localStorage.getItem('theme');if(t==='dark'||(!t&&window.matchMedia('(prefers-color-scheme: dark)').matches)){document.documentElement.classList.add('dark')}}catch(e){}})();`;
+
 export default function RootLayout({
   children,
 }: Readonly<{ children: React.ReactNode }>) {
@@ -60,7 +66,11 @@ export default function RootLayout({
     <html
       lang="en-AU"
       className={`${fraunces.variable} ${inter.variable} h-full`}
+      suppressHydrationWarning
     >
+      <head>
+        <script dangerouslySetInnerHTML={{ __html: themeInitScript }} />
+      </head>
       <body className="min-h-full flex flex-col">
         <JsonLd data={organizationJsonLd} />
         {children}
