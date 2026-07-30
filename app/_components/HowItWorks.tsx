@@ -34,7 +34,10 @@ export function HowItWorks() {
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
           {steps.map((s) => (
             <div key={s.number} className="flex flex-col">
-              <span className="font-display text-5xl font-medium text-accent/20 mb-4 leading-none">
+              <span
+                aria-hidden="true"
+                className="font-display text-5xl font-medium text-accent/20 mb-4 leading-none"
+              >
                 {s.number}
               </span>
               <h3 className="text-subsection-title text-fg mb-2">{s.title}</h3>
