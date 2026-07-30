@@ -38,14 +38,18 @@ Emits a fully static site to `out/`, deployed on Cloudflare Pages.
 | `data/reviews.json`, `data/reviews.dev.json` | Real vs. dev-fixture testimonial data — see below |
 | `app/sitemap.ts`, `app/robots.ts` | Static-exported sitemap/robots |
 | `scripts/generate-og-image.mjs` | Regenerates `public/og-image.png` |
+| `components/ThemeToggle.tsx` | Light/dark mode switch — see below |
+| `components/Breadcrumb.tsx`, `components/RelatedGuides.tsx`, `lib/breadcrumb.ts` | Guide breadcrumb trail + "more guides" cross-linking — see below |
 
 ## Adding a guide
 
 1. Create `app/guides/<slug>/page.mdx`. Copy the structure of an existing
-   guide (metadata export, `Article` JSON-LD, `<GuideCTA />` +
-   `<BrowseGuidesLink />` at the bottom).
-2. Add an entry to `lib/guides.ts`.
-3. Add the route to `app/sitemap.ts`.
+   guide (metadata export, `Article` JSON-LD, `<Breadcrumb />` +
+   `<RelatedGuides />`, then `<GuideCTA />` + `<BrowseGuidesLink />` at the
+   bottom).
+2. Add an entry to `lib/guides.ts` (title, description, href, subject —
+   "Maths" or "Science"; drives the index, sitemap, and `RelatedGuides`).
+3. Add a `{path, lastModified}` entry to `app/sitemap.ts` with a real date.
 
 Guides should be original writing fact-checked against real curriculum
 content — not a republish of the app's own lecture/worksheet material. See
@@ -97,6 +101,27 @@ each with a different pre-filled subject so enquiries arrive pre-sorted.
 address — import it rather than hardcoding the email anywhere. The trust
 strip's ABN/WWCC lines are intentionally commented out until real values
 exist; don't invent placeholder numbers.
+
+## Light/dark mode
+
+`components/ThemeToggle.tsx` (in the header, desktop + mobile) flips a
+`dark` class on `<html>` and persists the choice to `localStorage`. All
+theming is driven by CSS variables in `app/globals.css` — a light `@theme`
+block plus one `.dark { ... }` override block redefining the same
+variables — so components never branch on theme directly; they just use the
+existing `bg-*`/`text-*`/`border-*` color utilities. See CLAUDE.md for the
+hydration-flash script in `app/layout.tsx` and the cascade-ordering note on
+why the `.dark` block is unlayered.
+
+## Static images
+
+`next.config.ts` sets `images: { unoptimized: true }` (required under
+`output: 'export'`), so nothing resizes or recompresses images at build
+time — a committed PNG ships exactly as committed. Before adding or
+replacing a static image, check its actual max rendered size in the JSX and
+size the file to match (2–3x for retina is plenty). `sharp` is present in
+`node_modules` as a transitive Next.js dependency and works fine for a
+one-off resize/recompress script even though it's unused at runtime.
 
 ## Regenerating the OG image
 

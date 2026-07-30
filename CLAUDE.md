@@ -60,9 +60,10 @@ tokens). Static-export compatible — verified end to end.
 
 - **Source of truth for content:** guides are original writing (their own worked examples, own framing), *fact-checked against* real curriculum source material — never a verbatim republish of the app's actual lecture/worksheet content. Republishing the product's own content on the public marketing site would duplicate it and gives a visitor no reason to sign up.
 - **Curriculum accuracy:** WACE is the Years 11–12 senior secondary certificate. Don't call a Year 7–10 guide a "WACE guide" — that's only accurate for Year 11–12 WACE-registered courses (e.g. Maths Methods ATAR). Years 7–10 guides should say "WA Year N" instead.
-- `lib/guides.ts` — single array (title, description, href) driving both the `/guides/` index and the sitemap; add new guides here.
-- Shared components: `components/GuideCTA.tsx` (sign-up CTA block) and `components/BrowseGuidesLink.tsx` (link back to the index) — both go at the bottom of every guide.
-- Every new guide needs: the `.mdx` file, an entry in `lib/guides.ts`, and a new route string in `app/sitemap.ts` (sitemap routes are a manual list, not auto-discovered).
+- `lib/guides.ts` — single array (title, description, href, subject — "Maths" or "Science") driving the `/guides/` index, the sitemap, and `RelatedGuides`; add new guides here.
+- Shared components: `components/GuideCTA.tsx` (sign-up CTA block), `components/BrowseGuidesLink.tsx` (link back to the index), `components/Breadcrumb.tsx` (visible trail) and `components/RelatedGuides.tsx` ("More {subject} guides", filtered from `lib/guides.ts` by matching `subject`, current guide excluded) — all four go on every guide, breadcrumb+related above `<GuideCTA />` + `<BrowseGuidesLink />` at the bottom.
+- `lib/breadcrumb.ts` → `guideBreadcrumbJsonLd(title, href)` builds the matching `BreadcrumbList` JSON-LD for each guide — keep the visible `Breadcrumb` trail and this JSON-LD in sync (same title/href).
+- Every new guide needs: the `.mdx` file, an entry in `lib/guides.ts` (with correct `subject`), and a new `{path, lastModified}` entry in `app/sitemap.ts` (sitemap routes are a manual list, not auto-discovered — `lastModified` should be a real date, e.g. from `git log -1 --format=%ad --date=short -- <file>`, not today's date for every route).
 
 ## Founder letter (`/about/`)
 
@@ -133,6 +134,33 @@ static, still no form — a `mailto:` link is not a form submission.
   invent values to fill them in or delete the comments; leave them for
   whoever has the real numbers.
 
+## Theming (light/dark mode)
+
+Every component reads color through the CSS custom properties defined in
+`app/globals.css`'s `@theme` block (`bg-card`, `text-fg`, `border-border`,
+etc.) — never a hardcoded hex or a raw Tailwind palette color. This is what
+makes dark mode a single CSS block instead of a per-component change:
+
+- `.dark { ... }` in `app/globals.css`, directly after `@theme`, redefines
+  every one of those same variables for dark mode. Deliberately unlayered
+  (matches `@theme`'s own output) so normal cascade rules make it win over
+  `:root` by source order — don't wrap it in `@layer`.
+- `components/ThemeToggle.tsx` (`'use client'`) is a `role="switch"` pill
+  with Sun/Moon icons flanking it (added after explicit feedback that an
+  icon-only button and a bare toggle were both unclear on their own) — not a
+  plain button. It toggles `document.documentElement.classList` and
+  persists to `localStorage.setItem("theme", ...)`.
+- `app/layout.tsx` has `suppressHydrationWarning` on `<html>` plus a
+  blocking inline `<script>` in `<head>` that reads `localStorage`, falling
+  back to `prefers-color-scheme`, and applies the class before first paint —
+  without this the page flashes the wrong theme on load.
+- Wired into `components/Header.tsx` in both the desktop nav and the
+  always-visible mobile row.
+- New components never need dark-mode-specific code — just use the existing
+  color utilities and it's handled. If you introduce a new color, add it to
+  *both* the `@theme` block and the `.dark` block, and verify contrast in
+  both (see the WCAG note below).
+
 ## Intentional duplication
 
 `components/Button.tsx` and the brand tokens in `app/globals.css` deliberately
@@ -173,6 +201,43 @@ package would create a dependency that defeats the hard constraint above.
   Node script reading char codes), since terminal/grep display in this
   environment can *also* mis-render valid multi-byte UTF-8 as `�` — a
   separate, unrelated false alarm, not a real encoding bug.
+- **Custom `@utility` color can silently beat an intended override at equal
+  specificity.** `FinalCTA.tsx`'s "247 founding spots remaining" eyebrow was
+  meant to render in accent green (`text-accent`) but rendered in the
+  default eyebrow color instead — `text-eyebrow`'s own `color` declaration
+  and `text-accent` had equal specificity, and `text-eyebrow` was winning on
+  source order. Fixed with `!text-accent`. If a color utility isn't visibly
+  applying and there's no obvious reason why, suspect this before anything
+  else — check computed style, don't assume the className is wrong.
+- **Verify WCAG contrast with real relative-luminance math, not eyeballing.**
+  `--color-eyebrow` and `--color-success` both looked fine visually but
+  computed under 4.5:1 against their backgrounds in one or both themes — one
+  dark-mode failure wasn't in the original audit that prompted the fix, only
+  found by checking every token pair proactively. A short Node script
+  (luminance formula, check both fg/bg in light and dark) is fast and exact;
+  don't guess-and-check hex values by eye.
+- **Third-party "free" SEO audit tools (SiteChecker.pro and similar) have
+  produced outright false findings** — a claimed "critical redirect error"
+  on `/index.html` that `curl -I` shows is a correct 308, and a "Mobile
+  PageSpeed: 26" that a real PageSpeed Insights run (pagespeed.web.dev)
+  showed was actually 92–97. Don't act on a finding from one of these tools
+  without independently reproducing it (curl for redirects, an actual PSI
+  run for performance) — the public PSI API (`pagespeedonline.googleapis.com`)
+  has a low unauthenticated daily quota and returns 429 easily; ask the user
+  to paste a `pagespeed.web.dev` screenshot rather than assume a scraper
+  tool's number is real.
+- **Static images ship exactly as committed — there's no build-time
+  optimization.** `next.config.ts` sets `images: { unoptimized: true }`
+  (required under `output: 'export'`), so an oversized PNG stays oversized
+  in the deployed site. `sharp` happens to already be present in
+  `node_modules` (a transitive Next.js dependency) even though it's unused
+  at runtime — safe to script a one-off resize/recompress with it
+  (`.resize(w, h).png({ compressionLevel: 9, palette: true })`) rather than
+  adding a new dependency. `public/logo.png` was fixed this way (161×158,
+  52KB → 96×96, 8KB) after PageSpeed Insights flagged it as an image-delivery
+  opportunity — it was rendered at 36×36/32×32 max in `Header.tsx`/`Footer.tsx`,
+  so the original file was ~6x oversized in both dimensions. Check any new
+  static image against its actual max rendered size before committing it.
 
 ## Do NOT add
 
