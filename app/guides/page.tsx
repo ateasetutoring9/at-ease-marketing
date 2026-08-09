@@ -1,7 +1,15 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { Breadcrumb } from "@/components/Breadcrumb";
+import { JsonLd } from "@/components/JsonLd";
+import { breadcrumbItems, breadcrumbJsonLd } from "@/lib/breadcrumb";
 import { SITE_NAME, OG_IMAGE } from "@/lib/constants";
 import { guides } from "@/lib/guides";
+
+const breadcrumbTrail = [
+  { name: "Home", href: "/" },
+  { name: "Guides", href: "/guides/" },
+];
 
 export const metadata: Metadata = {
   title: "Guides",
@@ -19,6 +27,8 @@ export const metadata: Metadata = {
 export default function GuidesPage() {
   return (
     <>
+      <JsonLd data={breadcrumbJsonLd(breadcrumbTrail)} />
+      <Breadcrumb items={breadcrumbItems(breadcrumbTrail)} />
       <h1 className="text-hero text-fg mb-6">Guides</h1>
       <p className="text-body text-muted mb-10">
         Free, in-depth explanations of WA curriculum topics — read one on its own, or sign up to get the full interactive lecture and worksheet.

@@ -40,6 +40,7 @@ Emits a fully static site to `out/`, deployed on Cloudflare Pages.
 | `data/reviews.json`, `data/reviews.dev.json` | Real vs. dev-fixture testimonial data — see below |
 | `app/sitemap.ts`, `app/robots.ts` | Static-exported sitemap/robots |
 | `scripts/generate-og-image.mjs` | Regenerates `public/og-image.png` |
+| `scripts/check-routes.mjs`, `scripts/routes.mjs` | Route/sitemap verification — see below |
 | `components/ThemeToggle.tsx` | Light/dark mode switch — see below |
 | `components/Breadcrumb.tsx`, `components/RelatedGuides.tsx`, `lib/breadcrumb.ts` | Guide breadcrumb trail + "more guides" cross-linking — see below |
 
@@ -89,6 +90,24 @@ See CLAUDE.md for the full content rules: the two different SCSA syllabus
 websites (P-10 vs. WACE senior-secondary), why English's curriculum-change
 FAQ note is dated differently from Maths/Science, and the source-data
 boundary for topic names vs. lecture content.
+
+## Verifying routes
+
+```bash
+npm run build
+npm run check:routes   # diffs out/sitemap.xml against the actual built pages
+npm run routes         # human-readable listing: source, published, lastModified
+```
+
+`check:routes` exits non-zero on any mismatch — a sitemap URL with no
+matching built page, or a built page missing from the sitemap — so it can
+gate a build later. `routes` also warns if a route's stored `lastModified`
+is older than its backing file's real last commit (via local `git log`;
+never run this at build time — see CLAUDE.md for why). Both scripts import
+`lib/curriculum.ts` and `app/sitemap.ts` directly using a small module
+resolver (`scripts/lib/register-alias.mjs`) that teaches plain Node to
+follow the `@/*` path alias the same way `tsconfig.json` does — see CLAUDE.md
+if a new script needs the same trick.
 
 ## Founder letter (`/about/`)
 
@@ -182,6 +201,15 @@ domain is currently the apex, `ateasetutoring.com` (see `SITE_URL` in
 `www` was found to 522 on Cloudflare. If either hostname 522s while the other
 works, that's a DNS/custom-domain issue in the Pages dashboard, not a build
 failure.
+
+**Check whether preview deployments are public.** `robots.ts` allows
+everything and has no way to know which branch it's building for, so if CF
+Pages generates public `*.pages.dev` URLs for non-`master` branches (e.g.
+`qa`), those previews are just as crawlable as production — a duplicate copy
+of whatever's on that branch. Check Pages → this project → deployments in
+the CF dashboard. The fix, if needed, is a CF access rule or an
+`X-Robots-Tag: noindex` header scoped to preview branches — not a change to
+`robots.ts`, which would also apply to production.
 
 ## For AI agents
 

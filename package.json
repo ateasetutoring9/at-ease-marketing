@@ -6,7 +6,9 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "check:routes": "node --import ./scripts/lib/register-alias.mjs scripts/check-routes.mjs",
+    "routes": "node --import ./scripts/lib/register-alias.mjs scripts/routes.mjs"
   },
   "dependencies": {
     "@mdx-js/loader": "^3.1.1",

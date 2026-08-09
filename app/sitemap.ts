@@ -10,7 +10,8 @@ export const dynamic = "force-static";
 // (usually build-time) date, since that pattern means the date isn't
 // actually tracking real content changes. Update a route's date here when
 // you meaningfully change that page's content, not on every unrelated edit.
-const routes: { path: string; lastModified: string }[] = [
+// Exported so scripts/routes.mjs can read it without duplicating the list.
+export const routes: { path: string; lastModified: string }[] = [
   { path: "", lastModified: "2026-07-26" },
   { path: "/features", lastModified: "2026-07-26" },
   { path: "/pricing", lastModified: "2026-07-16" },
@@ -23,7 +24,7 @@ const routes: { path: string; lastModified: string }[] = [
   { path: "/guides/trigonometry-finding-a-side", lastModified: "2026-07-29" },
   { path: "/guides/newtons-laws-of-motion", lastModified: "2026-07-29" },
   { path: "/guides/what-is-a-derivative", lastModified: "2026-07-29" },
-  { path: "/curriculum", lastModified: "2026-08-05" },
+  { path: "/curriculum", lastModified: "2026-08-09" },
 ];
 
 export default function sitemap(): MetadataRoute.Sitemap {

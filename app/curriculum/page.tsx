@@ -3,8 +3,15 @@ import Link from "next/link";
 
 import { Breadcrumb } from "@/components/Breadcrumb";
 import { BrowseGuidesLink } from "@/components/BrowseGuidesLink";
+import { JsonLd } from "@/components/JsonLd";
+import { breadcrumbItems, breadcrumbJsonLd } from "@/lib/breadcrumb";
 import { OG_IMAGE } from "@/lib/constants";
 import { curriculumByStage, curriculumCardLabel, curriculumHref } from "@/lib/curriculum";
+
+const breadcrumbTrail = [
+  { name: "Home", href: "/" },
+  { name: "Curriculum", href: "/curriculum/" },
+];
 
 const TITLE = "WA Curriculum: English, Maths and Science, Years 7–12";
 const DESCRIPTION =
@@ -28,7 +35,8 @@ export default function CurriculumIndexPage() {
 
   return (
     <div>
-      <Breadcrumb items={[{ label: "Home", href: "/" }, { label: "Curriculum" }]} />
+      <JsonLd data={breadcrumbJsonLd(breadcrumbTrail)} />
+      <Breadcrumb items={breadcrumbItems(breadcrumbTrail)} />
 
       <header className="mt-6">
         <h1 className="text-fg text-3xl font-semibold sm:text-4xl">
