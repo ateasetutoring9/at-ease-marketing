@@ -139,7 +139,7 @@ export const curriculum: CurriculumEntry[] = [
     yearLabel: "Year 7",
     subject: "Maths",
     stage: "lower",
-    title: "WA Year 7 Maths: Every Topic, Explained Simply",
+    title: "WA Year 7 Maths: Every Topic Covered",
     description:
       "What Year 7 students actually cover in Maths in Western Australia, topic by topic, in plain English — plus where most students get stuck in the first year of high school.",
     heading: "WA Year 7 Maths: what your child covers this year",
@@ -152,21 +152,21 @@ export const curriculum: CurriculumEntry[] = [
           "The strand that carries most of the year. Two big shifts happen here: negatives, and the arrival of algebra.",
         topics: [
           {
-            name: "Integers — adding and subtracting negatives",
+            name: "Adding and subtracting negative numbers",
             plain:
               "Numbers below zero become part of ordinary calculation rather than a curiosity. Students add and subtract them fluently and place them on a number line.",
             sticking:
               "Subtracting a negative. Students who learned \"two minuses make a plus\" as a slogan apply it to multiplication problems where it does not belong. It is worth insisting they can explain why, using a number line, before they use the shortcut.",
           },
           {
-            name: "Proportional reasoning",
+            name: "Fractions, decimals, percentages and ratios",
             plain:
               "Fractions, decimals, percentages and ratios treated as different clothes on the same idea, so a problem can be moved between them freely.",
             sticking:
               "Students who can convert between the forms mechanically but cannot tell which form makes a particular problem easier. That judgement is the actual skill.",
           },
           {
-            name: "Introduction to algebra",
+            name: "Algebra: using letters to stand for numbers",
             plain:
               "Letters used to stand for unknown or varying quantities. Building expressions, substituting values, and solving simple equations.",
             sticking:
@@ -180,19 +180,19 @@ export const curriculum: CurriculumEntry[] = [
           "Where informal description gets replaced by proper mathematical language, notation and formulas.",
         topics: [
           {
-            name: "Angles and parallel lines",
+            name: "Angles on parallel lines",
             plain:
               "Naming angle relationships formed when a line crosses two parallel lines, and reasoning from them to find unknown angles.",
             sticking:
               "Guessing the relationship from how the diagram looks rather than justifying it. Requiring a written reason for every step fixes this quickly.",
           },
           {
-            name: "Classifying triangles",
+            name: "Types of triangles",
             plain:
               "Sorting triangles by side lengths and by angles, and using their properties to find missing measurements.",
           },
           {
-            name: "The Cartesian plane",
+            name: "Plotting points on a grid (the Cartesian plane)",
             plain:
               "Plotting points using coordinates and transforming them — sliding, flipping and turning shapes on the grid.",
             sticking:
@@ -218,14 +218,14 @@ export const curriculum: CurriculumEntry[] = [
           "Chance gets a numerical definition, and data handling starts to involve judgement rather than just plotting.",
         topics: [
           {
-            name: "Sample spaces and probability",
+            name: "Probability and sample spaces",
             plain:
               "Listing every possible outcome of a single-stage experiment and expressing likelihood as a number.",
             sticking:
               "Missing outcomes when listing. A systematic method — a table or a tree — is worth teaching before the arithmetic.",
           },
           {
-            name: "Summary statistics and critiquing data",
+            name: "Mean, median, mode and spotting misleading data",
             plain:
               "Calculating measures of centre and spread, then judging whether a graph or claim is actually supported by the data behind it.",
           },
@@ -261,7 +261,7 @@ export const curriculum: CurriculumEntry[] = [
     yearLabel: "Year 8",
     subject: "Science",
     stage: "lower",
-    title: "WA Year 8 Science: Every Topic, Explained Simply",
+    title: "WA Year 8 Science: Every Topic Covered",
     description:
       "What Year 8 students cover in Science in Western Australia — cells, atoms, plate tectonics and energy — in plain English, with the parts students most often find hard.",
     heading: "WA Year 8 Science: what your child covers this year",
@@ -292,7 +292,7 @@ export const curriculum: CurriculumEntry[] = [
           "Atoms arrive, and with them the distinction that underpins all of senior chemistry.",
         topics: [
           {
-            name: "Atomic structure",
+            name: "What atoms are made of",
             plain:
               "What atoms are made of and how that structure is represented in diagrams.",
           },
@@ -309,7 +309,7 @@ export const curriculum: CurriculumEntry[] = [
               "Sorting elements by their physical properties, which is the first step toward reading the periodic table in Year 9.",
           },
           {
-            name: "Physical versus chemical change",
+            name: "Physical vs chemical change",
             plain:
               "Whether a change produces a genuinely new substance or just a new form of the same one.",
             sticking:
@@ -329,7 +329,7 @@ export const curriculum: CurriculumEntry[] = [
               "Timescale. Students apply everyday intuitions about speed to processes measured in millions of years, and the explanations stop making sense.",
           },
           {
-            name: "Classifying rocks and minerals",
+            name: "Types of rocks and minerals",
             plain:
               "Grouping rocks by physical properties, and linking how a rock formed to what it is useful for.",
           },
@@ -363,19 +363,19 @@ export const curriculum: CurriculumEntry[] = [
           "Assessed alongside the content, and often where marks are actually won or lost.",
         topics: [
           {
-            name: "Planning reproducible investigations",
+            name: "Planning a science investigation",
             plain:
               "Choosing equipment, managing risk, and designing a method someone else could repeat and get the same result.",
           },
           {
-            name: "Analysing data and identifying anomalies",
+            name: "Finding patterns and anomalies in data",
             plain:
               "Finding patterns in results, spotting readings that do not fit, and using evidence to support a conclusion.",
             sticking:
               "Conclusions that restate the results instead of answering the original question. This is the single most common lost mark in Year 8 practical reports.",
           },
           {
-            name: "Identifying sources of error",
+            name: "Sources of error in an experiment",
             plain: "Saying specifically what could have gone wrong and what would fix it.",
             sticking:
               "\"Human error\" as a catch-all. It scores nothing. The mark is for naming the specific step and the specific improvement.",
@@ -412,7 +412,7 @@ export const curriculum: CurriculumEntry[] = [
     yearLabel: "Year 9",
     subject: "Maths",
     stage: "lower",
-    title: "WA Year 9 Maths: Every Topic, Explained Simply",
+    title: "WA Year 9 Maths: Every Topic Covered",
     description:
       "What Year 9 students cover in Maths in Western Australia — linear graphs, Pythagoras, trigonometry and simple interest — in plain English, and why Year 9 is the year that decides Year 11 options.",
     heading: "WA Year 9 Maths: what your child covers this year",
@@ -425,14 +425,14 @@ export const curriculum: CurriculumEntry[] = [
           "Linear relationships become the central object, and money enters the syllabus properly.",
         topics: [
           {
-            name: "Real numbers and exact form",
+            name: "Surds and exact answers",
             plain:
               "Working with surds and other non-terminating values, and knowing when to leave an answer exact rather than rounding it.",
             sticking:
               "Rounding too early. It is a habit from earlier years that starts costing marks here and keeps costing them through Year 12.",
           },
           {
-            name: "Financial maths — simple interest",
+            name: "Simple interest",
             plain:
               "Calculating simple interest and looking at how people actually earn and are paid.",
           },
@@ -452,23 +452,23 @@ export const curriculum: CurriculumEntry[] = [
           "Two of the most useful results in school mathematics arrive in the same year.",
         topics: [
           {
-            name: "Perimeter and area of composite figures",
+            name: "Perimeter and area of composite shapes",
             plain: "Breaking an irregular shape into parts you already have formulas for.",
           },
           {
-            name: "Pythagoras' theorem applied",
+            name: "Using Pythagoras' theorem",
             plain:
               "Using the relationship between the sides of a right-angled triangle to solve perimeter and area problems, not just to find a missing side.",
             sticking:
               "Identifying the hypotenuse in a rotated or embedded triangle. Students who only ever saw textbook orientations struggle the moment the triangle is part of a larger figure.",
           },
           {
-            name: "Congruent triangles and similar figures",
+            name: "Congruent and similar triangles",
             plain:
               "Establishing when two triangles must be identical, and what stays the same when a shape is scaled up or down.",
           },
           {
-            name: "The trigonometric ratios",
+            name: "Sine, cosine and tangent (SOH CAH TOA)",
             plain:
               "Sine, cosine and tangent introduced as fixed relationships between the sides of a right-angled triangle.",
             sticking:
@@ -489,14 +489,14 @@ export const curriculum: CurriculumEntry[] = [
           "Two-stage experiments, and the first serious look at how statistics get misused.",
         topics: [
           {
-            name: "Two-stage chance experiments",
+            name: "Probability with and without replacement",
             plain:
               "Experiments with two steps, including the difference between replacing an item between draws and not replacing it.",
             sticking:
               "Without replacement. Students correctly change the numerator and forget the denominator.",
           },
           {
-            name: "Critically analysing statistical claims",
+            name: "Spotting misleading statistics",
             plain:
               "Comparing data displays using proper statistical language, and evaluating claims made in the media — particularly around how a sample was drawn.",
           },
@@ -535,7 +535,7 @@ export const curriculum: CurriculumEntry[] = [
     yearLabel: "Year 7",
     subject: "Science",
     stage: "lower",
-    title: "WA Year 7 Science: Every Topic, Explained Simply",
+    title: "WA Year 7 Science: Every Topic Covered",
     description:
       "What Year 7 students cover in Science in Western Australia — classification, ecosystems, the particle model of matter, and forces — in plain English, with the parts students most often find hard in their first year of high school science.",
     heading: "WA Year 7 Science: what your child covers this year",
@@ -568,15 +568,15 @@ export const curriculum: CurriculumEntry[] = [
         blurb: "The particle model arrives and becomes the explanation for everything matter does.",
         topics: [
           {
-            name: "The particle model of matter",
+            name: "Solids, liquids and gases (the particle model)",
             plain:
-              "Explaining the arrangement and motion of particles in solids, liquids and gases, and using the model to explain changes of state.",
+              "Explaining how particles move in solids, liquids and gases, and using that motion to explain changes of state.",
             sticking:
               "Believing the particles themselves expand when heated, rather than understanding that they move faster and spread further apart. Left uncorrected, this single misconception causes trouble all the way through to Year 9 chemistry.",
             guide: "states-of-matter",
           },
           {
-            name: "Mixtures and separating mixtures",
+            name: "Separating mixtures",
             plain:
               "Distinguishing pure substances from mixtures, and choosing a separation technique — filtration, evaporation, distillation — based on the properties of what's being separated.",
             sticking:
@@ -616,7 +616,7 @@ export const curriculum: CurriculumEntry[] = [
           "Assessed alongside the content, and the place where the habits for every later science subject get set.",
         topics: [
           {
-            name: "Planning reproducible investigations",
+            name: "Planning a science investigation",
             plain:
               "Proposing a question, making a prediction based on scientific knowledge, and recognising risks when planning and conducting an investigation someone else could repeat.",
           },
@@ -628,7 +628,7 @@ export const curriculum: CurriculumEntry[] = [
               "Confusing a pattern in the data with an explanation for it. \"The graph goes up\" is an observation; saying why is the actual analysis, and it's where marks are lost.",
           },
           {
-            name: "Science as a human endeavour",
+            name: "Science, collaboration and society",
             plain:
               "Looking at examples of where scientific knowledge developed through collaboration, and how that knowledge has shaped human activity.",
           },
@@ -664,7 +664,7 @@ export const curriculum: CurriculumEntry[] = [
     yearLabel: "Year 9",
     subject: "Science",
     stage: "lower",
-    title: "WA Year 9 Science: Every Topic, Explained Simply",
+    title: "WA Year 9 Science: Every Topic Covered",
     description:
       "What Year 9 students cover in Science in Western Australia — atomic structure, the periodic table, ecosystems and energy, plate tectonics and waves — in plain English, and the parts students most often get stuck on.",
     heading: "WA Year 9 Science: what your child covers this year",
@@ -676,7 +676,7 @@ export const curriculum: CurriculumEntry[] = [
         blurb: "Ecosystems treated as dynamic systems, not static diagrams.",
         topics: [
           {
-            name: "Ecosystems and the flow of matter and energy",
+            name: "How energy and matter move through ecosystems",
             plain:
               "Tracking how matter and energy move through an ecosystem, and how its biotic (living) and abiotic (non-living) components affect one another.",
             sticking:
@@ -689,7 +689,7 @@ export const curriculum: CurriculumEntry[] = [
         blurb: "Where biology and geology meet — the systems that connect life to the planet it lives on.",
         topics: [
           {
-            name: "The carbon cycle and ecosystem change",
+            name: "The carbon cycle",
             plain:
               "Explaining how interactions between Earth's spheres — atmosphere, hydrosphere, biosphere, geosphere — drive the carbon cycle, the water cycle, and global climate.",
             sticking:
@@ -707,7 +707,7 @@ export const curriculum: CurriculumEntry[] = [
         blurb: "The strand that decides how comfortable Year 10 and senior Chemistry will be.",
         topics: [
           {
-            name: "Atomic structure",
+            name: "What atoms are made of",
             plain:
               "Using the structure of an atom — protons, neutrons and electrons — to determine its atomic number and mass number.",
             sticking:
@@ -738,7 +738,7 @@ export const curriculum: CurriculumEntry[] = [
               "Distinguishing conduction, convection and radiation as three different mechanisms for transferring heat energy.",
           },
           {
-            name: "Waves and transferring energy",
+            name: "How waves transfer energy",
             plain:
               "Using wave and particle models to explain how light and sound transfer energy without transferring matter.",
             sticking:
@@ -752,14 +752,14 @@ export const curriculum: CurriculumEntry[] = [
           "The inquiry skills step up from Year 7 and 8 — accuracy, reliability and validity are now assessed as distinct ideas.",
         topics: [
           {
-            name: "Working scientifically: accuracy, reliability and validity",
+            name: "Accuracy, reliability and validity in experiments",
             plain:
               "Planning and conducting investigations that produce reproducible results, and describing sources of error and how to improve data quality.",
             sticking:
               "Treating accuracy, reliability and validity as interchangeable words. They test three different things — how close to the true value, how repeatable, and how well the method actually answers the question — and assessments reward telling them apart.",
           },
           {
-            name: "Science as a human endeavour: models, ethics and society",
+            name: "Science, ethics and society",
             plain:
               "Examining how advances in science, technology and engineering are interconnected, and how scientific responses affect society.",
           },
@@ -795,7 +795,7 @@ export const curriculum: CurriculumEntry[] = [
     yearLabel: "Year 10",
     subject: "Science",
     stage: "lower",
-    title: "WA Year 10 Science: Every Topic, Explained Simply",
+    title: "WA Year 10 Science: Every Topic Covered",
     description:
       "What Year 10 students cover in Science in Western Australia — genetics, evolution, chemical reactions, motion and the origins of the universe — in plain English, and why Year 10 is the year that shapes ATAR science choices.",
     heading: "WA Year 10 Science: what your child covers this year",
@@ -846,7 +846,7 @@ export const curriculum: CurriculumEntry[] = [
               "Explaining a faster reaction rate by saying particles \"have more energy\" without connecting it to collision frequency and the proportion of collisions with enough energy to react. Both parts of that explanation are needed for full marks.",
           },
           {
-            name: "Energy in chemical reactions",
+            name: "Exothermic and endothermic reactions",
             plain:
               "Distinguishing exothermic reactions, which release energy, from endothermic reactions, which absorb it.",
           },
@@ -857,7 +857,7 @@ export const curriculum: CurriculumEntry[] = [
         blurb: "Zooming out from the planet to the universe it sits in.",
         topics: [
           {
-            name: "The universe and the Big Bang theory",
+            name: "The Big Bang and how the universe formed",
             plain:
               "Describing the formation of stars, galaxies and planetary systems, and how space exploration has contributed to understanding the universe's formation and evolution.",
           },
@@ -868,7 +868,7 @@ export const curriculum: CurriculumEntry[] = [
         blurb: "Motion and forces, tied together with the mathematical precision Year 9 didn't yet require.",
         topics: [
           {
-            name: "Motion: speed, velocity and acceleration",
+            name: "Speed, velocity and acceleration",
             plain:
               "Distinguishing speed from velocity, and calculating acceleration as the rate of change of velocity.",
             sticking:
@@ -877,7 +877,7 @@ export const curriculum: CurriculumEntry[] = [
           {
             name: "Newton's laws of motion",
             plain:
-              "Applying Newton's three laws to explain and predict the motion of objects under the forces acting on them.",
+              "Applying Newton's three laws to explain and predict how objects move under the forces acting on them.",
             sticking:
               "The third law — action and reaction — is the one that gets misapplied. Students describe the paired forces as acting on the same object and cancelling out, when they actually act on two different objects and don't cancel at all.",
             guide: "newtons-laws-of-motion",
@@ -889,7 +889,7 @@ export const curriculum: CurriculumEntry[] = [
         blurb: "The most sophisticated inquiry expectations of the P-10 curriculum, in preparation for senior science.",
         topics: [
           {
-            name: "Science as a human endeavour: research, ethics and global systems",
+            name: "Science, ethics and global systems",
             plain:
               "Examining how advances in science, technology and engineering are interconnected globally, and the ethical and societal dimensions of scientific research.",
           },
@@ -925,7 +925,7 @@ export const curriculum: CurriculumEntry[] = [
     yearLabel: "Year 8",
     subject: "Maths",
     stage: "lower",
-    title: "WA Year 8 Maths: Every Topic, Explained Simply",
+    title: "WA Year 8 Maths: Every Topic Covered",
     description:
       "What Year 8 students cover in Maths in Western Australia — rational and irrational numbers, algebra, Pythagoras' theorem and probability — in plain English, and where students most often get stuck.",
     heading: "WA Year 8 Maths: what your child covers this year",
@@ -937,7 +937,7 @@ export const curriculum: CurriculumEntry[] = [
         blurb: "The strand that carries most of the year — numbers broaden, and algebra stops being tentative.",
         topics: [
           {
-            name: "Operations with integers and rationals",
+            name: "Working with negative numbers and fractions",
             plain:
               "Applying the four operations fluently and efficiently to a broader range of numbers, including negative fractions and decimals.",
           },
@@ -949,7 +949,7 @@ export const curriculum: CurriculumEntry[] = [
               "Assuming every decimal that \"looks messy\" is irrational. The actual test is whether it terminates or repeats — 0.333... is rational despite going on forever, and that surprises most students the first time.",
           },
           {
-            name: "Index laws (numerical)",
+            name: "Index laws",
             plain: "Applying the index laws to simplify numerical expressions involving powers.",
           },
           {
@@ -958,19 +958,19 @@ export const curriculum: CurriculumEntry[] = [
               "Comparing quantities measured in different units — such as speed or price per item — using rates.",
           },
           {
-            name: "Financial maths and modelling",
+            name: "Financial maths (discounts, mark-ups, budgets)",
             plain:
               "Applying percentage and rate calculations to real financial situations like discounts, mark-ups and simple budgeting.",
           },
           {
-            name: "Algebraic manipulation",
+            name: "Expanding and simplifying algebra",
             plain:
               "Expanding, simplifying and factorising algebraic expressions fluently, extending the introduction to algebra from Year 7.",
             sticking:
               "Sign errors when expanding brackets with a negative term out the front — a mistake that looks like carelessness but is usually a genuine gap in understanding what the negative sign is distributing to. Worth diagnosing rather than just marking wrong.",
           },
           {
-            name: "Graphing linear relations",
+            name: "Graphing linear equations",
             plain:
               "Plotting a linear relationship from a table of values or an equation, and reading information back off the graph.",
           },
@@ -982,7 +982,7 @@ export const curriculum: CurriculumEntry[] = [
               "Forgetting to flip the inequality sign when multiplying or dividing by a negative number. It's a one-line rule that's easy to state and easy to forget under pressure, so it's worth over-practising specifically.",
           },
           {
-            name: "Modelling with linear relations",
+            name: "Using linear equations to solve real problems",
             plain: "Using a linear equation or graph to model and solve a real-world problem.",
           },
         ],
@@ -1019,7 +1019,7 @@ export const curriculum: CurriculumEntry[] = [
             plain: "Calculating time differences using 24-hour time and reading Australian and international time zones.",
           },
           {
-            name: "Congruence and similarity",
+            name: "Congruent and similar shapes",
             plain:
               "Establishing when two shapes are congruent (identical) or similar (same shape, different size), and using the tests for each.",
           },
@@ -1029,7 +1029,7 @@ export const curriculum: CurriculumEntry[] = [
               "Using the properties of different quadrilaterals — parallelograms, rhombuses, trapeziums — to find unknown angles and side lengths.",
           },
           {
-            name: "Position in 3D",
+            name: "Describing position in 3D",
             plain: "Describing the position of a point in three dimensions and interpreting simple 3D diagrams and nets.",
           },
         ],
@@ -1082,7 +1082,7 @@ export const curriculum: CurriculumEntry[] = [
     yearLabel: "Year 10",
     subject: "Maths",
     stage: "lower",
-    title: "WA Year 10 Maths: Every Topic, Explained Simply",
+    title: "WA Year 10 Maths: Every Topic Covered",
     description:
       "What Year 10 students cover in Maths in Western Australia — quadratics, simultaneous equations, trigonometry and bivariate data — in plain English, and why Year 10 results are what schools actually use to advise on Year 11 Maths.",
     heading: "WA Year 10 Maths: what your child covers this year",
@@ -1103,7 +1103,7 @@ export const curriculum: CurriculumEntry[] = [
               "Expanding and factorising algebraic expressions, extending the techniques introduced in Year 8 and 9.",
           },
           {
-            name: "Factorising quadratic expressions",
+            name: "Factorising quadratics",
             plain:
               "Factorising quadratic expressions using common techniques, including trinomials and the difference of two squares.",
             sticking:
@@ -1121,12 +1121,12 @@ export const curriculum: CurriculumEntry[] = [
             guide: "the-quadratic-formula",
           },
           {
-            name: "Simultaneous linear equations",
+            name: "Simultaneous equations",
             plain:
               "Solving two linear equations at once, algebraically and graphically, to find where two lines intersect.",
           },
           {
-            name: "Linear inequalities and problem solving",
+            name: "Linear inequalities",
             plain: "Solving linear inequalities arising from real-world problems and representing the solution correctly.",
           },
           {
@@ -1137,7 +1137,7 @@ export const curriculum: CurriculumEntry[] = [
               "Reading the turning point coordinates straight off the equation in the wrong order, or with the wrong sign, particularly from turning-point form. A small transcription error with an outsized effect on the final mark.",
           },
           {
-            name: "Exponential relationships and graphs",
+            name: "Graphing exponential functions",
             plain: "Graphing exponential relationships and using them to model growth and decay.",
           },
           {
@@ -1151,32 +1151,32 @@ export const curriculum: CurriculumEntry[] = [
         blurb: "Trigonometry becomes a complete toolkit, and similarity gets formal proof.",
         topics: [
           {
-            name: "Surface area of solids",
+            name: "Surface area of 3D shapes",
             plain: "Calculating the surface area of prisms, cylinders and composite solids.",
           },
           {
-            name: "Volume of solids",
+            name: "Volume of 3D shapes",
             plain: "Calculating the volume of prisms, cylinders and composite solids, extending Year 9's formulas.",
           },
           {
-            name: "Trigonometry: right-angled triangles and exact values",
+            name: "Right-angled triangle trigonometry and exact values",
             plain:
               "Using the trigonometric ratios to solve right-angled triangle problems, including angles with known exact trigonometric values.",
           },
           {
-            name: "Trigonometry: bearings, elevation and depression",
+            name: "Bearings, elevation and depression",
             plain:
               "Applying trigonometry to real-world problems described using compass bearings and angles of elevation or depression.",
             sticking:
               "Drawing the diagram incorrectly before any calculation starts — particularly angles of depression, which students often draw measured from the wrong line. Almost every error in this topic traces back to the diagram, not the trigonometry.",
           },
           {
-            name: "Similar triangles and similarity",
+            name: "Similar triangles",
             plain:
               "Establishing that two triangles are similar using the similarity tests, and using the scale factor to find unknown lengths.",
           },
           {
-            name: "Congruence and geometric reasoning",
+            name: "Congruent triangles and geometric proof",
             plain:
               "Using formal geometric reasoning, including congruence tests, to prove properties of shapes rather than just measuring them.",
           },
@@ -1187,7 +1187,7 @@ export const curriculum: CurriculumEntry[] = [
         blurb: "Statistics becomes genuinely about relationships between two variables, and probability handles conditional events.",
         topics: [
           {
-            name: "Bivariate data and scatterplots",
+            name: "Scatterplots and bivariate data",
             plain:
               "Displaying the relationship between two numerical variables on a scatterplot and describing the association.",
           },
@@ -1204,7 +1204,7 @@ export const curriculum: CurriculumEntry[] = [
               "Comparing the shape, centre and spread of two or more data sets using parallel boxplots or back-to-back stem plots.",
           },
           {
-            name: "Probability: Venn diagrams, two-way tables and conditional probability",
+            name: "Venn diagrams, two-way tables and conditional probability",
             plain:
               "Using Venn diagrams and two-way tables to solve problems involving conditional probability — the probability of one event given that another has happened.",
             sticking:
@@ -1242,7 +1242,7 @@ export const curriculum: CurriculumEntry[] = [
     yearLabel: "Year 7",
     subject: "English",
     stage: "lower",
-    title: "WA Year 7 English: Every Topic, Explained Simply",
+    title: "WA Year 7 English: Every Topic Covered",
     description:
       "What Year 7 students cover in English in Western Australia — text structure, literary devices, persuasive language and creating their own texts — in plain English, and where students most often get stuck.",
     heading: "WA Year 7 English: what your child covers this year",
@@ -1264,7 +1264,7 @@ export const curriculum: CurriculumEntry[] = [
               "Building and varying sentence structures, including combining ideas with more than one clause, to control pacing and emphasis.",
           },
           {
-            name: "Punctuation: colons and brackets",
+            name: "Colons and brackets",
             plain: "Using colons to introduce a list or explanation, and brackets to add extra information.",
             sticking:
               "Overusing brackets for anything that feels like an aside, rather than reserving them for information that's genuinely non-essential. A sentence with three bracketed asides is a sign the sentence needs restructuring, not more punctuation.",
@@ -1275,7 +1275,7 @@ export const curriculum: CurriculumEntry[] = [
               "Extending vocabulary through wide reading and applying spelling patterns and rules to new and unfamiliar words.",
           },
           {
-            name: "Language, identity and relationships",
+            name: "How language shows identity and relationships",
             plain:
               "Exploring how language choices signal identity and shape relationships between speakers, writers and their audience.",
           },
@@ -1286,12 +1286,12 @@ export const curriculum: CurriculumEntry[] = [
         blurb: "Literary texts examined for how they create meaning, not just summarised.",
         topics: [
           {
-            name: "Literature in context",
+            name: "How context shapes a story",
             plain:
               "Considering how the time, place and culture a text was written in shapes its content and the perspectives it represents.",
           },
           {
-            name: "How narratives create meaning",
+            name: "How stories create meaning",
             plain:
               "Analysing how plot, character and setting work together in a narrative to create meaning for a reader.",
           },
@@ -1303,12 +1303,12 @@ export const curriculum: CurriculumEntry[] = [
               "Naming a device correctly but stopping there. \"This is a metaphor\" is not an analysis; \"this metaphor makes the reader feel X because Y\" is. The naming is the easy half of the skill.",
           },
           {
-            name: "Responding to literature",
+            name: "Responding to what you read",
             plain:
               "Forming and justifying a personal response to a text using evidence from it, rather than just stating an opinion.",
           },
           {
-            name: "Creating imaginative texts",
+            name: "Writing creative stories",
             plain:
               "Writing original narratives that use structure and literary devices deliberately, rather than just telling a story chronologically.",
           },
@@ -1319,7 +1319,7 @@ export const curriculum: CurriculumEntry[] = [
         blurb: "Reading, viewing and creating a wide range of text types for real audiences and purposes.",
         topics: [
           {
-            name: "Reading and comprehension strategies",
+            name: "Reading comprehension strategies",
             plain:
               "Using strategies — predicting, questioning, summarising — to understand and interpret increasingly complex texts.",
           },
@@ -1329,19 +1329,19 @@ export const curriculum: CurriculumEntry[] = [
               "Interpreting how images, layout and design features work together with written text to create meaning.",
           },
           {
-            name: "Analysing language for audience and purpose",
+            name: "Audience and purpose in writing",
             plain:
               "Identifying how word choice, tone and structure are adapted for a specific audience and purpose.",
             sticking:
               "Describing what a text does (\"it uses persuasive language\") instead of what effect that has on a specific audience. The second version is what separates a describing answer from an analysing one.",
           },
           {
-            name: "Creating written texts",
+            name: "Writing different types of texts",
             plain:
               "Planning, drafting and editing written texts for a range of purposes — informative, persuasive, reflective.",
           },
           {
-            name: "Spoken and multimodal presentations",
+            name: "Giving a spoken or multimedia presentation",
             plain:
               "Planning and delivering a spoken or multimodal presentation to an audience, with attention to how delivery affects meaning.",
           },
@@ -1377,7 +1377,7 @@ export const curriculum: CurriculumEntry[] = [
     yearLabel: "Year 8",
     subject: "English",
     stage: "lower",
-    title: "WA Year 8 English: Every Topic, Explained Simply",
+    title: "WA Year 8 English: Every Topic Covered",
     description:
       "What Year 8 students cover in English in Western Australia — genre, intertextuality, figurative language and academic vocabulary — in plain English, and the parts students most often find hard.",
     heading: "WA Year 8 English: what your child covers this year",
@@ -1396,14 +1396,14 @@ export const curriculum: CurriculumEntry[] = [
               "Losing the main clause's subject-verb agreement once an embedded clause is inserted between them. It's a small technical slip, but it's exactly the kind of error that undermines an otherwise strong piece of writing.",
           },
           {
-            name: "Nominalisation and academic vocabulary",
+            name: "Turning verbs into nouns (academic vocabulary)",
             plain:
               "Turning verbs and adjectives into nouns (\"decide\" into \"decision\") to create the more formal, condensed register expected in academic and analytical writing.",
             sticking:
               "Overusing nominalisation until the writing becomes dense and lifeless rather than precise. It's a technique to deploy deliberately in formal writing, not a habit to apply everywhere.",
           },
           {
-            name: "Punctuation: semicolons and dashes",
+            name: "Semicolons and dashes",
             plain: "Using semicolons to join related independent clauses, and dashes to add emphasis or an aside.",
           },
           {
@@ -1422,29 +1422,29 @@ export const curriculum: CurriculumEntry[] = [
         blurb: "Texts read in relation to other texts and to the values embedded in them.",
         topics: [
           {
-            name: "Evaluative language and figurative devices",
+            name: "Figurative language and devices",
             plain:
               "Identifying language that carries judgement or evaluation, and analysing the effect of figurative devices in more sophisticated texts.",
           },
           {
-            name: "Literature and values",
+            name: "How stories reflect values",
             plain:
               "Examining how a text represents particular values, and how a reader's own values shape their response to it.",
           },
           {
-            name: "Intertextuality",
+            name: "When one story references another (intertextuality)",
             plain:
               "Recognising when one text deliberately references, echoes or reworks another, and explaining why an author would do that.",
             sticking:
               "Spotting a reference but not being able to say what it adds. Identifying an allusion is only half the skill — the mark is for explaining what the connection contributes to meaning.",
           },
           {
-            name: "Responding and positioning readers",
+            name: "How writers position the reader",
             plain:
               "Analysing the techniques a text uses to position a reader to feel sympathy, suspicion or agreement toward a character or idea.",
           },
           {
-            name: "Creating literary texts",
+            name: "Writing creative texts",
             plain:
               "Writing original literary texts that use genre conventions and figurative language deliberately.",
           },
@@ -1464,7 +1464,7 @@ export const curriculum: CurriculumEntry[] = [
               "Identifying the conventions of common genres, and recognising when a text deliberately blends more than one genre.",
           },
           {
-            name: "Cohesion, evidence and substantiation",
+            name: "Linking ideas and using evidence",
             plain:
               "Using cohesive devices to link ideas across a text, and supporting claims with specific evidence rather than assertion.",
             sticking:
@@ -1475,15 +1475,15 @@ export const curriculum: CurriculumEntry[] = [
             plain: "Interpreting how visual elements and references to other texts or ideas build meaning.",
           },
           {
-            name: "Analysing the organisation of ideas",
+            name: "How ideas are organised in a text",
             plain: "Analysing how a text sequences and organises its ideas to build an argument or narrative.",
           },
           {
-            name: "Creating written and multimodal texts",
+            name: "Writing different types of texts",
             plain: "Planning and creating written and multimodal texts that use genre conventions purposefully.",
           },
           {
-            name: "Spoken and multimodal presentations",
+            name: "Giving a spoken or multimedia presentation",
             plain:
               "Delivering a spoken or multimodal presentation, extending Year 7's introduction with more sustained content.",
           },
@@ -1519,7 +1519,7 @@ export const curriculum: CurriculumEntry[] = [
     yearLabel: "Year 9",
     subject: "English",
     stage: "lower",
-    title: "WA Year 9 English: Every Topic, Explained Simply",
+    title: "WA Year 9 English: Every Topic Covered",
     description:
       "What Year 9 students cover in English in Western Australia — register and style, narrative voice, persuasive technique and comparing texts — in plain English, and where students most often get stuck.",
     heading: "WA Year 9 English: what your child covers this year",
@@ -1531,12 +1531,12 @@ export const curriculum: CurriculumEntry[] = [
         blurb: "Register, tone and word choice become tools a student is expected to control deliberately.",
         topics: [
           {
-            name: "Language, register and style",
+            name: "Formal and informal language (register and style)",
             plain:
               "Adjusting register and style deliberately to suit different audiences, purposes and contexts, in both reading and writing.",
           },
           {
-            name: "Modality and shades of meaning",
+            name: "Modal verbs (might, must, possibly)",
             plain:
               "Using modal verbs and adverbs (\"might\", \"must\", \"possibly\") to express degrees of certainty, obligation or possibility precisely.",
             sticking:
@@ -1547,7 +1547,7 @@ export const curriculum: CurriculumEntry[] = [
             plain: "Manipulating sentence length and structure deliberately for rhetorical or narrative effect.",
           },
           {
-            name: "Connotation and word choice",
+            name: "Word choice and connotation",
             plain:
               "Distinguishing a word's literal meaning from its connotation, and choosing words deliberately for the associations they carry.",
           },
@@ -1562,23 +1562,23 @@ export const curriculum: CurriculumEntry[] = [
         blurb: "Texts compared against one another, and narrative voice examined as a deliberate construction.",
         topics: [
           {
-            name: "Perspectives and representation",
+            name: "How texts represent different perspectives",
             plain:
               "Analysing how a text represents particular groups or perspectives, and whose viewpoint is centred or left out.",
           },
           {
-            name: "Narrative point of view and voice",
+            name: "Point of view and narrative voice",
             plain:
               "Analysing how the choice of narrative point of view and voice shapes what a reader knows, trusts and feels.",
             sticking:
               "Treating a first-person narrator as automatically reliable. Recognising an unreliable or limited narrator, and explaining what that choice does for the story, is the actual analytical skill being assessed.",
           },
           {
-            name: "Themes and how they develop",
+            name: "How themes develop in a story",
             plain: "Tracing how a text's central themes develop and change across its length, not just naming them.",
           },
           {
-            name: "Analysing literary style",
+            name: "Analysing a writer's style",
             plain: "Analysing the distinctive stylistic choices of a writer and their effect on a reader.",
           },
           {
@@ -1589,7 +1589,7 @@ export const curriculum: CurriculumEntry[] = [
               "Writing two separate summaries side by side rather than a genuine comparison. A real comparison makes a point about the relationship between the texts — the mark is in the connective analysis, not the description of each text alone.",
           },
           {
-            name: "Creating literary texts",
+            name: "Writing creative texts",
             plain: "Writing original literary texts with a deliberately controlled voice and stylistic choices.",
           },
         ],
@@ -1599,11 +1599,11 @@ export const curriculum: CurriculumEntry[] = [
         blurb: "Persuasive and evidence-based analysis, now assessed on quality rather than just identification.",
         topics: [
           {
-            name: "Cohesion in extended texts",
+            name: "Linking ideas in a long piece of writing",
             plain: "Maintaining cohesion and a clear line of argument across a longer, more extended piece of writing.",
           },
           {
-            name: "Analysing persuasive techniques",
+            name: "Persuasive techniques",
             plain:
               "Identifying persuasive techniques in texts such as advertisements, opinion pieces and speeches, and evaluating how effectively they're used.",
           },
@@ -1614,11 +1614,11 @@ export const curriculum: CurriculumEntry[] = [
               "Accepting a confident tone as a substitute for actually checking the reasoning. This is the exact habit exam questions are designed to test, and it's a genuinely useful skill well beyond the English classroom.",
           },
           {
-            name: "Creating persuasive and analytical texts",
+            name: "Writing persuasive and analytical texts",
             plain: "Writing original persuasive and analytical texts that use evidence and reasoning deliberately.",
           },
           {
-            name: "Spoken and multimodal presentations",
+            name: "Giving a spoken or multimedia presentation",
             plain: "Delivering a more sustained spoken or multimodal presentation, building on Years 7 and 8.",
           },
         ],
@@ -1653,7 +1653,7 @@ export const curriculum: CurriculumEntry[] = [
     yearLabel: "Year 10",
     subject: "English",
     stage: "lower",
-    title: "WA Year 10 English: Every Topic, Explained Simply",
+    title: "WA Year 10 English: Every Topic Covered",
     description:
       "What Year 10 students cover in English in Western Australia — rhetoric, critical media literacy, synthesising sources and sustained essay writing — in plain English, and why Year 10 shapes readiness for ATAR English.",
     heading: "WA Year 10 English: what your child covers this year",
@@ -1665,12 +1665,12 @@ export const curriculum: CurriculumEntry[] = [
         blurb: "Grammar and vocabulary treated as instruments of control, precision and identity, not just correctness.",
         topics: [
           {
-            name: "Language, power and positioning",
+            name: "How language shows power (language and positioning)",
             plain:
               "Analysing how language choices reflect and reinforce power relationships between speakers, writers and their audiences.",
           },
           {
-            name: "The evolution and varieties of English",
+            name: "How English has changed and varies",
             plain:
               "Examining how English varies across time, place and social context, and what those varieties reveal about identity and community.",
           },
@@ -1680,7 +1680,7 @@ export const curriculum: CurriculumEntry[] = [
               "Using grammatical and syntactic choices deliberately to control meaning, emphasis and tone in writing.",
           },
           {
-            name: "Vocabulary, nuance and academic language",
+            name: "Academic vocabulary and word choice",
             plain: "Selecting vocabulary precisely for nuance, particularly in formal and academic writing.",
           },
           {
@@ -1697,7 +1697,7 @@ export const curriculum: CurriculumEntry[] = [
         blurb: "Texts read through the lens of context and values, with a genuinely critical reading position.",
         topics: [
           {
-            name: "Context, values and reading positions",
+            name: "How context shapes how we read a text",
             plain:
               "Analysing how the context a text was produced in, and the values it embeds, shape the reading positions available to different audiences.",
           },
@@ -1706,7 +1706,7 @@ export const curriculum: CurriculumEntry[] = [
             plain: "Constructing a sustained, evidence-based interpretation of a literary text.",
           },
           {
-            name: "Comparative analysis of texts",
+            name: "Comparing texts",
             plain: "Comparing texts at a more sophisticated level, focusing on how form and context shape meaning.",
           },
           {
@@ -1714,7 +1714,7 @@ export const curriculum: CurriculumEntry[] = [
             plain: "Analysing experimental or unconventional stylistic choices and what they achieve.",
           },
           {
-            name: "Responding to literature",
+            name: "Responding to what you read",
             plain: "Constructing an extended, well-substantiated personal response to a literary text.",
           },
         ],
@@ -1724,11 +1724,11 @@ export const curriculum: CurriculumEntry[] = [
         blurb: "Multiple sources, synthesised into one sustained argument rather than treated one at a time.",
         topics: [
           {
-            name: "Cohesion in complex texts",
+            name: "Linking ideas in complex texts",
             plain: "Maintaining a clear, cohesive line of argument across a long and structurally complex text.",
           },
           {
-            name: "Analysing persuasion and rhetoric",
+            name: "Persuasion and rhetoric",
             plain:
               "Analysing rhetorical technique in depth — how an argument is constructed to be persuasive, not just which techniques appear in it.",
           },
@@ -1740,18 +1740,18 @@ export const curriculum: CurriculumEntry[] = [
               "Equating \"has a bias\" with \"is wrong\". Every source has a perspective; the actual skill is identifying that perspective and factoring it into how the source is used as evidence, not dismissing the source outright.",
           },
           {
-            name: "Synthesising multiple sources",
+            name: "Combining information from multiple sources",
             plain:
               "Drawing together evidence and ideas from several sources into one coherent, original argument, rather than summarising each source in turn.",
             sticking:
               "The most common failure at this level: a \"synthesis\" that is really several source summaries placed next to each other. Genuine synthesis makes its own point and uses the sources to support that point, in an order the student chose, not the order the sources happened to be given.",
           },
           {
-            name: "Crafting sustained essays",
+            name: "Writing a long essay",
             plain: "Planning and writing an extended essay that sustains one argument across multiple paragraphs.",
           },
           {
-            name: "Spoken argument and debating",
+            name: "Debating and spoken argument",
             plain: "Constructing and delivering a spoken argument, responding to counterpoints in real time.",
           },
         ],
@@ -1789,7 +1789,7 @@ export const curriculum: CurriculumEntry[] = [
     courseName: "Mathematics Methods",
     courseType: "ATAR",
     unitLabel: "Units 1 and 2",
-    title: "WACE Mathematics Methods (Units 1 & 2): Course Guide",
+    title: "WACE Mathematics Methods (Units 1 & 2)",
     description:
       "What Year 11 Mathematics Methods covers in WA — functions, calculus foundations and probability — unit by unit, in plain English, for families deciding if this ATAR course is the right fit.",
     heading: "WACE Mathematics Methods, Year 11 (Units 1 and 2)",
@@ -1805,13 +1805,13 @@ export const curriculum: CurriculumEntry[] = [
           { name: "Fundamentals of probability", plain: "Calculating probabilities of events using the formal language and notation established in this unit." },
           { name: "Conditional probability and independence", plain: "Calculating the probability of one event given another has occurred, and testing whether two events are independent.", sticking: "Assuming two events are independent because they seem unrelated intuitively, rather than checking the actual condition mathematically. Intuition about independence is wrong often enough to be worth distrusting." },
           { name: "Lines and linear relationships", plain: "Working with the equation, gradient and intercepts of a line at a more formal, generalised level than Year 10." },
-          { name: "Quadratic functions: graphs and features", plain: "Analysing quadratic functions through their graphs — turning point, axis of symmetry, intercepts — as a function, not just an equation to solve." },
-          { name: "Solving quadratics: completing the square, formula and the discriminant", plain: "Solving quadratics by every available method, and using the discriminant to determine the number and nature of the solutions before solving." },
+          { name: "Quadratic functions and their graphs", plain: "Analysing quadratic functions through their graphs — turning point, axis of symmetry, intercepts — as a function, not just an equation to solve." },
+          { name: "Solving quadratics (completing the square, the formula, the discriminant)", plain: "Solving quadratics by every available method, and using the discriminant to determine the number and nature of the solutions before solving." },
           { name: "Inverse proportion and hyperbolas", plain: "Graphing inverse proportion relationships and recognising their hyperbolic shape." },
           { name: "Power functions", plain: "Graphing and analysing functions of the form f(x) = x^n for different values of n." },
           { name: "Cubics and polynomials", plain: "Extending function analysis to cubic and higher-degree polynomials." },
           { name: "Circles and other relations", plain: "Graphing the equation of a circle and other relations that aren't functions in the strict sense." },
-          { name: "Functions: concept, notation, domain and range", plain: "Formalising what a function actually is, using function notation properly, and determining domain and range.", sticking: "Treating function notation f(x) as multiplication rather than \"the output of f when the input is x\". This misreading, uncorrected, causes confusion through every function topic that follows." },
+          { name: "Functions, domain and range", plain: "Formalising what a function actually is, using function notation properly, and determining domain and range.", sticking: "Treating function notation f(x) as multiplication rather than \"the output of f when the input is x\". This misreading, uncorrected, causes confusion through every function topic that follows." },
           { name: "Transformations of graphs", plain: "Predicting how a graph shifts, stretches or reflects based on changes to its equation." },
         ],
       },
@@ -1820,21 +1820,21 @@ export const curriculum: CurriculumEntry[] = [
         blurb: "Trigonometry extends, sequences arrive, and calculus formally begins.",
         topics: [
           { name: "Right-angled trigonometry and the unit circle", plain: "Extending trigonometry using the unit circle, connecting the ratios learned in Year 10 to angles beyond 90 degrees." },
-          { name: "Sine and cosine rules; area and the ambiguous case", plain: "Solving non-right-angled triangles using the sine and cosine rules, including recognising when a problem has two valid solutions." },
-          { name: "Radian measure; arc length, sectors and segments", plain: "Measuring angles in radians instead of degrees, and using radians to calculate arc length and sector area." },
+          { name: "Sine rule, cosine rule and the ambiguous case", plain: "Solving non-right-angled triangles using the sine and cosine rules, including recognising when a problem has two valid solutions." },
+          { name: "Radians, arc length and sectors", plain: "Measuring angles in radians instead of degrees, and using radians to calculate arc length and sector area." },
           { name: "Indices, index laws, surds and scientific notation", plain: "Consolidating index laws and surd manipulation at ATAR-course fluency, beyond what Year 10 required." },
-          { name: "Exponential functions: properties and graphs", plain: "Graphing and analysing exponential functions and their key features." },
-          { name: "Modelling with exponentials and solving exponential equations", plain: "Using exponential functions to model real growth and decay situations, and solving equations involving them." },
+          { name: "Exponential functions and their graphs", plain: "Graphing and analysing exponential functions and their key features." },
+          { name: "Exponential growth, decay and equations", plain: "Using exponential functions to model real growth and decay situations, and solving equations involving them." },
           { name: "Arithmetic sequences", plain: "Identifying and working with sequences that increase or decrease by a constant amount." },
           { name: "Arithmetic series", plain: "Finding the sum of an arithmetic sequence using the series formula." },
           { name: "Geometric sequences", plain: "Identifying and working with sequences that multiply by a constant ratio." },
           { name: "Geometric series and applications", plain: "Finding the sum of a geometric sequence, including real applications like compound growth." },
           { name: "Average rate of change and the difference quotient", plain: "Calculating the average rate of change between two points, building the concept that calculus will formalise." },
           { name: "The derivative as a limit", plain: "Introducing the derivative as the limit of the difference quotient as the interval shrinks to zero.", guide: "what-is-a-derivative", sticking: "Treating the derivative as a formula to apply before understanding what it represents — an instantaneous rate of change, built from a limit. Students who learn the mechanical rules without this foundation struggle the moment a question asks them to interpret a derivative, not just compute one." },
-          { name: "Computing derivatives: the power rule from first principles", plain: "Deriving the power rule for differentiation from the limit definition, rather than being given it as a fact." },
-          { name: "The derivative as a function; differentiating polynomials", plain: "Treating the derivative itself as a function, and differentiating polynomial functions fluently." },
+          { name: "The power rule, from first principles", plain: "Deriving the power rule for differentiation from the limit definition, rather than being given it as a fact." },
+          { name: "Differentiating polynomials", plain: "Treating the derivative itself as a function, and differentiating polynomial functions fluently." },
           { name: "Tangents and instantaneous rates of change", plain: "Using the derivative to find the gradient of a tangent line and interpret instantaneous rates of change in context." },
-          { name: "Kinematics: position-time graphs and velocity", plain: "Applying derivatives to motion, connecting position, velocity and the gradient of a position-time graph." },
+          { name: "Kinematics (position-time graphs and velocity)", plain: "Applying derivatives to motion, connecting position, velocity and the gradient of a position-time graph." },
           { name: "Curve sketching and stationary points", plain: "Using the derivative to find stationary points and sketch the shape of a curve." },
           { name: "Optimisation problems", plain: "Using calculus to find the maximum or minimum value of a real-world quantity." },
           { name: "Anti-derivatives of polynomial functions", plain: "Reversing differentiation to find anti-derivatives of polynomial functions, previewing integration in Year 12." },
@@ -1860,7 +1860,7 @@ export const curriculum: CurriculumEntry[] = [
     courseName: "Mathematics Methods",
     courseType: "ATAR",
     unitLabel: "Units 3 and 4",
-    title: "WACE Mathematics Methods (Units 3 & 4): Course Guide",
+    title: "WACE Mathematics Methods (Units 3 & 4)",
     description:
       "What Year 12 Mathematics Methods covers in WA — calculus of exponential, logarithmic and trigonometric functions, integration, and statistical inference — unit by unit, in plain English.",
     heading: "WACE Mathematics Methods, Year 12 (Units 3 and 4)",
@@ -1875,11 +1875,11 @@ export const curriculum: CurriculumEntry[] = [
           { name: "Derivatives of trigonometric functions", plain: "Differentiating sine, cosine and related trigonometric functions." },
           { name: "The chain rule", plain: "Differentiating composite functions using the chain rule.", sticking: "Applying the chain rule mechanically without correctly identifying the \"outer\" and \"inner\" functions first. Misidentifying the composition is the single most common source of chain rule errors, not the differentiation itself." },
           { name: "The product and quotient rules", plain: "Differentiating products and quotients of functions using the product and quotient rules." },
-          { name: "The second derivative: concavity and points of inflection", plain: "Using the second derivative to determine concavity and identify points of inflection." },
-          { name: "Applications: curve sketching, optimisation and kinematics", plain: "Applying the full calculus toolkit to sketch curves, solve optimisation problems and analyse motion." },
+          { name: "The second derivative, concavity and inflection points", plain: "Using the second derivative to determine concavity and identify points of inflection." },
+          { name: "Applying calculus to curve sketching, optimisation and kinematics", plain: "Applying the full calculus toolkit to sketch curves, solve optimisation problems and analyse motion." },
           { name: "Anti-differentiation of standard functions", plain: "Extending anti-differentiation to exponential and trigonometric functions." },
           { name: "The definite integral and the fundamental theorem of calculus", plain: "Connecting the definite integral to area under a curve via the fundamental theorem of calculus.", sticking: "Treating the fundamental theorem as a computational shortcut without grasping that it connects two seemingly unrelated ideas — accumulated area and anti-differentiation. The connection is exactly what tends to get tested conceptually, not just procedurally." },
-          { name: "Applications of integration: area", plain: "Using definite integrals to calculate the area between curves." },
+          { name: "Using integration to find area", plain: "Using definite integrals to calculate the area between curves." },
           { name: "Discrete random variables and probability distributions", plain: "Formalising discrete random variables and their probability distributions." },
           { name: "The Bernoulli distribution", plain: "Modelling single trials with two outcomes using the Bernoulli distribution." },
           { name: "The binomial distribution", plain: "Modelling repeated independent trials using the binomial distribution." },
@@ -1890,11 +1890,11 @@ export const curriculum: CurriculumEntry[] = [
         blurb: "Logarithms, continuous distributions and statistical inference bring the course together.",
         topics: [
           { name: "Logarithms and logarithm laws", plain: "Working fluently with logarithms and their laws, including as the inverse of exponential functions." },
-          { name: "Calculus of logarithmic and exponential functions", plain: "Differentiating and integrating logarithmic functions and extending exponential calculus." },
+          { name: "Differentiating logs and exponentials", plain: "Differentiating and integrating logarithmic functions and extending exponential calculus." },
           { name: "Exponential growth and decay with calculus", plain: "Using calculus to model and analyse exponential growth and decay situations rigorously." },
           { name: "Continuous random variables and probability density functions", plain: "Extending probability distributions to continuous variables using probability density functions." },
           { name: "The normal distribution", plain: "Using the normal distribution to model continuous data and calculate probabilities." },
-          { name: "Random sampling and the distribution of sample proportions", plain: "Understanding how sample proportions vary from sample to sample, setting up statistical inference." },
+          { name: "Sample proportions and sampling distributions", plain: "Understanding how sample proportions vary from sample to sample, setting up statistical inference." },
           { name: "Confidence intervals for a population proportion", plain: "Constructing and interpreting a confidence interval for an unknown population proportion.", sticking: "Misinterpreting what a confidence interval actually claims — it's not \"a 95% chance the true value is in this range\", it's a claim about the long-run reliability of the method used to construct it. This distinction is genuinely subtle and is exactly what separates a strong Unit 4 statistics answer from a mechanically correct but conceptually wrong one." },
         ],
       },
@@ -1918,7 +1918,7 @@ export const curriculum: CurriculumEntry[] = [
     courseName: "Mathematics Specialist",
     courseType: "ATAR",
     unitLabel: "Units 3 and 4",
-    title: "WACE Mathematics Specialist (Units 3 & 4): Course Guide",
+    title: "WACE Mathematics Specialist (Units 3 & 4)",
     description:
       "What Year 12 Mathematics Specialist covers in WA — complex numbers, vectors, advanced integration and differential equations — unit by unit, in plain English, for families weighing this course alongside Methods.",
     heading: "WACE Mathematics Specialist, Year 12 (Units 3 and 4)",
@@ -1929,29 +1929,29 @@ export const curriculum: CurriculumEntry[] = [
         name: "Unit 3",
         blurb: "Complex numbers and three-dimensional vectors extend the number system and geometry Methods works with.",
         topics: [
-          { name: "Complex Numbers in Polar Form", plain: "Representing complex numbers in polar form and converting between polar and Cartesian representations." },
-          { name: "Products, Quotients and De Moivre's Theorem", plain: "Multiplying and dividing complex numbers in polar form, and using De Moivre's theorem for powers." },
-          { name: "Powers and Roots of Complex Numbers", plain: "Finding powers and roots of complex numbers using De Moivre's theorem." },
-          { name: "Curves and Regions in the Complex Plane", plain: "Sketching curves and regions defined by equations and inequalities in the complex plane." },
-          { name: "Composition and Inverse Functions", plain: "Composing functions and finding inverse functions, extending Methods' treatment of functions." },
-          { name: "Sketching Reciprocal and Related Functions", plain: "Sketching reciprocal functions and related transformations by analysing the original function's features." },
-          { name: "Rational Functions and Asymptotes", plain: "Sketching rational functions, identifying asymptotes and discontinuities." },
-          { name: "Vectors in Three Dimensions and the Scalar Product", plain: "Extending vector work into three dimensions and using the scalar (dot) product." },
-          { name: "The Vector Product, Lines and Planes", plain: "Using the vector (cross) product, and describing lines and planes in three dimensions using vector equations." },
+          { name: "Complex numbers in polar form", plain: "Representing complex numbers in polar form and converting between polar and Cartesian representations." },
+          { name: "Products, quotients and De Moivre's theorem", plain: "Multiplying and dividing complex numbers in polar form, and using De Moivre's theorem for powers." },
+          { name: "Powers and roots of complex numbers", plain: "Finding powers and roots of complex numbers using De Moivre's theorem." },
+          { name: "Curves and regions in the complex plane", plain: "Sketching curves and regions defined by equations and inequalities in the complex plane." },
+          { name: "Composite and inverse functions", plain: "Composing functions and finding inverse functions, extending Methods' treatment of functions." },
+          { name: "Sketching reciprocal functions", plain: "Sketching reciprocal functions and related transformations by analysing the original function's features." },
+          { name: "Rational functions and asymptotes", plain: "Sketching rational functions, identifying asymptotes and discontinuities." },
+          { name: "Vectors in 3D and the dot product", plain: "Extending vector work into three dimensions and using the scalar (dot) product." },
+          { name: "The cross product, lines and planes", plain: "Using the vector (cross) product, and describing lines and planes in three dimensions using vector equations." },
         ],
       },
       {
         name: "Unit 4",
         blurb: "Integration techniques and differential equations extend Methods' calculus considerably further.",
         topics: [
-          { name: "Integration by Substitution", plain: "Using substitution to integrate functions that don't fit standard integration rules directly." },
-          { name: "Integration Using Partial Fractions and Trigonometric Identities", plain: "Using partial fractions and trigonometric identities to integrate more complex expressions." },
-          { name: "Applications of Integration: Area and Volume", plain: "Using integration to calculate areas and volumes of revolution, beyond what Methods covers." },
-          { name: "Rates of Change and Related Rates", plain: "Solving related-rates problems where two or more quantities change with respect to time simultaneously.", sticking: "Trying to solve a related-rates problem without first writing an equation connecting the two quantities before differentiating. Differentiating too early, before the relationship is properly set up, is the most common way this topic goes wrong." },
-          { name: "Differential Equations: Separation of Variables", plain: "Solving differential equations by separating variables, a genuinely new technique beyond anything in Methods." },
-          { name: "Modelling with Differential Equations", plain: "Using differential equations to model real growth, decay and rate-based situations." },
-          { name: "Sample Means and the Distribution of Sample Means", plain: "Extending statistical inference to sample means rather than sample proportions." },
-          { name: "Confidence Intervals for a Population Mean", plain: "Constructing and interpreting confidence intervals for an unknown population mean." },
+          { name: "Integration by substitution", plain: "Using substitution to integrate functions that don't fit standard integration rules directly." },
+          { name: "Integration using partial fractions and trig identities", plain: "Using partial fractions and trigonometric identities to integrate more complex expressions." },
+          { name: "Using integration to find area and volume", plain: "Using integration to calculate areas and volumes of revolution, beyond what Methods covers." },
+          { name: "Related rates problems", plain: "Solving related-rates problems where two or more quantities change with respect to time simultaneously.", sticking: "Trying to solve a related-rates problem without first writing an equation connecting the two quantities before differentiating. Differentiating too early, before the relationship is properly set up, is the most common way this topic goes wrong." },
+          { name: "Differential equations (separation of variables)", plain: "Solving differential equations by separating variables, a genuinely new technique beyond anything in Methods." },
+          { name: "Modelling with differential equations", plain: "Using differential equations to model real growth, decay and rate-based situations." },
+          { name: "Sample means and sampling distributions", plain: "Extending statistical inference to sample means rather than sample proportions." },
+          { name: "Confidence intervals for a population mean", plain: "Constructing and interpreting confidence intervals for an unknown population mean." },
         ],
       },
     ],
@@ -1994,7 +1994,7 @@ export const curriculum: CurriculumEntry[] = [
     courseName: "Mathematics Applications",
     courseType: "ATAR",
     unitLabel: "Units 1 and 2",
-    title: "WACE Mathematics Applications (Units 1 & 2): Course Guide",
+    title: "WACE Mathematics Applications (Units 1 & 2)",
     description:
       "What Year 11 Mathematics Applications covers in WA — matrices, measurement, statistics and trigonometry — unit by unit, in plain English, for families weighing this ATAR course against Methods.",
     heading: "WACE Mathematics Applications, Year 11 (Units 1 and 2)",
@@ -2005,36 +2005,36 @@ export const curriculum: CurriculumEntry[] = [
         name: "Unit 1",
         blurb: "Everyday financial maths and matrices, treated with real depth.",
         topics: [
-          { name: "Percentages and Percentage Change", plain: "Calculating percentages and percentage change fluently in real financial and everyday contexts." },
-          { name: "Rates, Ratios and Unit Cost", plain: "Comparing quantities using rates, ratios and unit cost to make informed decisions." },
-          { name: "Earning Money", plain: "Calculating income from wages, salaries and other earning arrangements." },
-          { name: "Taxation, Deductions and Budgeting", plain: "Calculating tax and deductions, and applying budgeting principles to real financial planning." },
-          { name: "Substitution, Formulas and Linear Equations", plain: "Substituting into formulas and solving linear equations in applied, real-world contexts." },
-          { name: "Introduction to Matrices", plain: "Introducing matrices as a way to organise and represent data — genuinely new content, not previewed in Year 10.", sticking: "Treating matrix notation as just a grid of numbers without understanding what operations on it actually mean. The notation is unfamiliar enough that students often can perform the arithmetic correctly while having no sense of what a matrix represents." },
-          { name: "Matrix Arithmetic", plain: "Adding, subtracting and multiplying matrices, and understanding why matrix multiplication works the way it does." },
-          { name: "Applications of Matrices", plain: "Applying matrices to real problems, such as representing and solving systems of relationships." },
-          { name: "Units, Perimeter and Area", plain: "Applying unit conversions and area calculations to real practical measurement problems." },
-          { name: "Surface Area and Volume", plain: "Calculating surface area and volume of real objects, extending Year 10 formulas to applied contexts." },
-          { name: "Similarity and Scale", plain: "Applying similarity and scale factors to real situations like maps, models and enlargements." },
-          { name: "Pythagoras' Theorem and Applications", plain: "Applying Pythagoras' theorem to genuinely applied, real-world measurement problems." },
+          { name: "Percentages and percentage change", plain: "Calculating percentages and percentage change fluently in real financial and everyday contexts." },
+          { name: "Rates, ratios and unit cost", plain: "Comparing quantities using rates, ratios and unit cost to make informed decisions." },
+          { name: "Earning money (wages, salaries)", plain: "Calculating income from wages, salaries and other earning arrangements." },
+          { name: "Tax, deductions and budgeting", plain: "Calculating tax and deductions, and applying budgeting principles to real financial planning." },
+          { name: "Substitution, formulas and linear equations", plain: "Substituting into formulas and solving linear equations in applied, real-world contexts." },
+          { name: "What is a matrix?", plain: "Introducing matrices as a way to organise and represent data — genuinely new content, not previewed in Year 10.", sticking: "Treating matrix notation as just a grid of numbers without understanding what operations on it actually mean. The notation is unfamiliar enough that students often can perform the arithmetic correctly while having no sense of what a matrix represents." },
+          { name: "Adding and multiplying matrices", plain: "Adding, subtracting and multiplying matrices, and understanding why matrix multiplication works the way it does." },
+          { name: "Using matrices to solve problems", plain: "Applying matrices to real problems, such as representing and solving systems of relationships." },
+          { name: "Units, perimeter and area", plain: "Applying unit conversions and area calculations to real practical measurement problems." },
+          { name: "Surface area and volume", plain: "Calculating surface area and volume of real objects, extending Year 10 formulas to applied contexts." },
+          { name: "Similarity and scale", plain: "Applying similarity and scale factors to real situations like maps, models and enlargements." },
+          { name: "Pythagoras' theorem", plain: "Applying Pythagoras' theorem to genuinely applied, real-world measurement problems." },
         ],
       },
       {
         name: "Unit 2",
         blurb: "Statistics becomes a full investigation process, and trigonometry extends beyond right-angled triangles.",
         topics: [
-          { name: "The Statistical Investigation Process and Types of Data", plain: "Working through the full statistical investigation cycle and classifying different types of data correctly." },
-          { name: "Displaying Univariate Data", plain: "Choosing and constructing appropriate displays for single-variable data." },
-          { name: "Measures of Centre and Spread", plain: "Calculating and interpreting measures of centre and spread for a data set." },
-          { name: "Boxplots, Outliers and Comparing Distributions", plain: "Constructing boxplots, identifying outliers, and comparing the shape of different distributions.", sticking: "Flagging any unusually large or small value as an outlier without applying the actual outlier rule (typically 1.5 times the interquartile range beyond the quartiles). \"It looks unusual\" isn't the criterion the course assesses." },
-          { name: "Right-Angled Trigonometry", plain: "Consolidating right-angled trigonometry at ATAR-course fluency." },
-          { name: "Angles of Elevation, Depression and Bearings", plain: "Applying trigonometry to real navigation and surveying problems using bearings and angles of elevation and depression." },
-          { name: "The Sine Rule", plain: "Solving non-right-angled triangles using the sine rule, including the ambiguous case." },
-          { name: "The Cosine Rule", plain: "Solving non-right-angled triangles using the cosine rule." },
-          { name: "Area of a Triangle and Applications", plain: "Calculating the area of a triangle using trigonometry, without needing the height directly." },
-          { name: "Linear Graphs: Gradient and Intercept", plain: "Working with linear graphs at an applied level, focused on real interpretation of gradient and intercept." },
-          { name: "Equation of a Line and Linear Modelling", plain: "Finding the equation of a line and using linear models to represent real relationships." },
-          { name: "Simultaneous Equations", plain: "Solving simultaneous linear equations in applied contexts." },
+          { name: "The statistical investigation process", plain: "Working through the full statistical investigation cycle and classifying different types of data correctly." },
+          { name: "Displaying data (histograms, dot plots)", plain: "Choosing and constructing appropriate displays for single-variable data." },
+          { name: "Mean, median, mode and spread", plain: "Calculating and interpreting measures of centre and spread for a data set." },
+          { name: "Boxplots and outliers", plain: "Constructing boxplots, identifying outliers, and comparing the shape of different distributions.", sticking: "Flagging any unusually large or small value as an outlier without applying the actual outlier rule (typically 1.5 times the interquartile range beyond the quartiles). \"It looks unusual\" isn't the criterion the course assesses." },
+          { name: "Right-angled trigonometry", plain: "Consolidating right-angled trigonometry at ATAR-course fluency." },
+          { name: "Angles of elevation, depression and bearings", plain: "Applying trigonometry to real navigation and surveying problems using bearings and angles of elevation and depression." },
+          { name: "The sine rule", plain: "Solving non-right-angled triangles using the sine rule, including the ambiguous case." },
+          { name: "The cosine rule", plain: "Solving non-right-angled triangles using the cosine rule." },
+          { name: "Area of a triangle using trigonometry", plain: "Calculating the area of a triangle using trigonometry, without needing the height directly." },
+          { name: "Linear graphs, gradient and intercept", plain: "Working with linear graphs at an applied level, focused on real interpretation of gradient and intercept." },
+          { name: "Equation of a line", plain: "Finding the equation of a line and using linear models to represent real relationships." },
+          { name: "Simultaneous equations", plain: "Solving simultaneous linear equations in applied contexts." },
         ],
       },
     ],
@@ -2057,7 +2057,7 @@ export const curriculum: CurriculumEntry[] = [
     courseName: "Mathematics Applications",
     courseType: "ATAR",
     unitLabel: "Units 3 and 4",
-    title: "WACE Mathematics Applications (Units 3 & 4): Course Guide",
+    title: "WACE Mathematics Applications (Units 3 & 4)",
     description:
       "What Year 12 Mathematics Applications covers in WA — bivariate statistics, financial modelling and network analysis — unit by unit, in plain English.",
     heading: "WACE Mathematics Applications, Year 12 (Units 3 and 4)",
@@ -2068,30 +2068,30 @@ export const curriculum: CurriculumEntry[] = [
         name: "Unit 3",
         blurb: "Bivariate statistics, sequences and the first look at networks.",
         topics: [
-          { name: "Bivariate Data: Scatterplots and Correlation", plain: "Displaying and describing the relationship between two numerical variables." },
-          { name: "Least-Squares Regression", plain: "Fitting a least-squares regression line to bivariate data and using it for prediction." },
-          { name: "Using Regression and Residual Analysis", plain: "Analysing residuals to assess how well a regression model actually fits the data.", sticking: "Assuming a high correlation coefficient automatically means the linear model is a good fit. A residual plot showing a clear pattern reveals a non-linear relationship even when the correlation looks strong — this is the actual test the course wants a student to apply." },
-          { name: "Arithmetic Sequences and Recurrence Relations", plain: "Representing arithmetic sequences using recurrence relations, connecting to real stepwise growth." },
-          { name: "Geometric Sequences", plain: "Working with geometric sequences and their recurrence relations." },
-          { name: "Geometric Growth and Decay", plain: "Modelling real growth and decay situations using geometric sequences." },
-          { name: "First-Order Linear Recurrence Relations", plain: "Working with recurrence relations that combine both additive and multiplicative change." },
-          { name: "Graphs and Networks: Terminology", plain: "Learning the formal terminology of graph and network theory — vertices, edges, degree." },
-          { name: "Adjacency Matrices and Traversals", plain: "Representing networks using adjacency matrices and analysing paths through them." },
-          { name: "Planar Graphs, Euler's Formula and Trees", plain: "Working with planar graphs, Euler's formula, and tree structures within network theory." },
+          { name: "Scatterplots and correlation", plain: "Displaying and describing the relationship between two numerical variables." },
+          { name: "Least-squares regression (line of best fit)", plain: "Fitting a least-squares regression line to bivariate data and using it for prediction." },
+          { name: "Residuals and how well a model fits", plain: "Analysing residuals to assess how well a regression model actually fits the data.", sticking: "Assuming a high correlation coefficient automatically means the linear model is a good fit. A residual plot showing a clear pattern reveals a non-linear relationship even when the correlation looks strong — this is the actual test the course wants a student to apply." },
+          { name: "Arithmetic sequences and recurrence relations", plain: "Representing arithmetic sequences using recurrence relations, connecting to real stepwise growth." },
+          { name: "Geometric sequences", plain: "Working with geometric sequences and their recurrence relations." },
+          { name: "Geometric growth and decay", plain: "Modelling real growth and decay situations using geometric sequences." },
+          { name: "Linear recurrence relations", plain: "Working with recurrence relations that combine both additive and multiplicative change." },
+          { name: "Graphs and networks (vertices and edges)", plain: "Learning the formal terminology of graph and network theory — vertices, edges, degree." },
+          { name: "Adjacency matrices and network paths", plain: "Representing networks using adjacency matrices and analysing paths through them." },
+          { name: "Planar graphs, Euler's formula and trees", plain: "Working with planar graphs, Euler's formula, and tree structures within network theory." },
         ],
       },
       {
         name: "Unit 4",
         blurb: "Time series, finance and network optimisation — the most applied content in the course.",
         topics: [
-          { name: "Time Series: Trends and Seasonality", plain: "Analysing time series data for trends and seasonal patterns." },
-          { name: "Smoothing and Seasonal Indices", plain: "Using smoothing techniques and seasonal indices to analyse and adjust time series data." },
-          { name: "Compound Interest and Future Value", plain: "Calculating compound interest and future value for real investment and savings scenarios." },
-          { name: "Reducing-Balance Loans and Amortisation", plain: "Calculating loan repayments and amortisation schedules for reducing-balance loans." },
-          { name: "Annuities and Regular Investments", plain: "Calculating the future and present value of annuities and regular investments." },
-          { name: "Shortest Path", plain: "Finding the shortest path through a network using systematic algorithms." },
-          { name: "Minimal Spanning Trees", plain: "Finding the minimal spanning tree of a network — the cheapest way to connect every point." },
-          { name: "Critical Path Analysis", plain: "Using critical path analysis to schedule a project and identify which tasks control its minimum completion time.", sticking: "Assuming every task on a long project needs monitoring equally. The critical path method exists precisely to identify the small subset of tasks — the critical ones — where a delay genuinely delays the whole project, and that's the actual point of the technique." },
+          { name: "Time series, trends and seasonality", plain: "Analysing time series data for trends and seasonal patterns." },
+          { name: "Smoothing and seasonal indices", plain: "Using smoothing techniques and seasonal indices to analyse and adjust time series data." },
+          { name: "Compound interest", plain: "Calculating compound interest and future value for real investment and savings scenarios." },
+          { name: "Loan repayments and amortisation", plain: "Calculating loan repayments and amortisation schedules for reducing-balance loans." },
+          { name: "Annuities and regular investments", plain: "Calculating the future and present value of annuities and regular investments." },
+          { name: "Finding the shortest path in a network", plain: "Finding the shortest path through a network using systematic algorithms." },
+          { name: "Minimal spanning trees", plain: "Finding the minimal spanning tree of a network — the cheapest way to connect every point." },
+          { name: "Critical path analysis", plain: "Using critical path analysis to schedule a project and identify which tasks control its minimum completion time.", sticking: "Assuming every task on a long project needs monitoring equally. The critical path method exists precisely to identify the small subset of tasks — the critical ones — where a delay genuinely delays the whole project, and that's the actual point of the technique." },
         ],
       },
     ],
@@ -2114,7 +2114,7 @@ export const curriculum: CurriculumEntry[] = [
     courseName: "Mathematics Essential",
     courseType: "General",
     unitLabel: "Units 1 and 2",
-    title: "WACE Mathematics Essential (Units 1 & 2): Course Guide",
+    title: "WACE Mathematics Essential (Units 1 & 2)",
     description:
       "What Year 11 Mathematics Essential covers in WA — practical calculation, measurement and data — unit by unit, in plain English, for families weighing this General maths pathway.",
     heading: "WACE Mathematics Essential, Year 11 (Units 1 and 2)",
@@ -2125,20 +2125,20 @@ export const curriculum: CurriculumEntry[] = [
         name: "Unit 1",
         blurb: "Calculation and measurement, grounded in real, everyday use.",
         topics: [
-          { name: "Basic Calculations, Estimation and Order of Operations", plain: "Building fluency and confidence with core calculation, including sensible estimation." },
-          { name: "Percentages and Rates in Context", plain: "Applying percentages and rates to real, everyday situations rather than abstract exercises." },
-          { name: "Measurement: Length, Area, Volume and Units", plain: "Applying measurement and unit conversion to genuinely practical situations." },
-          { name: "Formulas and Reading Graphs", plain: "Substituting into formulas and reading information directly off graphs used in real contexts.", sticking: "Reading a graph's axis labels and scale too quickly. Misreading what a graph's axes actually represent, before any calculation starts, is the single most common source of error at this level — worth checking every time as a first step." },
+          { name: "Estimation and order of operations", plain: "Building fluency and confidence with core calculation, including sensible estimation." },
+          { name: "Percentages and rates", plain: "Applying percentages and rates to real, everyday situations rather than abstract exercises." },
+          { name: "Length, area, volume and units", plain: "Applying measurement and unit conversion to genuinely practical situations." },
+          { name: "Formulas and reading graphs", plain: "Substituting into formulas and reading information directly off graphs used in real contexts.", sticking: "Reading a graph's axis labels and scale too quickly. Misreading what a graph's axes actually represent, before any calculation starts, is the single most common source of error at this level — worth checking every time as a first step." },
         ],
       },
       {
         name: "Unit 2",
         blurb: "Data and further percentage-based financial calculation.",
         topics: [
-          { name: "Representing and Comparing Data", plain: "Constructing and comparing simple data displays for real, everyday data sets." },
-          { name: "Working with Percentages: Discount, GST and Profit", plain: "Applying percentage calculations to discounts, GST and profit in real shopping and business contexts." },
-          { name: "Rates and Ratios", plain: "Applying rates and ratios to real practical comparison problems." },
-          { name: "Time and Motion", plain: "Applying calculation to real time, distance and motion problems, such as travel planning." },
+          { name: "Representing and comparing data", plain: "Constructing and comparing simple data displays for real, everyday data sets." },
+          { name: "Discounts, GST and profit", plain: "Applying percentage calculations to discounts, GST and profit in real shopping and business contexts." },
+          { name: "Rates and ratios", plain: "Applying rates and ratios to real practical comparison problems." },
+          { name: "Time and motion (speed, distance, time)", plain: "Applying calculation to real time, distance and motion problems, such as travel planning." },
         ],
       },
     ],
@@ -2161,7 +2161,7 @@ export const curriculum: CurriculumEntry[] = [
     courseName: "Mathematics Essential",
     courseType: "General",
     unitLabel: "Units 3 and 4",
-    title: "WACE Mathematics Essential (Units 3 & 4): Course Guide",
+    title: "WACE Mathematics Essential (Units 3 & 4)",
     description:
       "What Year 12 Mathematics Essential covers in WA — practical measurement, probability, earth geometry and loans — unit by unit, in plain English.",
     heading: "WACE Mathematics Essential, Year 12 (Units 3 and 4)",
@@ -2172,20 +2172,20 @@ export const curriculum: CurriculumEntry[] = [
         name: "Unit 3",
         blurb: "Measurement, scale and data, applied to real practical and media contexts.",
         topics: [
-          { name: "Measurement and Estimation in Practical Contexts", plain: "Applying measurement and estimation skills to genuinely practical, trade-relevant contexts." },
-          { name: "Scales, Plans and Models", plain: "Reading and interpreting scaled plans and models, and converting between scale and real size." },
-          { name: "Graphs and Tables in the Media", plain: "Critically reading graphs and tables as they actually appear in news and media reporting.", sticking: "Accepting a media graph's visual impression at face value without checking the axis scale. A truncated y-axis can make a small change look dramatic, and this course explicitly tests whether a student notices." },
-          { name: "Data Collection and the Statistical Process", plain: "Working through a simplified, practically-focused statistical investigation process." },
+          { name: "Practical measurement and estimation", plain: "Applying measurement and estimation skills to genuinely practical, trade-relevant contexts." },
+          { name: "Scales, plans and models", plain: "Reading and interpreting scaled plans and models, and converting between scale and real size." },
+          { name: "Reading graphs and tables in the media", plain: "Critically reading graphs and tables as they actually appear in news and media reporting.", sticking: "Accepting a media graph's visual impression at face value without checking the axis scale. A truncated y-axis can make a small change look dramatic, and this course explicitly tests whether a student notices." },
+          { name: "Data collection and the statistical process", plain: "Working through a simplified, practically-focused statistical investigation process." },
         ],
       },
       {
         name: "Unit 4",
         blurb: "Earth geometry, time and personal finance round out the course.",
         topics: [
-          { name: "Probability and Relative Frequency", plain: "Estimating probability using relative frequency from real, observed data." },
-          { name: "Earth Geometry: Latitude and Longitude", plain: "Using latitude and longitude to describe location and calculate distances on Earth." },
-          { name: "Time Zones and Travel", plain: "Calculating time differences and travel times across time zones, genuinely relevant for a WA-based student." },
-          { name: "Loans, Credit and Compound Interest", plain: "Calculating the real cost of loans and credit using compound interest, directly applicable to personal finance." },
+          { name: "Probability and relative frequency", plain: "Estimating probability using relative frequency from real, observed data." },
+          { name: "Latitude and longitude", plain: "Using latitude and longitude to describe location and calculate distances on Earth." },
+          { name: "Time zones and travel", plain: "Calculating time differences and travel times across time zones, genuinely relevant for a WA-based student." },
+          { name: "Loans, credit and compound interest", plain: "Calculating the real cost of loans and credit using compound interest, directly applicable to personal finance." },
         ],
       },
     ],
@@ -2208,7 +2208,7 @@ export const curriculum: CurriculumEntry[] = [
     courseName: "Mathematics Foundation",
     courseType: "Foundation",
     unitLabel: "Units 1 and 2",
-    title: "WACE Mathematics Foundation (Units 1 & 2): Course Guide",
+    title: "WACE Mathematics Foundation (Units 1 & 2)",
     description:
       "What Year 11 Mathematics Foundation covers in WA — whole numbers, money, measurement and time — unit by unit, in plain English, for families whose child hasn't yet met the Year 10 numeracy standard.",
     heading: "WACE Mathematics Foundation, Year 11 (Units 1 and 2)",
@@ -2219,17 +2219,17 @@ export const curriculum: CurriculumEntry[] = [
         name: "Unit 1",
         blurb: "Whole numbers and money, at a genuinely functional level.",
         topics: [
-          { name: "Whole Numbers, Place Value and the Four Operations", plain: "Building confidence and fluency with whole number place value and the four operations." },
-          { name: "Money: Counting, Change and Budgeting Basics", plain: "Building practical confidence handling money, giving and checking change, and basic budgeting." },
-          { name: "Length, Mass and Capacity", plain: "Measuring and comparing length, mass and capacity using everyday units." },
-          { name: "Time and the Calendar", plain: "Reading time and calendars confidently and applying this to everyday planning." },
+          { name: "Whole numbers and place value", plain: "Building confidence and fluency with whole number place value and the four operations." },
+          { name: "Counting money and change", plain: "Building practical confidence handling money, giving and checking change, and basic budgeting." },
+          { name: "Length, mass and capacity", plain: "Measuring and comparing length, mass and capacity using everyday units." },
+          { name: "Time and the calendar", plain: "Reading time and calendars confidently and applying this to everyday planning." },
         ],
       },
       {
         name: "Unit 2",
         blurb: "Fractions, percentages and simple data, kept close to daily application.",
         topics: [
-          { name: "Fractions, Percentages and Simple Data", plain: "Working with straightforward fractions and percentages, and reading simple data displays." },
+          { name: "Fractions, percentages and simple data", plain: "Working with straightforward fractions and percentages, and reading simple data displays." },
         ],
       },
     ],
@@ -2252,7 +2252,7 @@ export const curriculum: CurriculumEntry[] = [
     courseName: "Mathematics Foundation",
     courseType: "Foundation",
     unitLabel: "Units 3 and 4",
-    title: "WACE Mathematics Foundation (Units 3 & 4): Course Guide",
+    title: "WACE Mathematics Foundation (Units 3 & 4)",
     description:
       "What Year 12 Mathematics Foundation covers in WA — money, measurement, timetables and workplace numeracy — unit by unit, in plain English.",
     heading: "WACE Mathematics Foundation, Year 12 (Units 3 and 4)",
@@ -2263,16 +2263,16 @@ export const curriculum: CurriculumEntry[] = [
         name: "Unit 3",
         blurb: "Money and measurement, extended toward independent adult life.",
         topics: [
-          { name: "Working with Money: Wages, Shopping and Saving", plain: "Applying numeracy confidently to wages, shopping decisions and saving." },
-          { name: "Measurement for Everyday Tasks", plain: "Applying measurement skills to genuinely everyday practical tasks." },
+          { name: "Wages, shopping and saving", plain: "Applying numeracy confidently to wages, shopping decisions and saving." },
+          { name: "Everyday measurement", plain: "Applying measurement skills to genuinely everyday practical tasks." },
         ],
       },
       {
         name: "Unit 4",
         blurb: "Reading real information sources, with an explicit workplace focus.",
         topics: [
-          { name: "Reading Tables, Graphs and Timetables", plain: "Confidently reading and using tables, graphs and timetables encountered in daily life." },
-          { name: "Numeracy in the Workplace", plain: "Applying numeracy skills directly to workplace situations a student is likely to encounter after school." },
+          { name: "Reading tables, graphs and timetables", plain: "Confidently reading and using tables, graphs and timetables encountered in daily life." },
+          { name: "Numeracy in the workplace", plain: "Applying numeracy skills directly to workplace situations a student is likely to encounter after school." },
         ],
       },
     ],
@@ -2294,7 +2294,7 @@ export const curriculum: CurriculumEntry[] = [
     courseName: "Biology",
     courseType: "ATAR",
     unitLabel: "Unit 1",
-    title: "WACE Biology (Unit 1): Course Guide",
+    title: "WACE Biology (Unit 1)",
     description:
       "What Year 11 Biology covers in WA — classification, ecosystems, energy flow and human impact — unit by unit, in plain English. Currently covers Unit 1 only; Unit 2 isn't yet in our content.",
     heading: "WACE Biology, Year 11 (Unit 1)",
@@ -2305,17 +2305,17 @@ export const curriculum: CurriculumEntry[] = [
         name: "Unit 1",
         blurb: "Classification, ecosystems, energy flow and human impact.",
         topics: [
-          { name: "Biodiversity and Classification", plain: "Understanding biodiversity at different scales and how it's used to classify living things." },
-          { name: "Naming and Grouping Organisms", plain: "Using taxonomic classification and binomial nomenclature to name and group organisms." },
-          { name: "Sampling and Measuring Biodiversity", plain: "Using field sampling techniques to measure and estimate biodiversity in a real ecosystem." },
-          { name: "Ecosystem Components and Habitats", plain: "Describing the biotic and abiotic components of an ecosystem and how they define a habitat." },
-          { name: "Energy Flow: Food Chains and Trophic Levels", plain: "Tracking energy flow through an ecosystem using food chains and trophic levels." },
-          { name: "Food Webs, Ecological Pyramids and Productivity", plain: "Analysing food webs and ecological pyramids to understand productivity within an ecosystem.", sticking: "Assuming energy transfers efficiently between trophic levels. Only a small fraction of energy passes to the next level — this inefficiency is precisely why food chains rarely extend beyond four or five levels, and it's a common gap in otherwise solid answers." },
-          { name: "Cycling of Matter", plain: "Explaining how matter, unlike energy, cycles repeatedly through an ecosystem rather than being lost." },
-          { name: "Population Dynamics and Carrying Capacity", plain: "Analysing how populations grow and are limited by a habitat's carrying capacity." },
-          { name: "Interactions Between Organisms", plain: "Classifying the different types of interactions between organisms within a community — competition, predation, symbiosis." },
-          { name: "Ecological Succession", plain: "Explaining how an ecosystem changes over time through the stages of ecological succession." },
-          { name: "Human Impact, Conservation and Measuring Change", plain: "Evaluating human impact on ecosystems and the methods used to measure and manage that change." },
+          { name: "Biodiversity and classification", plain: "Understanding biodiversity at different scales and how it's used to classify living things." },
+          { name: "Naming and classifying organisms (taxonomy)", plain: "Using taxonomic classification and binomial nomenclature to name and group organisms." },
+          { name: "Measuring biodiversity (sampling methods)", plain: "Using field sampling techniques to measure and estimate biodiversity in a real ecosystem." },
+          { name: "Ecosystems and habitats", plain: "Describing the biotic and abiotic components of an ecosystem and how they define a habitat." },
+          { name: "Food chains and trophic levels", plain: "Tracking energy flow through an ecosystem using food chains and trophic levels." },
+          { name: "Food webs and ecological pyramids", plain: "Analysing food webs and ecological pyramids to understand productivity within an ecosystem.", sticking: "Assuming energy transfers efficiently between trophic levels. Only a small fraction of energy passes to the next level — this inefficiency is precisely why food chains rarely extend beyond four or five levels, and it's a common gap in otherwise solid answers." },
+          { name: "How matter cycles through an ecosystem", plain: "Explaining how matter, unlike energy, cycles repeatedly through an ecosystem rather than being lost." },
+          { name: "Population growth and carrying capacity", plain: "Analysing how populations grow and are limited by a habitat's carrying capacity." },
+          { name: "Interactions between organisms (competition, predation)", plain: "Classifying the different types of interactions between organisms within a community — competition, predation, symbiosis." },
+          { name: "Ecological succession", plain: "Explaining how an ecosystem changes over time through the stages of ecological succession." },
+          { name: "Human impact and conservation", plain: "Evaluating human impact on ecosystems and the methods used to measure and manage that change." },
         ],
       },
     ],
@@ -2378,7 +2378,7 @@ export const curriculum: CurriculumEntry[] = [
     courseName: "Human Biology",
     courseType: "ATAR",
     unitLabel: "Units 3 and 4",
-    title: "WACE Human Biology (Units 3 & 4): Course Guide",
+    title: "WACE Human Biology (Units 3 & 4)",
     description:
       "What Year 12 Human Biology covers in WA — the nervous and endocrine systems, homeostasis, immunity, genetics and evolution — unit by unit, in plain English.",
     heading: "WACE Human Biology, Year 12 (Units 3 and 4)",
@@ -2389,33 +2389,33 @@ export const curriculum: CurriculumEntry[] = [
         name: "Unit 3",
         blurb: "How the body coordinates itself and defends itself, at real physiological depth.",
         topics: [
-          { name: "Neurons and Nerve Impulse Transmission", plain: "Explaining how neurons transmit nerve impulses electrically and chemically." },
-          { name: "The Central and Peripheral Nervous Systems", plain: "Describing the structure and function of the central and peripheral nervous systems." },
-          { name: "The Brain and Reflex Arcs", plain: "Describing key brain regions and how reflex arcs allow rapid, automatic responses." },
-          { name: "The Endocrine System and Hormone Action", plain: "Explaining how hormones are released and act on target tissues throughout the body." },
-          { name: "Coordination of Nervous and Endocrine Control", plain: "Comparing how the nervous and endocrine systems coordinate body functions differently and together." },
-          { name: "Homeostasis and Feedback Mechanisms", plain: "Explaining homeostasis through negative feedback mechanisms that keep the body's internal environment stable.", sticking: "Describing a feedback mechanism's direction backwards — confusing what triggers a corrective response with the response itself. Being precise about the sequence (stimulus, detection, response, correction) is what separates a strong homeostasis answer from a vague one." },
-          { name: "Thermoregulation", plain: "Applying homeostatic principles specifically to how the body regulates its temperature." },
-          { name: "Regulation of Blood Glucose", plain: "Explaining how insulin and glucagon regulate blood glucose levels." },
-          { name: "Regulation of Respiratory Gases and Blood pH", plain: "Explaining how the body regulates blood gas levels and pH." },
-          { name: "Osmoregulation and the Kidney", plain: "Explaining how the kidney regulates water and solute balance in the body." },
-          { name: "Pathogens, Transmission and Non-Specific Defence", plain: "Classifying pathogens and describing the body's non-specific (innate) defences against them." },
-          { name: "Specific Immunity, Immunisation and Treatment", plain: "Explaining the specific (adaptive) immune response and how immunisation works with it." },
+          { name: "Neurons and nerve impulses", plain: "Explaining how neurons transmit nerve impulses electrically and chemically." },
+          { name: "The central and peripheral nervous systems", plain: "Describing the structure and function of the central and peripheral nervous systems." },
+          { name: "The brain and reflex arcs", plain: "Describing key brain regions and how reflex arcs allow rapid, automatic responses." },
+          { name: "The endocrine system and hormones", plain: "Explaining how hormones are released and act on target tissues throughout the body." },
+          { name: "Nervous vs endocrine control", plain: "Comparing how the nervous and endocrine systems coordinate body functions differently and together." },
+          { name: "Homeostasis and feedback loops", plain: "Explaining homeostasis through negative feedback mechanisms that keep the body's internal environment stable.", sticking: "Describing a feedback mechanism's direction backwards — confusing what triggers a corrective response with the response itself. Being precise about the sequence (stimulus, detection, response, correction) is what separates a strong homeostasis answer from a vague one." },
+          { name: "Thermoregulation (how the body controls temperature)", plain: "Applying homeostatic principles specifically to how the body regulates its temperature." },
+          { name: "Blood glucose regulation", plain: "Explaining how insulin and glucagon regulate blood glucose levels." },
+          { name: "Blood gases and pH regulation", plain: "Explaining how the body regulates blood gas levels and pH." },
+          { name: "How the kidney regulates water (osmoregulation)", plain: "Explaining how the kidney regulates water and solute balance in the body." },
+          { name: "Pathogens and the body's non-specific defences", plain: "Classifying pathogens and describing the body's non-specific (innate) defences against them." },
+          { name: "Specific immunity and immunisation", plain: "Explaining the specific (adaptive) immune response and how immunisation works with it." },
         ],
       },
       {
         name: "Unit 4",
         blurb: "Genetics, biotechnology and the evidence for human evolution.",
         topics: [
-          { name: "DNA Structure and Gene Expression", plain: "Explaining the structure of DNA and how genes are expressed as proteins." },
-          { name: "Mutations and Sources of Variation", plain: "Describing how mutations and other sources create genetic variation within a population." },
-          { name: "Biotechnology: PCR and Gel Electrophoresis", plain: "Explaining how PCR and gel electrophoresis are used to amplify and analyse DNA." },
-          { name: "Bioinformatics and Genome Analysis", plain: "Using bioinformatics tools and concepts to analyse genome data." },
-          { name: "Comparative Analysis: Biochemistry and Anatomy", plain: "Using biochemical and anatomical comparisons as evidence of evolutionary relationships between species." },
-          { name: "Population Genetics and Evolutionary Mechanisms", plain: "Explaining how allele frequencies change in a population through evolutionary mechanisms." },
-          { name: "Evidence for Evolution: Fossils and Dating Techniques", plain: "Using fossil evidence and dating techniques to support the evidence for evolution." },
-          { name: "Hominin Evolution: Locomotion, Features and Tool Culture", plain: "Tracing hominin evolution through changes in locomotion, physical features and tool use.", sticking: "Treating human evolution as a straight line from an ancestor species to modern humans. The real fossil record shows multiple hominin species existing at overlapping times, and questions that test genuine understanding usually probe this branching picture, not a simplified single-line version." },
-          { name: "Contemporary Human Variation and Dispersal", plain: "Explaining patterns of contemporary human variation in terms of historical migration and dispersal." },
+          { name: "DNA structure and gene expression", plain: "Explaining the structure of DNA and how genes are expressed as proteins." },
+          { name: "Mutations and genetic variation", plain: "Describing how mutations and other sources create genetic variation within a population." },
+          { name: "PCR and gel electrophoresis", plain: "Explaining how PCR and gel electrophoresis are used to amplify and analyse DNA." },
+          { name: "Bioinformatics and genome analysis", plain: "Using bioinformatics tools and concepts to analyse genome data." },
+          { name: "Comparing biochemistry and anatomy across species", plain: "Using biochemical and anatomical comparisons as evidence of evolutionary relationships between species." },
+          { name: "Population genetics and evolution", plain: "Explaining how allele frequencies change in a population through evolutionary mechanisms." },
+          { name: "Fossil evidence and dating techniques", plain: "Using fossil evidence and dating techniques to support the evidence for evolution." },
+          { name: "Hominin evolution and tool use", plain: "Tracing hominin evolution through changes in locomotion, physical features and tool use.", sticking: "Treating human evolution as a straight line from an ancestor species to modern humans. The real fossil record shows multiple hominin species existing at overlapping times, and questions that test genuine understanding usually probe this branching picture, not a simplified single-line version." },
+          { name: "Human variation and migration", plain: "Explaining patterns of contemporary human variation in terms of historical migration and dispersal." },
         ],
       },
     ],
@@ -2438,7 +2438,7 @@ export const curriculum: CurriculumEntry[] = [
     courseName: "Chemistry",
     courseType: "ATAR",
     unitLabel: "Units 1 and 2",
-    title: "WACE Chemistry (Units 1 & 2): Course Guide",
+    title: "WACE Chemistry (Units 1 & 2)",
     description:
       "What Year 11 Chemistry covers in WA — atomic structure, bonding, the mole concept, solutions, rates of reaction and acids and bases — unit by unit, in plain English.",
     heading: "WACE Chemistry, Year 11 (Units 1 and 2)",
@@ -2449,28 +2449,28 @@ export const curriculum: CurriculumEntry[] = [
         name: "Unit 1",
         blurb: "Atomic structure, bonding and the mole concept — the calculation foundation for the whole course.",
         topics: [
-          { name: "Atomic Structure and the Periodic Table", plain: "Extending atomic structure and periodic table understanding to ATAR-course depth." },
-          { name: "Periodic Trends", plain: "Explaining trends in atomic radius, ionisation energy and other properties across the periodic table." },
-          { name: "Ionic Bonding and Ionic Compounds", plain: "Explaining how ionic bonds form and predicting the properties of ionic compounds." },
-          { name: "Covalent Bonding and Molecular Substances", plain: "Explaining covalent bonding and predicting the properties of molecular substances." },
-          { name: "Metallic Bonding and Comparing Structures", plain: "Explaining metallic bonding and comparing the properties of ionic, covalent and metallic structures." },
-          { name: "The Mole Concept and Molar Mass", plain: "Using the mole as a counting unit for particles, and calculating molar mass.", sticking: "Treating the mole as an abstract formula-plugging exercise rather than what it actually is — a very large counting number, like \"dozen\" but for chemistry. Students who never build that intuition struggle with every mole calculation that follows, not just this topic." },
-          { name: "Chemical Equations and Stoichiometry", plain: "Using balanced chemical equations and stoichiometry to calculate reacting quantities." },
-          { name: "Energy Changes in Chemical Reactions", plain: "Explaining and calculating the energy changes that accompany chemical reactions." },
+          { name: "Atomic structure and the periodic table", plain: "Extending atomic structure and periodic table understanding to ATAR-course depth." },
+          { name: "Periodic trends", plain: "Explaining trends in atomic radius, ionisation energy and other properties across the periodic table." },
+          { name: "Ionic bonding", plain: "Explaining how ionic bonds form and predicting the properties of ionic compounds." },
+          { name: "Covalent bonding", plain: "Explaining covalent bonding and predicting the properties of molecular substances." },
+          { name: "Metallic bonding", plain: "Explaining metallic bonding and comparing the properties of ionic, covalent and metallic structures." },
+          { name: "The mole and molar mass", plain: "Using the mole as a counting unit for particles, and calculating molar mass.", sticking: "Treating the mole as an abstract formula-plugging exercise rather than what it actually is — a very large counting number, like \"dozen\" but for chemistry. Students who never build that intuition struggle with every mole calculation that follows, not just this topic." },
+          { name: "Chemical equations and stoichiometry", plain: "Using balanced chemical equations and stoichiometry to calculate reacting quantities." },
+          { name: "Energy changes in reactions", plain: "Explaining and calculating the energy changes that accompany chemical reactions." },
         ],
       },
       {
         name: "Unit 2",
         blurb: "Solutions, rates and acid-base chemistry — largely quantitative, calculation-heavy content.",
         topics: [
-          { name: "Intermolecular Forces", plain: "Explaining the different types of intermolecular forces and how they affect a substance's properties." },
-          { name: "The Unique Properties of Water", plain: "Explaining water's unusual properties in terms of hydrogen bonding." },
-          { name: "Solutions and Concentration Calculations", plain: "Calculating the concentration of solutions and performing dilution calculations." },
-          { name: "Solubility, Precipitation and Ionic Equations", plain: "Predicting precipitation reactions and writing ionic equations for them." },
-          { name: "Rates of Reaction and Collision Theory", plain: "Explaining reaction rates using collision theory." },
-          { name: "Gases and the Gas Laws", plain: "Applying the gas laws to calculate the behaviour of gases under changing conditions." },
-          { name: "Acids and Bases", plain: "Defining acids and bases and explaining their reactions." },
-          { name: "Volumetric Analysis and Titration", plain: "Using titration and volumetric analysis to determine an unknown concentration.", sticking: "Rounding intermediate values during a multi-step titration calculation. Small rounding errors compound across the several steps a titration calculation typically requires, and this is a common, avoidable source of a wrong final answer." },
+          { name: "Intermolecular forces", plain: "Explaining the different types of intermolecular forces and how they affect a substance's properties." },
+          { name: "Why water is unusual (hydrogen bonding)", plain: "Explaining water's unusual properties in terms of hydrogen bonding." },
+          { name: "Concentration calculations", plain: "Calculating the concentration of solutions and performing dilution calculations." },
+          { name: "Solubility and precipitation reactions", plain: "Predicting precipitation reactions and writing ionic equations for them." },
+          { name: "Reaction rates and collision theory", plain: "Explaining reaction rates using collision theory." },
+          { name: "The gas laws", plain: "Applying the gas laws to calculate the behaviour of gases under changing conditions." },
+          { name: "Acids and bases", plain: "Defining acids and bases and explaining their reactions." },
+          { name: "Titration", plain: "Using titration and volumetric analysis to determine an unknown concentration.", sticking: "Rounding intermediate values during a multi-step titration calculation. Small rounding errors compound across the several steps a titration calculation typically requires, and this is a common, avoidable source of a wrong final answer." },
         ],
       },
     ],
@@ -2493,7 +2493,7 @@ export const curriculum: CurriculumEntry[] = [
     courseName: "Chemistry",
     courseType: "ATAR",
     unitLabel: "Unit 3",
-    title: "WACE Chemistry (Unit 3): Course Guide",
+    title: "WACE Chemistry (Unit 3)",
     description:
       "What Year 12 Chemistry covers in WA — equilibrium, acid-base calculations and electrochemistry — unit by unit, in plain English. Currently covers Unit 3 only; Unit 4 isn't yet in our content.",
     heading: "WACE Chemistry, Year 12 (Unit 3)",
@@ -2504,15 +2504,15 @@ export const curriculum: CurriculumEntry[] = [
         name: "Unit 3",
         blurb: "Equilibrium, acid-base calculations and electrochemistry.",
         topics: [
-          { name: "Chemical Equilibrium and Dynamic Equilibrium", plain: "Explaining dynamic equilibrium as a state where forward and reverse reactions continue at equal rates.", sticking: "Assuming equilibrium means the reaction has stopped. It hasn't — both the forward and reverse reactions are still happening, just at matched rates, so the concentrations stay constant rather than the reaction itself being over. This distinction underpins everything else in the unit." },
-          { name: "Le Chatelier's Principle", plain: "Predicting how an equilibrium system responds to a change in conditions using Le Chatelier's principle." },
-          { name: "The Equilibrium Constant and Calculations", plain: "Calculating and interpreting the equilibrium constant for a reaction." },
-          { name: "Acid-Base Equilibria, Ka and pH", plain: "Calculating pH and using Ka to compare the strength of weak acids." },
-          { name: "Titration Curves and Buffers", plain: "Interpreting titration curves and explaining how buffer solutions resist pH change." },
-          { name: "Oxidation, Reduction and Oxidation Numbers", plain: "Assigning oxidation numbers and identifying oxidation and reduction in a reaction." },
-          { name: "Galvanic Cells and Standard Electrode Potentials", plain: "Explaining how galvanic cells generate electricity and using standard electrode potentials to predict reactions." },
-          { name: "Electrolysis and Industrial Electrochemistry", plain: "Explaining electrolysis and its industrial applications." },
-          { name: "Redox Titrations, Corrosion and Electrochemical Cells", plain: "Applying redox chemistry to titrations, corrosion and electrochemical cell problems." },
+          { name: "Chemical equilibrium", plain: "Explaining dynamic equilibrium as a state where forward and reverse reactions continue at equal rates.", sticking: "Assuming equilibrium means the reaction has stopped. It hasn't — both the forward and reverse reactions are still happening, just at matched rates, so the concentrations stay constant rather than the reaction itself being over. This distinction underpins everything else in the unit." },
+          { name: "Le Chatelier's principle", plain: "Predicting how an equilibrium system responds to a change in conditions using Le Chatelier's principle." },
+          { name: "The equilibrium constant (Kc)", plain: "Calculating and interpreting the equilibrium constant for a reaction." },
+          { name: "Acid-base equilibria, Ka and pH", plain: "Calculating pH and using Ka to compare the strength of weak acids." },
+          { name: "Titration curves and buffers", plain: "Interpreting titration curves and explaining how buffer solutions resist pH change." },
+          { name: "Oxidation and reduction (redox)", plain: "Assigning oxidation numbers and identifying oxidation and reduction in a reaction." },
+          { name: "Galvanic cells and electrode potentials", plain: "Explaining how galvanic cells generate electricity and using standard electrode potentials to predict reactions." },
+          { name: "Electrolysis", plain: "Explaining electrolysis and its industrial applications." },
+          { name: "Redox titrations and corrosion", plain: "Applying redox chemistry to titrations, corrosion and electrochemical cell problems." },
         ],
       },
     ],
@@ -2535,7 +2535,7 @@ export const curriculum: CurriculumEntry[] = [
     courseName: "Physics",
     courseType: "ATAR",
     unitLabel: "Units 1 and 2",
-    title: "WACE Physics (Units 1 & 2): Course Guide",
+    title: "WACE Physics (Units 1 & 2)",
     description:
       "What Year 11 Physics covers in WA — motion, forces, momentum and energy, then waves, sound, light and electricity — unit by unit, in plain English.",
     heading: "WACE Physics, Year 11 (Units 1 and 2)",
@@ -2546,32 +2546,32 @@ export const curriculum: CurriculumEntry[] = [
         name: "Unit 1",
         blurb: "Motion, forces, momentum and energy — the mathematically heaviest content in the course.",
         topics: [
-          { name: "Measurement, Uncertainty and Data Analysis", plain: "Applying formal measurement uncertainty and data analysis techniques to experimental physics." },
-          { name: "Scalars, Vectors and Vector Analysis", plain: "Distinguishing scalar and vector quantities and performing vector addition and resolution." },
-          { name: "Linear Motion: Displacement, Velocity and Acceleration", plain: "Analysing linear motion using displacement, velocity and acceleration, including from graphs." },
-          { name: "Equations of Motion and Free Fall", plain: "Applying the equations of motion to constant-acceleration problems, including free fall." },
-          { name: "Projectile Motion", plain: "Analysing projectile motion by treating horizontal and vertical motion independently.", sticking: "Forgetting that horizontal and vertical motion in a projectile are independent of each other. Students who try to solve a projectile problem with one combined equation, instead of separating the two directions first, consistently get stuck." },
-          { name: "Forces and Newton's Laws of Motion", plain: "Applying Newton's three laws at ATAR-course mathematical rigour." },
-          { name: "Friction, Inclined Planes and Connected Bodies", plain: "Solving force problems involving friction, inclined planes and multiple connected objects." },
-          { name: "Momentum and Impulse", plain: "Applying momentum and impulse to collisions and other force-over-time situations." },
-          { name: "Work, Energy and Power", plain: "Calculating work, energy and power, and applying the conservation of energy to mechanical systems." },
-          { name: "Thermal Energy and Heat Transfer", plain: "Applying thermal energy concepts and heat transfer calculations." },
+          { name: "Measurement and uncertainty", plain: "Applying formal measurement uncertainty and data analysis techniques to experimental physics." },
+          { name: "Scalars and vectors", plain: "Distinguishing scalar and vector quantities and performing vector addition and resolution." },
+          { name: "Displacement, velocity and acceleration", plain: "Analysing linear motion using displacement, velocity and acceleration, including from graphs." },
+          { name: "Equations of motion and free fall", plain: "Applying the equations of motion to constant-acceleration problems, including free fall." },
+          { name: "Projectile motion", plain: "Analysing projectile motion by treating horizontal and vertical motion independently.", sticking: "Forgetting that horizontal and vertical motion in a projectile are independent of each other. Students who try to solve a projectile problem with one combined equation, instead of separating the two directions first, consistently get stuck." },
+          { name: "Newton's laws of motion", plain: "Applying Newton's three laws to explain and predict how objects move, at ATAR-course mathematical rigour." },
+          { name: "Friction and inclined planes", plain: "Solving force problems involving friction, inclined planes and multiple connected objects." },
+          { name: "Momentum and impulse", plain: "Applying momentum and impulse to collisions and other force-over-time situations." },
+          { name: "Work, energy and power", plain: "Calculating work, energy and power, and applying the conservation of energy to mechanical systems." },
+          { name: "Thermal energy and heat transfer", plain: "Applying thermal energy concepts and heat transfer calculations." },
         ],
       },
       {
         name: "Unit 2",
         blurb: "Waves, nuclear physics and electricity — more conceptual and model-based.",
         topics: [
-          { name: "Wave Fundamentals", plain: "Establishing the fundamental properties and behaviour common to all waves." },
-          { name: "Wave Behaviour: Reflection, Refraction, Diffraction and Interference", plain: "Explaining wave behaviour through reflection, refraction, diffraction and interference." },
-          { name: "Sound Waves", plain: "Applying wave principles specifically to sound." },
-          { name: "Light and the Electromagnetic Spectrum", plain: "Explaining light's properties and its place within the electromagnetic spectrum." },
-          { name: "Nuclear Structure, Isotopes and Radioactivity", plain: "Explaining nuclear structure, isotopes and the basics of radioactivity." },
-          { name: "Nuclear Decay Equations and Half-Life", plain: "Writing nuclear decay equations and applying the concept of half-life." },
-          { name: "Nuclear Reactions: Fission, Fusion and Mass-Energy", plain: "Explaining fission and fusion and the mass-energy relationship underlying them." },
-          { name: "Electric Charge, Current and Voltage", plain: "Establishing the fundamental relationships between electric charge, current and voltage." },
-          { name: "Resistance and Ohm's Law", plain: "Applying Ohm's law and calculating resistance in circuits." },
-          { name: "Electric Circuits, Power and Household Electricity", plain: "Analysing electric circuits and applying power calculations to real household electricity contexts." },
+          { name: "How waves work", plain: "Establishing the fundamental properties and behaviour common to all waves." },
+          { name: "Reflection, refraction, diffraction and interference", plain: "Explaining wave behaviour through reflection, refraction, diffraction and interference." },
+          { name: "Sound waves", plain: "Applying wave principles specifically to sound." },
+          { name: "Light and the electromagnetic spectrum", plain: "Explaining light's properties and its place within the electromagnetic spectrum." },
+          { name: "Isotopes and radioactivity", plain: "Explaining nuclear structure, isotopes and the basics of radioactivity." },
+          { name: "Nuclear decay and half-life", plain: "Writing nuclear decay equations and applying the concept of half-life." },
+          { name: "Fission and fusion", plain: "Explaining fission and fusion and the mass-energy relationship underlying them." },
+          { name: "Electric charge, current and voltage", plain: "Establishing the fundamental relationships between electric charge, current and voltage." },
+          { name: "Resistance and Ohm's law", plain: "Applying Ohm's law and calculating resistance in circuits." },
+          { name: "Electric circuits and household electricity", plain: "Analysing electric circuits and applying power calculations to real household electricity contexts." },
         ],
       },
     ],
@@ -2594,7 +2594,7 @@ export const curriculum: CurriculumEntry[] = [
     courseName: "Physics",
     courseType: "ATAR",
     unitLabel: "Units 3 and 4",
-    title: "WACE Physics (Units 3 & 4): Course Guide",
+    title: "WACE Physics (Units 3 & 4)",
     description:
       "What Year 12 Physics covers in WA — circular motion, gravitation, fields, electromagnetism and modern physics — unit by unit, in plain English.",
     heading: "WACE Physics, Year 12 (Units 3 and 4)",
@@ -2605,28 +2605,28 @@ export const curriculum: CurriculumEntry[] = [
         name: "Unit 3",
         blurb: "Circular motion, gravitation and electromagnetism.",
         topics: [
-          { name: "Uniform Circular Motion", plain: "Analysing uniform circular motion, including centripetal force and acceleration." },
-          { name: "Universal Gravitation and Gravitational Fields", plain: "Applying Newton's law of universal gravitation and the concept of a gravitational field." },
-          { name: "Satellites, Orbits and Kepler's Laws", plain: "Applying gravitation and circular motion to satellites and orbits, using Kepler's laws." },
-          { name: "Electric Fields and Coulomb's Law", plain: "Applying Coulomb's law and the concept of an electric field to charged particles." },
-          { name: "Magnetic Fields and the Motor Effect", plain: "Explaining magnetic fields and the force on a current-carrying conductor (the motor effect)." },
-          { name: "Electromagnetic Induction", plain: "Explaining how a changing magnetic field induces an electric current." },
-          { name: "Generators and Alternating Current", plain: "Explaining how generators produce alternating current using electromagnetic induction." },
-          { name: "Transformers and Power Transmission", plain: "Explaining how transformers work and why they matter for efficient power transmission." },
+          { name: "Circular motion", plain: "Analysing uniform circular motion, including centripetal force and acceleration." },
+          { name: "Gravity and gravitational fields", plain: "Applying Newton's law of universal gravitation and the concept of a gravitational field." },
+          { name: "Satellites, orbits and Kepler's laws", plain: "Applying gravitation and circular motion to satellites and orbits, using Kepler's laws." },
+          { name: "Electric fields and Coulomb's law", plain: "Applying Coulomb's law and the concept of an electric field to charged particles." },
+          { name: "Magnetic fields and the motor effect", plain: "Explaining magnetic fields and the force on a current-carrying conductor (the motor effect)." },
+          { name: "Electromagnetic induction", plain: "Explaining how a changing magnetic field induces an electric current." },
+          { name: "Generators and AC current", plain: "Explaining how generators produce alternating current using electromagnetic induction." },
+          { name: "Transformers and power transmission", plain: "Explaining how transformers work and why they matter for efficient power transmission." },
         ],
       },
       {
         name: "Unit 4",
         blurb: "Special relativity and quantum physics — where classical intuition genuinely breaks down.",
         topics: [
-          { name: "Special Relativity: Frames of Reference and Einstein's Postulates", plain: "Introducing special relativity through Einstein's postulates and the concept of reference frames." },
-          { name: "Time Dilation and Length Contraction", plain: "Explaining and calculating time dilation and length contraction at relativistic speeds.", sticking: "Trying to reconcile relativistic effects with everyday intuition instead of accepting the postulates and following the mathematics. This topic is one of the few in the entire WA physics sequence where intuition is actively unhelpful, and that's worth saying explicitly rather than expecting it to eventually \"make sense\" the ordinary way." },
-          { name: "Mass-Energy Equivalence and Relativistic Momentum", plain: "Applying mass-energy equivalence and relativistic momentum." },
-          { name: "The Quantum Nature of Light: Black-Body Radiation and the Photoelectric Effect", plain: "Explaining the evidence for light's quantum nature through black-body radiation and the photoelectric effect." },
-          { name: "Wave-Particle Duality and Matter Waves", plain: "Explaining wave-particle duality and the concept of matter waves." },
-          { name: "The Quantum Atom: Energy Levels and Atomic Spectra", plain: "Explaining atomic energy levels and how they produce atomic spectra." },
-          { name: "The Standard Model of Particle Physics", plain: "Introducing the standard model of particle physics." },
-          { name: "Particle Accelerators and the Frontier of Physics", plain: "Explaining how particle accelerators are used to investigate the frontier of physics." },
+          { name: "Special relativity", plain: "Introducing special relativity through Einstein's postulates and the concept of reference frames." },
+          { name: "Time dilation and length contraction", plain: "Explaining and calculating time dilation and length contraction at relativistic speeds.", sticking: "Trying to reconcile relativistic effects with everyday intuition instead of accepting the postulates and following the mathematics. This topic is one of the few in the entire WA physics sequence where intuition is actively unhelpful, and that's worth saying explicitly rather than expecting it to eventually \"make sense\" the ordinary way." },
+          { name: "Mass-energy equivalence (E=mc²)", plain: "Applying mass-energy equivalence and relativistic momentum." },
+          { name: "The photoelectric effect and quantum light", plain: "Explaining the evidence for light's quantum nature through black-body radiation and the photoelectric effect." },
+          { name: "Wave-particle duality", plain: "Explaining wave-particle duality and the concept of matter waves." },
+          { name: "Atomic energy levels and spectra", plain: "Explaining atomic energy levels and how they produce atomic spectra." },
+          { name: "The standard model of particle physics", plain: "Introducing the standard model of particle physics." },
+          { name: "Particle accelerators", plain: "Explaining how particle accelerators are used to investigate the frontier of physics." },
         ],
       },
     ],
@@ -2649,7 +2649,7 @@ export const curriculum: CurriculumEntry[] = [
     courseName: "English",
     courseType: "ATAR",
     unitLabel: "Units 1 and 2",
-    title: "WACE English ATAR (Units 1 & 2): Course Guide",
+    title: "WACE English ATAR (Units 1 & 2)",
     description:
       "What Year 11 English ATAR covers in WA — the purpose-context-audience triad, text types, stylistic analysis and creating original texts — unit by unit, in plain English.",
     heading: "WACE English ATAR, Year 11 (Units 1 and 2)",
@@ -2660,35 +2660,35 @@ export const curriculum: CurriculumEntry[] = [
         name: "Unit 1",
         blurb: "The purpose-context-audience triad, established as the lens for the whole course.",
         topics: [
-          { name: "The Purpose-Context-Audience Triad", plain: "Establishing purpose, context and audience as the three lenses used to analyse and create every text in the course." },
-          { name: "Language Modes and Metalanguage", plain: "Using the correct metalanguage to discuss spoken, written and multimodal language modes precisely." },
-          { name: "Imaginative, Interpretive and Persuasive Text Types", plain: "Distinguishing the conventions of imaginative, interpretive and persuasive text types." },
-          { name: "Text Structures and Conventions", plain: "Analysing how text structures and conventions serve a text's purpose." },
-          { name: "Stylistic Features and How They Shape Meaning", plain: "Analysing how an author's stylistic choices shape the meaning a reader takes from a text." },
-          { name: "Vocabulary, Idiom and Rhetoric", plain: "Analysing precise vocabulary, idiom and rhetorical choices at ATAR-course depth." },
-          { name: "Description and Imagery: Evaluating Impact", plain: "Evaluating the impact of descriptive language and imagery on a reader." },
-          { name: "Visual Elements and Multimodal Meaning", plain: "Analysing how visual elements contribute to meaning in multimodal texts." },
-          { name: "How Context Shapes Response", plain: "Analysing how a reader's own context shapes their response to a text." },
-          { name: "Creating Texts: Form, Content, Style and Tone", plain: "Creating original texts with deliberate control over form, content, style and tone." },
-          { name: "Evidence, Argument and Referencing", plain: "Constructing an evidence-based argument with correct academic referencing." },
-          { name: "Planning, Drafting, Editing and the Mechanics of Writing", plain: "Applying a full, disciplined writing process from planning through to final editing." },
-          { name: "Reflecting: Assessing Purpose and Context", plain: "Reflecting critically on how well a student's own text achieved its intended purpose for its context." },
+          { name: "Purpose, context and audience", plain: "Establishing purpose, context and audience as the three lenses used to analyse and create every text in the course." },
+          { name: "Language modes and metalanguage", plain: "Using the correct metalanguage to discuss spoken, written and multimodal language modes precisely." },
+          { name: "Imaginative, interpretive and persuasive texts", plain: "Distinguishing the conventions of imaginative, interpretive and persuasive text types." },
+          { name: "Text structures and conventions", plain: "Analysing how text structures and conventions serve a text's purpose." },
+          { name: "How stylistic choices shape meaning", plain: "Analysing how an author's stylistic choices shape the meaning a reader takes from a text." },
+          { name: "Vocabulary, idiom and rhetoric", plain: "Analysing precise vocabulary, idiom and rhetorical choices at ATAR-course depth." },
+          { name: "Description and imagery", plain: "Evaluating the impact of descriptive language and imagery on a reader." },
+          { name: "Visual and multimodal meaning", plain: "Analysing how visual elements contribute to meaning in multimodal texts." },
+          { name: "How context shapes a reader's response", plain: "Analysing how a reader's own context shapes their response to a text." },
+          { name: "Form, content, style and tone in writing", plain: "Creating original texts with deliberate control over form, content, style and tone." },
+          { name: "Evidence, argument and referencing", plain: "Constructing an evidence-based argument with correct academic referencing." },
+          { name: "Planning, drafting and editing", plain: "Applying a full, disciplined writing process from planning through to final editing." },
+          { name: "Reflecting on purpose and context", plain: "Reflecting critically on how well a student's own text achieved its intended purpose for its context." },
         ],
       },
       {
         name: "Unit 2",
         blurb: "Comparison, genre and how texts position an audience.",
         topics: [
-          { name: "Comparing Texts: The Purpose-Context Relationship", plain: "Comparing two texts by analysing how their differing purposes and contexts shape their content.", sticking: "Comparing two texts by describing each one separately rather than making a genuine connective argument about the relationship between them. At ATAR level, this is the single most consistent gap between a strong and a mediocre comparative response." },
-          { name: "Analysing the Style and Structure of Texts", plain: "Analysing style and structure across texts at a more sophisticated comparative level." },
-          { name: "Hybrid Texts and Genre", plain: "Analysing texts that deliberately blend genre conventions and explaining the effect." },
-          { name: "Representation of Ideas, Attitudes and Voices", plain: "Analysing how a text represents particular ideas, attitudes and voices." },
-          { name: "Rhetorical Devices and Persuasive Techniques", plain: "Analysing rhetorical devices and persuasive techniques at ATAR-course depth." },
-          { name: "Multimodal and Digital Effects", plain: "Analysing the effects created specifically by multimodal and digital text features." },
-          { name: "Attitude, Mood and Atmosphere", plain: "Analysing how a text builds attitude, mood and atmosphere." },
-          { name: "Positioning Audiences", plain: "Analysing the specific techniques a text uses to position its audience toward a particular response." },
-          { name: "Creating Voice, Tone and Style", plain: "Creating original texts with a controlled, deliberate voice, tone and style." },
-          { name: "Reflecting on Values and Positioning", plain: "Reflecting critically on the values embedded in a student's own text and how it positions its reader." },
+          { name: "Comparing texts by purpose and context", plain: "Comparing two texts by analysing how their differing purposes and contexts shape their content.", sticking: "Comparing two texts by describing each one separately rather than making a genuine connective argument about the relationship between them. At ATAR level, this is the single most consistent gap between a strong and a mediocre comparative response." },
+          { name: "Analysing style and structure", plain: "Analysing style and structure across texts at a more sophisticated comparative level." },
+          { name: "Hybrid texts and genre", plain: "Analysing texts that deliberately blend genre conventions and explaining the effect." },
+          { name: "How texts represent ideas and voices", plain: "Analysing how a text represents particular ideas, attitudes and voices." },
+          { name: "Rhetorical devices and persuasive techniques", plain: "Analysing rhetorical devices and persuasive techniques at ATAR-course depth." },
+          { name: "Multimodal and digital effects", plain: "Analysing the effects created specifically by multimodal and digital text features." },
+          { name: "Attitude, mood and atmosphere", plain: "Analysing how a text builds attitude, mood and atmosphere." },
+          { name: "How texts position an audience", plain: "Analysing the specific techniques a text uses to position its audience toward a particular response." },
+          { name: "Writing with voice, tone and style", plain: "Creating original texts with a controlled, deliberate voice, tone and style." },
+          { name: "Reflecting on values and positioning", plain: "Reflecting critically on the values embedded in a student's own text and how it positions its reader." },
         ],
       },
     ],
@@ -2711,7 +2711,7 @@ export const curriculum: CurriculumEntry[] = [
     courseName: "English",
     courseType: "ATAR",
     unitLabel: "Units 3 and 4",
-    title: "WACE English ATAR (Units 3 & 4): Course Guide",
+    title: "WACE English ATAR (Units 3 & 4)",
     description:
       "What Year 12 English ATAR covers in WA — perspectives and representation, intertextuality, synthesis and exam technique — unit by unit, in plain English.",
     heading: "WACE English ATAR, Year 12 (Units 3 and 4)",
@@ -2722,30 +2722,30 @@ export const curriculum: CurriculumEntry[] = [
         name: "Unit 3",
         blurb: "Critical reading — ideology, genre manipulation and intertextuality.",
         topics: [
-          { name: "Perspectives and Representation", plain: "Analysing how a text represents particular perspectives at a more critical, sophisticated level than Year 11." },
-          { name: "How Language Represents Ideas and Concepts", plain: "Analysing precisely how language choices construct and represent abstract ideas and concepts." },
-          { name: "Genre Conventions and Their Manipulation", plain: "Analysing how a text deliberately manipulates genre conventions for effect." },
-          { name: "Analysing Voice and Point of View", plain: "Analysing voice and point of view at ATAR-exam depth." },
-          { name: "Intertextuality and Allusion", plain: "Analysing intertextual references and allusion at a sophisticated level." },
-          { name: "Creating Analytical and Interpretive Responses", plain: "Creating sustained, original analytical and interpretive responses to texts." },
-          { name: "Comparing Representations Across Texts", plain: "Comparing how different texts represent similar ideas or groups." },
-          { name: "Reading Critically: Ideology and Assumptions", plain: "Reading a text critically for the ideology and unstated assumptions embedded within it.", sticking: "Treating \"critical reading\" as finding something to criticise, rather than what it actually means — identifying the values and assumptions a text takes for granted, which may or may not be ones the reader shares. This distinction is exactly what Unit 3 is testing." },
-          { name: "Creating Texts That Represent a Perspective", plain: "Creating original texts that deliberately construct and represent a chosen perspective." },
-          { name: "Sustained Interpretation and Reflection", plain: "Sustaining a single interpretation across an extended analytical response, with critical reflection." },
+          { name: "Perspectives and representation", plain: "Analysing how a text represents particular perspectives at a more critical, sophisticated level than Year 11." },
+          { name: "How language represents ideas", plain: "Analysing precisely how language choices construct and represent abstract ideas and concepts." },
+          { name: "Manipulating genre conventions", plain: "Analysing how a text deliberately manipulates genre conventions for effect." },
+          { name: "Analysing voice and point of view", plain: "Analysing voice and point of view at ATAR-exam depth." },
+          { name: "Intertextuality and allusion", plain: "Analysing intertextual references and allusion at a sophisticated level." },
+          { name: "Writing analytical and interpretive responses", plain: "Creating sustained, original analytical and interpretive responses to texts." },
+          { name: "Comparing representations across texts", plain: "Comparing how different texts represent similar ideas or groups." },
+          { name: "Reading critically for ideology and assumptions", plain: "Reading a text critically for the ideology and unstated assumptions embedded within it.", sticking: "Treating \"critical reading\" as finding something to criticise, rather than what it actually means — identifying the values and assumptions a text takes for granted, which may or may not be ones the reader shares. This distinction is exactly what Unit 3 is testing." },
+          { name: "Writing texts that represent a perspective", plain: "Creating original texts that deliberately construct and represent a chosen perspective." },
+          { name: "Sustained interpretation and reflection", plain: "Sustaining a single interpretation across an extended analytical response, with critical reflection." },
         ],
       },
       {
         name: "Unit 4",
         blurb: "Synthesis across texts, sustained creation, and exam technique as a taught skill.",
         topics: [
-          { name: "Comparison of Texts: Ideas, Perspectives and Contexts", plain: "Comparing texts on ideas, perspectives and contexts at the course's most sophisticated level." },
-          { name: "Evaluating the Effectiveness of Texts", plain: "Evaluating how effectively a text achieves its purpose, not just describing what it does." },
-          { name: "Synthesis: Drawing Ideas Across Texts", plain: "Synthesising ideas across multiple texts into one original, coherent argument." },
-          { name: "Creating Sustained Persuasive Texts", plain: "Creating an extended, sustained persuasive text under exam-realistic conditions." },
-          { name: "Creating Sustained Imaginative and Interpretive Texts", plain: "Creating an extended imaginative or interpretive text with sustained control." },
-          { name: "Reflecting on and Evaluating Your Own Creative Choices", plain: "Critically reflecting on and justifying the creative choices made in a student's own writing." },
-          { name: "Exam Technique: Responding Under Timed Conditions", plain: "Practising writing sustained, high-quality analytical responses under real exam time pressure.", sticking: "Practising essay content extensively but never practising it under an actual timer. A student who writes strong essays untimed but has never rehearsed the same standard at exam pace is likely to be caught out by the external exam specifically, not by the content itself." },
-          { name: "Consolidation: Integrating the Skills of the Course", plain: "Integrating all the analytical and creative skills built across the course into exam-ready responses." },
+          { name: "Comparing texts by ideas, perspectives and context", plain: "Comparing texts on ideas, perspectives and contexts at the course's most sophisticated level." },
+          { name: "Evaluating how effective a text is", plain: "Evaluating how effectively a text achieves its purpose, not just describing what it does." },
+          { name: "Synthesising ideas across texts", plain: "Synthesising ideas across multiple texts into one original, coherent argument." },
+          { name: "Writing a sustained persuasive text", plain: "Creating an extended, sustained persuasive text under exam-realistic conditions." },
+          { name: "Writing a sustained imaginative or interpretive text", plain: "Creating an extended imaginative or interpretive text with sustained control." },
+          { name: "Reflecting on your own creative choices", plain: "Critically reflecting on and justifying the creative choices made in a student's own writing." },
+          { name: "Exam technique and writing under time pressure", plain: "Practising writing sustained, high-quality analytical responses under real exam time pressure.", sticking: "Practising essay content extensively but never practising it under an actual timer. A student who writes strong essays untimed but has never rehearsed the same standard at exam pace is likely to be caught out by the external exam specifically, not by the content itself." },
+          { name: "Bringing the course together (consolidation)", plain: "Integrating all the analytical and creative skills built across the course into exam-ready responses." },
         ],
       },
     ],
@@ -2768,7 +2768,7 @@ export const curriculum: CurriculumEntry[] = [
     courseName: "English",
     courseType: "General",
     unitLabel: "Units 1 and 2",
-    title: "WACE English General (Units 1 & 2): Course Guide",
+    title: "WACE English General (Units 1 & 2)",
     description:
       "What Year 11 English General covers in WA — everyday and workplace texts, media literacy and creating informative and persuasive texts — unit by unit, in plain English.",
     heading: "WACE English General, Year 11 (Units 1 and 2)",
@@ -2779,29 +2779,29 @@ export const curriculum: CurriculumEntry[] = [
         name: "Unit 1",
         blurb: "Comprehension and creation of everyday and workplace texts.",
         topics: [
-          { name: "Comprehending Texts: Main Ideas and Detail", plain: "Identifying main ideas and supporting detail in a range of everyday texts." },
-          { name: "Purpose, Audience and Context in Everyday Texts", plain: "Identifying purpose, audience and context in texts encountered in daily and working life." },
-          { name: "Everyday and Workplace Text Types", plain: "Recognising the conventions of common everyday and workplace text types." },
-          { name: "Vocabulary and Meaning in Context", plain: "Determining word meaning from context in a range of practical texts." },
-          { name: "Visual and Graphic Texts", plain: "Interpreting visual and graphic texts such as signs, infographics and instructions." },
-          { name: "Fact, Opinion and Bias", plain: "Distinguishing fact from opinion and identifying bias in everyday texts.", sticking: "Assuming a confident or authoritative tone is the same as factual accuracy. Learning to separate how something is said from whether it's actually true is the core skill this topic is building." },
-          { name: "Creating Informative Texts", plain: "Creating clear, well-organised informative texts for a real audience and purpose." },
-          { name: "Creating Persuasive Texts", plain: "Creating persuasive texts using techniques appropriate to a real audience." },
-          { name: "Planning, Drafting and Editing", plain: "Applying a full writing process — planning, drafting and editing — to produce a polished text." },
+          { name: "Finding the main idea and detail in a text", plain: "Identifying main ideas and supporting detail in a range of everyday texts." },
+          { name: "Purpose, audience and context", plain: "Identifying purpose, audience and context in texts encountered in daily and working life." },
+          { name: "Everyday and workplace texts", plain: "Recognising the conventions of common everyday and workplace text types." },
+          { name: "Working out word meaning from context", plain: "Determining word meaning from context in a range of practical texts." },
+          { name: "Visual and graphic texts", plain: "Interpreting visual and graphic texts such as signs, infographics and instructions." },
+          { name: "Fact, opinion and bias", plain: "Distinguishing fact from opinion and identifying bias in everyday texts.", sticking: "Assuming a confident or authoritative tone is the same as factual accuracy. Learning to separate how something is said from whether it's actually true is the core skill this topic is building." },
+          { name: "Writing informative texts", plain: "Creating clear, well-organised informative texts for a real audience and purpose." },
+          { name: "Writing persuasive texts", plain: "Creating persuasive texts using techniques appropriate to a real audience." },
+          { name: "Planning, drafting and editing", plain: "Applying a full writing process — planning, drafting and editing — to produce a polished text." },
         ],
       },
       {
         name: "Unit 2",
         blurb: "Media literacy — how media texts inform, persuade and represent issues.",
         topics: [
-          { name: "Media Texts: How They Inform and Persuade", plain: "Analysing how media texts are constructed to inform and persuade an audience." },
-          { name: "Advertising and Persuasive Techniques", plain: "Analysing the specific persuasive techniques used in advertising." },
-          { name: "Representation in Texts", plain: "Analysing how media texts represent particular people, groups or issues." },
-          { name: "Point of View and Bias in Media", plain: "Identifying point of view and bias specifically within media reporting." },
-          { name: "Comparing How Texts Present the Same Topic", plain: "Comparing how two different media texts present the same topic or event." },
-          { name: "Digital and Multimodal Texts", plain: "Interpreting digital and multimodal texts, including social media content." },
-          { name: "Creating Texts for a Specific Audience and Purpose", plain: "Creating a text with deliberate control over how it addresses a specific audience and purpose." },
-          { name: "Oral Communication and Presenting", plain: "Planning and delivering an oral or multimodal presentation to a real audience." },
+          { name: "How media texts inform and persuade", plain: "Analysing how media texts are constructed to inform and persuade an audience." },
+          { name: "Advertising and persuasive techniques", plain: "Analysing the specific persuasive techniques used in advertising." },
+          { name: "Representation in texts", plain: "Analysing how media texts represent particular people, groups or issues." },
+          { name: "Point of view and bias in the media", plain: "Identifying point of view and bias specifically within media reporting." },
+          { name: "Comparing how texts cover the same topic", plain: "Comparing how two different media texts present the same topic or event." },
+          { name: "Digital and multimodal texts", plain: "Interpreting digital and multimodal texts, including social media content." },
+          { name: "Writing for a specific audience and purpose", plain: "Creating a text with deliberate control over how it addresses a specific audience and purpose." },
+          { name: "Oral presentations", plain: "Planning and delivering an oral or multimodal presentation to a real audience." },
         ],
       },
     ],
@@ -2824,7 +2824,7 @@ export const curriculum: CurriculumEntry[] = [
     courseName: "English",
     courseType: "General",
     unitLabel: "Units 3 and 4",
-    title: "WACE English General (Units 3 & 4): Course Guide",
+    title: "WACE English General (Units 3 & 4)",
     description:
       "What Year 12 English General covers in WA — persuasive technique, media representation and creating texts for community and workplace contexts — unit by unit, in plain English.",
     heading: "WACE English General, Year 12 (Units 3 and 4)",
@@ -2835,25 +2835,25 @@ export const curriculum: CurriculumEntry[] = [
         name: "Unit 3",
         blurb: "Persuasive technique and workplace-relevant comprehension, at greater length.",
         topics: [
-          { name: "How Texts Influence Audiences", plain: "Analysing the range of techniques texts use to influence an audience's thinking or behaviour." },
-          { name: "Analysing Persuasive Techniques in Texts", plain: "Analysing persuasive technique at a more sustained, detailed level than Year 11." },
-          { name: "Point of View, Perspective and Values", plain: "Analysing how point of view, perspective and values are embedded in a text." },
-          { name: "Comprehending Community and Workplace Texts", plain: "Comprehending texts genuinely encountered in community and workplace settings." },
-          { name: "Creating Extended Persuasive Texts", plain: "Creating a longer, more sustained persuasive text than Year 11 required." },
-          { name: "Creating Informative and Explanatory Texts", plain: "Creating clear, well-structured informative and explanatory texts." },
-          { name: "Planning and Structuring Longer Texts", plain: "Planning and structuring a longer piece of writing so it stays coherent from start to finish.", sticking: "Starting to write before planning a longer text's overall structure. A text that runs long without a plan tends to drift, and the fix is a genuine structural outline before drafting starts, not more editing afterward." },
+          { name: "How texts influence an audience", plain: "Analysing the range of techniques texts use to influence an audience's thinking or behaviour." },
+          { name: "Persuasive techniques in texts", plain: "Analysing persuasive technique at a more sustained, detailed level than Year 11." },
+          { name: "Point of view, perspective and values", plain: "Analysing how point of view, perspective and values are embedded in a text." },
+          { name: "Community and workplace texts", plain: "Comprehending texts genuinely encountered in community and workplace settings." },
+          { name: "Writing an extended persuasive text", plain: "Creating a longer, more sustained persuasive text than Year 11 required." },
+          { name: "Writing informative and explanatory texts", plain: "Creating clear, well-structured informative and explanatory texts." },
+          { name: "Planning and structuring a longer text", plain: "Planning and structuring a longer piece of writing so it stays coherent from start to finish.", sticking: "Starting to write before planning a longer text's overall structure. A text that runs long without a plan tends to drift, and the fix is a genuine structural outline before drafting starts, not more editing afterward." },
         ],
       },
       {
         name: "Unit 4",
         blurb: "Media representation and creating texts genuinely useful beyond school.",
         topics: [
-          { name: "Representations in the Media and Popular Culture", plain: "Analysing representation across media and popular culture texts." },
-          { name: "Comparing Representations Across Texts", plain: "Comparing how different texts represent the same group, issue or idea." },
-          { name: "Evaluating the Reliability and Effectiveness of Texts", plain: "Evaluating how reliable and how effective a text actually is, not just describing its features." },
-          { name: "Creating Texts for Community, Workplace or Further Study", plain: "Creating texts genuinely suited to community, workplace or further-study purposes." },
-          { name: "Multimodal and Oral Presentations", plain: "Planning and delivering a sustained multimodal or oral presentation." },
-          { name: "Reflecting on and Improving Your Own Texts", plain: "Critically reflecting on a student's own writing and using that reflection to genuinely improve it." },
+          { name: "Representation in media and popular culture", plain: "Analysing representation across media and popular culture texts." },
+          { name: "Comparing representations across texts", plain: "Comparing how different texts represent the same group, issue or idea." },
+          { name: "Evaluating reliability and effectiveness", plain: "Evaluating how reliable and how effective a text actually is, not just describing its features." },
+          { name: "Writing for community, work or further study", plain: "Creating texts genuinely suited to community, workplace or further-study purposes." },
+          { name: "Multimodal and oral presentations", plain: "Planning and delivering a sustained multimodal or oral presentation." },
+          { name: "Reflecting on and improving your own writing", plain: "Critically reflecting on a student's own writing and using that reflection to genuinely improve it." },
         ],
       },
     ],

@@ -95,6 +95,7 @@ tokens). Static-export compatible — verified end to end.
 - Shared components: `components/GuideCTA.tsx` (sign-up CTA block), `components/BrowseGuidesLink.tsx` (link back to the index), `components/Breadcrumb.tsx` (visible trail) and `components/RelatedGuides.tsx` ("More {subject} guides", filtered from `lib/guides.ts` by matching `subject`, current guide excluded) — all four go on every guide, breadcrumb+related above `<GuideCTA />` + `<BrowseGuidesLink />` at the bottom.
 - `lib/breadcrumb.ts` → `guideBreadcrumbJsonLd(title, href)` builds the matching `BreadcrumbList` JSON-LD for each guide — keep the visible `Breadcrumb` trail and this JSON-LD in sync (same title/href). The `/guides/` and `/curriculum/` **index** pages use the lower-level `breadcrumbJsonLd(trail)` + `breadcrumbItems(trail)` directly (both exported from the same file): build one `{name, href}[]` trail array, pass it to both, and the visible trail and the JSON-LD can't drift apart — the same one-array pattern `FAQ.tsx` uses for its visible/JSON-LD FAQ content. Don't write the visible `<Breadcrumb items={...}>` array by hand next to a separately-written JSON-LD trail; that defeats the point.
 - Every new guide needs: the `.mdx` file, an entry in `lib/guides.ts` (with correct `subject`), and a new `{path, lastModified}` entry in `app/sitemap.ts` (sitemap routes are a manual list, not auto-discovered — `lastModified` should be a real date, e.g. from `git log -1 --format=%ad --date=short -- <file>`, not today's date for every route).
+- **4 of the 6 guide titles end in ", Explained"** ("States of Matter, Explained", etc.) — flagged as candidates to drop per the same query-data evidence that drove the curriculum topic renames (no query in the dataset contains "explained"), but deliberately **not changed**. These 6 pages are already indexed and ranking; retitling a live, ranking page is a separate decision with its own risk (temporary ranking movement, changing the exact text Google already associates with the page) and shouldn't happen as a side effect of an unrelated pass. If this gets revisited, do it as its own deliberate step.
 
 ## Curriculum library (`app/curriculum/`)
 
@@ -186,6 +187,36 @@ index and in the footer.
   the same logic as the guides library's own content rule (see above) —
   copying or lightly rewording the lecture body would republish the paid
   product's content on the free marketing site.
+- **`topics[].name` is tuned for how people actually search, and the
+  intensity of that tuning deliberately differs by tier.** Years 7–10 names
+  are aggressively plain-language ("Adding and subtracting negative
+  numbers", not "Integers — adding and subtracting negatives"), based on
+  real Search Console query data for this site. Years 11–12 (WACE) names
+  are only lightly cleaned up (sentence case, untangled colons/semicolons)
+  and otherwise keep the technical term — "chain rule", "Le Chatelier's
+  principle", "De Moivre's theorem" — because at that level the technical
+  term *is* the natural search term; there's no evidence a Year 12 Methods
+  student searches around it, and inventing a plain-English substitute
+  would just lose precision. Match this pattern for any new topic rather
+  than plain-language-ifying WACE content by default.
+- **Every topic has a stable `id` in `components/CurriculumHub.tsx`,
+  slugified from `topic.name`.** The component checks for collisions across
+  every topic + strand + `#assessment` anchor on a hub at render time and
+  **throws** if two slugify identically — a duplicate id is a broken anchor,
+  not a cosmetic issue, so this fails the build rather than shipping it
+  silently. Once these hub pages are live and indexed/deep-linked (they
+  aren't yet — see the route-slug note elsewhere in this file for the same
+  logic applied to URLs), treat topic names as settled: renaming one changes
+  its anchor, which breaks any inbound deep link or passage-level search
+  result pointing at it.
+- **The "On this page" nav lists every topic nested under its strand, not
+  just strand headings — and on a few hubs that's a long list.**
+  `mathematics-methods-year-11` (32 topics, 2 strands) produces a 35-item
+  nav; five more hubs land in the 20–27 item range. This was a deliberate
+  choice not to truncate rather than an oversight. If it needs addressing,
+  the proposed fix is per-strand `<details>`/`<summary>` (native HTML,
+  collapsed by default, no JS, works fine under static export) — not yet
+  implemented, since collapsing the nav is a UX call beyond a plumbing pass.
 
 ## Founder letter (`/about/`)
 
@@ -391,6 +422,21 @@ package would create a dependency that defeats the hard constraint above.
   `node --import ./scripts/lib/register-alias.mjs <script>.mjs` (see the
   `check:routes`/`routes` npm scripts). Reach for this instead of
   hand-duplicating data from a `lib/*.ts` file into a standalone script.
+- **Bulk-renaming a field across a large hand-authored data file (e.g.
+  `lib/curriculum.ts`'s 465 `topics[].name` values) is safer as a scripted,
+  verified pass than hundreds of manual edits.** The approach that worked:
+  build an explicit `[oldValue, newValue][]` mapping, then for each pair
+  search the file for the exact substring `` `key: "${oldValue}"` `` (not
+  just the bare value — this is what stops the script from touching, say,
+  a `plain` field that happens to mention the same phrase in prose) and
+  `replaceAll` it, reporting the match count per pair. Cross-check the
+  mapping's old values against every other object in the file using the
+  same key name first (here: strand names also use `name:` — confirmed no
+  topic-name string collided with a strand-name string before running it),
+  and verify a structural invariant afterward (here: total topic count
+  unchanged) rather than trusting the diff by eye. A "0 matches" or "more
+  matches than expected" result means the mapping has a transcription error
+  — treat it as a hard stop, not a warning to skip past.
 - **No browser-automation tool is available by default in this
   environment, but one can be installed one-off per session for real
   screenshot verification.** `npm install --no-save playwright` (doesn't

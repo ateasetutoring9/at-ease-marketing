@@ -29,6 +29,22 @@ export default function CurriculumHub({ slug }: { slug: string }) {
   const related = relatedCurriculum(entry);
   const label = curriculumCardLabel(entry);
 
+  // Topic anchors are derived from topic.name — fail the build rather than
+  // silently emit two elements with the same id (the second anchor link
+  // would then jump to the first occurrence).
+  const seenTopicIds = new Set<string>();
+  for (const strand of entry.strands) {
+    for (const topic of strand.topics) {
+      const id = slugify(topic.name);
+      if (seenTopicIds.has(id)) {
+        throw new Error(
+          `Duplicate topic anchor "#${id}" on curriculum hub "${entry.slug}" (from topic "${topic.name}"). Rename one of the colliding topics.`
+        );
+      }
+      seenTopicIds.add(id);
+    }
+  }
+
   return (
     <article>
       <JsonLd data={curriculumBreadcrumbJsonLd(label, href)} />
@@ -54,12 +70,24 @@ export default function CurriculumHub({ slug }: { slug: string }) {
 
       <nav aria-label="On this page" className="border-border mt-10 border-t pt-6">
         <h2 className="text-fg text-sm font-semibold">On this page</h2>
-        <ul className="mt-3 space-y-1">
+        <ul className="mt-3 space-y-2">
           {entry.strands.map((s) => (
             <li key={s.name}>
               <Link href={`#${slugify(s.name)}`} className="text-accent text-sm hover:underline">
                 {s.name}
               </Link>
+              <ul className="mt-1 ml-4 space-y-1">
+                {s.topics.map((t) => (
+                  <li key={t.name}>
+                    <Link
+                      href={`#${slugify(t.name)}`}
+                      className="text-muted hover:text-accent text-sm hover:underline"
+                    >
+                      {t.name}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
             </li>
           ))}
           <li>
@@ -82,7 +110,11 @@ export default function CurriculumHub({ slug }: { slug: string }) {
                 : undefined;
 
               return (
-                <div key={topic.name} className="bg-card border-border rounded-lg border p-5">
+                <div
+                  key={topic.name}
+                  id={slugify(topic.name)}
+                  className="bg-card border-border rounded-lg border p-5 scroll-mt-4"
+                >
                   <h3 className="text-fg text-lg font-medium">{topic.name}</h3>
                   <p className="text-muted mt-2">{topic.plain}</p>
 

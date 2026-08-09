@@ -86,10 +86,17 @@ To add a hub:
    `app/sitemap.ts` picks it up automatically via `curriculumSitemapEntries()`
    — no manual sitemap entry needed here, unlike guides.
 
+Each `topics[].name` becomes that topic's anchor (`id`, slugified) and its
+entry in the "On this page" nav — write it the way someone would actually
+search, not the syllabus phrasing. `CurriculumHub.tsx` throws at build time
+if two topics on one hub produce the same slug, so a collision is a build
+failure, not a silent bug.
+
 See CLAUDE.md for the full content rules: the two different SCSA syllabus
 websites (P-10 vs. WACE senior-secondary), why English's curriculum-change
-FAQ note is dated differently from Maths/Science, and the source-data
-boundary for topic names vs. lecture content.
+FAQ note is dated differently from Maths/Science, the source-data boundary
+for topic names vs. lecture content, and why topic-name searchability is
+tuned differently for Years 7–10 vs. WACE courses.
 
 ## Verifying routes
 
