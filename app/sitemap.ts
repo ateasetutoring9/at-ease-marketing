@@ -1,5 +1,6 @@
 import type { MetadataRoute } from "next";
 import { SITE_URL } from "@/lib/constants";
+import { curriculumSitemapEntries } from "@/lib/curriculum";
 
 export const dynamic = "force-static";
 
@@ -22,10 +23,11 @@ const routes: { path: string; lastModified: string }[] = [
   { path: "/guides/trigonometry-finding-a-side", lastModified: "2026-07-29" },
   { path: "/guides/newtons-laws-of-motion", lastModified: "2026-07-29" },
   { path: "/guides/what-is-a-derivative", lastModified: "2026-07-29" },
+  { path: "/curriculum", lastModified: "2026-08-05" },
 ];
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  return routes.map((route) => ({
+  return [...routes, ...curriculumSitemapEntries()].map((route) => ({
     url: `${SITE_URL}${route.path}/`,
     lastModified: route.lastModified,
   }));

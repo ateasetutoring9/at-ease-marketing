@@ -10,7 +10,7 @@ import { APP_URL } from "@/lib/constants";
 const navLinks = [
   { href: "/features/", label: "Features" },
   { href: "/pricing/", label: "Pricing" },
-  { href: "/guides/", label: "Guides" },
+  { href: "/curriculum/", label: "Curriculum" },
   { href: "/about/", label: "About" },
   { href: "/contact/", label: "Contact" },
 ];

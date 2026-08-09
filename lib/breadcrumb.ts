@@ -1,13 +1,32 @@
 import { SITE_URL } from "@/lib/constants";
 
-export function guideBreadcrumbJsonLd(title: string, href: string) {
+type Crumb = { name: string; href: string };
+
+function breadcrumbJsonLd(trail: Crumb[]) {
   return {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
-    itemListElement: [
-      { "@type": "ListItem", position: 1, name: "Home", item: `${SITE_URL}/` },
-      { "@type": "ListItem", position: 2, name: "Guides", item: `${SITE_URL}/guides/` },
-      { "@type": "ListItem", position: 3, name: title, item: `${SITE_URL}${href}` },
-    ],
+    itemListElement: trail.map((crumb, i) => ({
+      "@type": "ListItem",
+      position: i + 1,
+      name: crumb.name,
+      item: `${SITE_URL}${crumb.href}`,
+    })),
   };
+}
+
+export function guideBreadcrumbJsonLd(title: string, href: string) {
+  return breadcrumbJsonLd([
+    { name: "Home", href: "/" },
+    { name: "Guides", href: "/guides/" },
+    { name: title, href },
+  ]);
+}
+
+export function curriculumBreadcrumbJsonLd(label: string, href: string) {
+  return breadcrumbJsonLd([
+    { name: "Home", href: "/" },
+    { name: "Curriculum", href: "/curriculum/" },
+    { name: label, href },
+  ]);
 }

@@ -30,10 +30,12 @@ Emits a fully static site to `out/`, deployed on Cloudflare Pages.
 | `app/page.tsx` | Homepage |
 | `app/features/`, `app/pricing/`, `app/about/`, `app/contact/` | Core pages — `/about` is the founder letter, not a mission statement |
 | `app/guides/` | MDX study-guide content library — see below |
+| `app/curriculum/` | Year-level (7–10) + WACE course (11–12) hub pages — see below |
 | `app/_components/` | Homepage-only sections |
-| `components/` | Shared components (Header, Footer, UI primitives, FounderLetter*, FounderAvatar, Signature, TestimonialCarousel, ParentDashboardGallery, DashboardMock, ContactRoutes) |
+| `components/` | Shared components (Header, Footer, UI primitives, FounderLetter*, FounderAvatar, Signature, TestimonialCarousel, ParentDashboardGallery, DashboardMock, ContactRoutes, CurriculumHub) |
 | `lib/constants.ts` | Site-wide constants (URLs, site name/description, OG image) |
 | `lib/guides.ts` | Guide index data — add new guides here |
+| `lib/curriculum.ts` | Curriculum hub data (much larger) — add new hubs here |
 | `lib/founder-letter.ts` | Single source of truth for all founder-letter prose — see below |
 | `data/reviews.json`, `data/reviews.dev.json` | Real vs. dev-fixture testimonial data — see below |
 | `app/sitemap.ts`, `app/robots.ts` | Static-exported sitemap/robots |
@@ -55,6 +57,38 @@ Guides should be original writing fact-checked against real curriculum
 content — not a republish of the app's own lecture/worksheet material. See
 CLAUDE.md for the WACE-vs-general-curriculum accuracy note (WACE only
 applies to Year 11–12 courses).
+
+## Curriculum library (`/curriculum/`)
+
+A separate section from `/guides/`, not a replacement for it — `/guides/`
+stays untouched. `/curriculum/` covers two different kinds of page from one
+data file, `lib/curriculum.ts`:
+
+- **Year-level hubs** (Years 7–10): one per year/subject, e.g.
+  `year-9-maths`. Content grouped into subject strands (Number and algebra,
+  Language, Biological sciences, etc.).
+- **WACE course hubs** (Years 11–12): one per course *per year*, e.g.
+  `mathematics-methods-year-11` and `mathematics-methods-year-12` as two
+  separate entries, not one. Content grouped into WACE units (Unit 1/2 for
+  Year 11, Unit 3/4 for Year 12) instead of subject strands.
+
+Both render through the same `components/CurriculumHub.tsx`.
+
+To add a hub:
+
+1. Add a `CurriculumEntry` to `lib/curriculum.ts` (`published: false` is
+   fine as a placeholder — it's excluded from routes, the index and the
+   sitemap until flipped to `true`).
+2. Create `app/curriculum/<slug>/page.tsx` — copy an existing one, it's a
+   thin file that just sets `SLUG` and renders `<CurriculumHub slug={SLUG} />`.
+3. Flip `published: true` once the content is written and fact-checked.
+   `app/sitemap.ts` picks it up automatically via `curriculumSitemapEntries()`
+   — no manual sitemap entry needed here, unlike guides.
+
+See CLAUDE.md for the full content rules: the two different SCSA syllabus
+websites (P-10 vs. WACE senior-secondary), why English's curriculum-change
+FAQ note is dated differently from Maths/Science, and the source-data
+boundary for topic names vs. lecture content.
 
 ## Founder letter (`/about/`)
 
