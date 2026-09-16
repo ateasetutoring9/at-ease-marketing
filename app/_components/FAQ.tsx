@@ -10,12 +10,12 @@ const faqs = [
   {
     question: "Which year levels and subjects are covered?",
     answer:
-      "We cover Year 7 through to Year 12 across Mathematics, Sciences, English, and Humanities. We're adding new topics regularly — if there's something you need that isn't there yet, let us know.",
+      "Mathematics, Science, English and Humanities across Years 7 to 10, plus a growing library of WACE courses for Years 11 and 12. We're adding new topics regularly — if there's something you need that isn't there yet, let us know.",
   },
   {
-    question: "Which Australian curriculum does the content follow?",
+    question: "Which curriculum does the content follow?",
     answer:
-      "Content is aligned to the Australian Curriculum v9 and mapped to the senior secondary frameworks of each state and territory, including VCE, HSC, QCE, ATAR, SACE, TCE, BSSS, and NTCET.",
+      "Years 7 to 10 follow the Western Australian Curriculum (ACARA v9). Years 11 and 12 follow the SCSA syllabus for each WACE course, unit by unit — the same structure your child's school teaches from.",
   },
   {
     question: "Can I use it on my phone or tablet?",
@@ -25,7 +25,7 @@ const faqs = [
   {
     question: "How do the worksheets and feedback work?",
     answer:
-      "After reading or watching a lecture, you attempt the corresponding worksheet. Most questions are auto-graded — once you submit, you see your score and per-question feedback immediately. Essay questions are marked as practice and not auto-graded.",
+      "After reading a lecture, you attempt the corresponding worksheet. Most questions are auto-graded — once you submit, you see your score and per-question feedback immediately. Essay questions are marked as practice and not auto-graded.",
   },
 ];
 

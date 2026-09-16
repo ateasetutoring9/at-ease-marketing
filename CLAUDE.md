@@ -332,6 +332,97 @@ package would create a dependency that defeats the hard constraint above.
   on the platform). Future-tense roadmap language ("tutoring is coming") is
   fine and already used correctly on Pricing/About — the distinction is
   present-tense fact vs. future-tense plan.
+- **The homepage/footer "Browse subjects" CTA links to this repo's own
+  `/curriculum/` index, not `${APP_URL}/browse`.** The app's `/browse` sits
+  behind auth (`app/(app)/` route group) — an anonymous visitor clicking it
+  gets bounced to `/login`, directly contradicting adjacent copy ("No
+  sign-up required to browse"). `/curriculum/` is the real, already-public
+  equivalent covering the same subject/topic breadth. Don't repoint this
+  back to the app without also removing that copy, or the same bug returns.
+
+## Content accuracy audit (2026-09)
+
+A review pass found and fixed several false/overclaiming statements that had
+drifted from the product's real state. Listed here so nobody accidentally
+reintroduces them — each was a real, live claim on the site, not a
+hypothetical:
+
+- `CurriculumCoverage.tsx` claimed national coverage (VCE/HSC/QCE/SACE/TCE/
+  BSSS/NTCET) when the product is WA/SCSA-only. Rewritten to lean into
+  WA-specificity instead of hiding it.
+- `WhatsFree.tsx`, `HowItWorks.tsx`, `features/page.tsx`, `GuideCTA.tsx`,
+  `FAQ.tsx` all had present-tense claims about video lectures existing.
+  Video is roadmap-only — see the content-conventions rule above. Reworded
+  to describe text lectures only.
+- `features/page.tsx`, `WhatsFree.tsx`, `FAQ.tsx` claimed Humanities was
+  fully covered Years 7–12. Per `lib/founder-letter.ts`'s
+  `whatThisIs.unfinished`, senior Humanities hasn't been started —
+  reworded to "Years 7–10, plus a growing library of WACE courses."
+- `FoundingBanner.tsx` and `FinalCTA.tsx` both hardcoded "247 founding
+  spots remaining" — a fake, non-live number. Reframed toward mission/
+  co-building copy instead of a scarcity counter.
+- `Hero.tsx` and `Footer.tsx`'s "Browse subjects" CTA pointed at the
+  authenticated app `/browse` route — see the routing rule above.
+
+None of `CurriculumCoverage.tsx`, `WhatsFree.tsx`, `HowItWorks.tsx`,
+`features/page.tsx`, `GuideCTA.tsx`, `FAQ.tsx`, `FoundingBanner.tsx`,
+`FinalCTA.tsx` should regress to a hardcoded number or a
+national/video/all-subjects-covered claim. If content like this needs to
+change, verify against `lib/founder-letter.ts`'s `progress`/`whatThisIs`
+fields first — that's the single source of truth for what's actually
+finished.
+
+## Known content/UX gaps — flagged, not yet fixed
+
+From the same audit, real but not yet actioned:
+
+- **No privacy policy or terms page anywhere on the site**, despite the
+  site making data-handling claims ("No tracking pixels, no data sold to
+  third parties" — `features/page.tsx`, `WhatsFree.tsx`, `TrustStrip.tsx`).
+  Likely a genuine gap once real signups exist, not just an optics one.
+- **Header is not sticky** on a 14-section homepage — no `sticky`/`fixed`
+  positioning anywhere in `Header.tsx`. Once scrolled past the hero there's
+  no way back to Sign Up/Log In except scrolling all the way up or down.
+- **Guides and Curriculum only link one direction.** `CurriculumHub.tsx`
+  links out to a matching guide via `topic.guide`; nothing links back from
+  a guide to its curriculum hub, and `/guides/` is missing from
+  `Header.tsx`'s primary nav (footer only).
+- **Founder `Person` JSON-LD is only used on `/about`.** Every guide's
+  `Article` and every curriculum hub's `Course` JSON-LD attribute
+  authorship to the generic `EducationalOrganization` only, despite a real
+  `Person` entity already existing in `FounderLetter.tsx`.
+- **No content targets the primary acquisition segment's actual search
+  intent** — "my WA school doesn't offer this subject," "distance
+  education alternative for WACE [subject]." Nothing in `app/curriculum/`
+  or `app/guides/` is organized around access/availability rather than
+  subject/year.
+- **`Pricing.tsx`'s "$80–120/hr market average" has no citation** — same
+  category of unbacked-specific-number risk as the fixed items above.
+- **`TrustStrip.tsx` says "Australian Curriculum Aligned"**, collapsing
+  the WA-curriculum (Years 7–10) / SCSA-WACE (Years 11–12) distinction the
+  rest of the site is careful about.
+- **`Footer.tsx` says "Australian students"** where `SITE_DESCRIPTION` and
+  everywhere else says "Western Australian" — undersells the actual
+  differentiator.
+- **CTA copy for the identical signup action is inconsistent** across the
+  funnel — four different phrasings ("Start learning for free" / "Sign up
+  free" / "Get started free" / "Create your free account").
+- **The founder letter (arguably the strongest trust asset on the site)
+  sits at position 12 of 15 on the homepage**, right after a testimonials
+  carousel that currently renders nothing (`data/reviews.json` is `[]`).
+- **Footer now has two links to the identical `/curriculum/` destination**
+  ("Curriculum" and "Browse subjects") since the CTA fix above — candidate
+  for removing the redundancy or repointing one.
+- **Accessibility:** 3 CTA buttons (`pricing/page.tsx`, `GuideCTA.tsx`,
+  `not-found.tsx`) hardcode `text-white` instead of the design-token
+  pattern `components/ui/Button.tsx` already gets right, producing a
+  ~2.7:1 contrast failure in dark mode — a recurrence of the same bug
+  class `8221f67` already fixed once. A dead, unused `components/Button.tsx`
+  has the identical bug and is a landmine for a future accidental import.
+  Also: no skip-to-content link; `DashboardMock.tsx`'s correct/incorrect
+  icons are `aria-hidden` with no text equivalent; the header/footer logo
+  link double-announces its name to screen readers; 3 `<nav>` landmarks
+  have no `aria-label`.
 
 ## Known gotchas
 
@@ -361,7 +452,11 @@ package would create a dependency that defeats the hard constraint above.
   and `text-accent` had equal specificity, and `text-eyebrow` was winning on
   source order. Fixed with `!text-accent`. If a color utility isn't visibly
   applying and there's no obvious reason why, suspect this before anything
-  else — check computed style, don't assume the className is wrong.
+  else — check computed style, don't assume the className is wrong. (The
+  "247 founding spots remaining" copy itself was later removed in the
+  content accuracy audit above — the specificity lesson still applies to
+  any `text-eyebrow`/`text-accent` combination, just not to that exact
+  string anymore.)
 - **Verify WCAG contrast with real relative-luminance math, not eyeballing.**
   `--color-eyebrow` and `--color-success` both looked fine visually but
   computed under 4.5:1 against their backgrounds in one or both themes — one

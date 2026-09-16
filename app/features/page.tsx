@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import {
-  Video,
+  FileText,
   ClipboardCheck,
   Clock,
   BookOpen,
@@ -38,9 +38,9 @@ const groups = [
     description: "The core of the platform — how a student actually studies a topic.",
     features: [
       {
-        icon: Video,
-        title: "Video & Text Lectures",
-        description: "Curriculum-aligned content for every topic — watch a video or read through at your own pace.",
+        icon: FileText,
+        title: "Text Lectures",
+        description: "Curriculum-aligned lectures for every topic — read through at your own pace, and revisit any section as many times as you need.",
       },
       {
         icon: ClipboardCheck,
@@ -54,8 +54,8 @@ const groups = [
       },
       {
         icon: BookOpen,
-        title: "All Years, All Subjects",
-        description: "Mathematics, Sciences, English, and Humanities — from Year 7 through to Year 12, all in one place.",
+        title: "Years 7 to 12",
+        description: "Mathematics, Science, English and Humanities across Years 7 to 10, plus a growing library of WACE courses for Years 11 and 12.",
       },
     ],
   },

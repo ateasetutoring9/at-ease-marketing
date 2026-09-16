@@ -5,7 +5,7 @@ export function GuideCTA() {
     <div className="mt-12 rounded-2xl border-2 border-accent bg-card p-8 text-center">
       <p className="text-subsection-title text-fg mb-3">Want the full interactive lecture?</p>
       <p className="text-body text-muted mb-6 max-w-md mx-auto">
-        This topic is one of hundreds covered free on {SITE_NAME} — video and text lectures, plus an auto-graded practice worksheet with instant feedback.
+        This topic is one of hundreds covered free on {SITE_NAME} — a full text lecture, plus an auto-graded practice worksheet with instant feedback.
       </p>
       <a
         href={`${APP_URL}/signup`}

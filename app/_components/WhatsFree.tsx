@@ -1,12 +1,12 @@
-import { Video, ClipboardCheck, BarChart2, BookOpen } from "lucide-react";
+import { FileText, ClipboardCheck, BarChart2, BookOpen } from "lucide-react";
 import { Card } from "@/components/ui/Card";
 
 const features = [
   {
-    title: "Video & Text Lectures",
+    title: "Text Lectures",
     description:
-      "Curriculum-aligned content covering every major topic — watch a video or read through at your own pace.",
-    icon: <Video className="w-6 h-6" aria-hidden="true" />,
+      "Curriculum-aligned lectures covering every major topic — read through at your own pace, and come back to any section as many times as you need.",
+    icon: <FileText className="w-6 h-6" aria-hidden="true" />,
   },
   {
     title: "Auto-Graded Worksheets",
@@ -21,9 +21,9 @@ const features = [
     icon: <BarChart2 className="w-6 h-6" aria-hidden="true" />,
   },
   {
-    title: "All Years, All Subjects",
+    title: "Years 7 to 12",
     description:
-      "Mathematics, Sciences, English, Humanities — from Year 7 through to Year 12, all in one place.",
+      "Mathematics, Science, English and Humanities across Years 7 to 10, plus a growing library of WACE courses for Years 11 and 12.",
     icon: <BookOpen className="w-6 h-6" aria-hidden="true" />,
   },
 ];

@@ -12,7 +12,7 @@ const steps = [
   {
     number: "03",
     title: "Learn at your pace",
-    description: "Watch the video or read through the text lecture — however you learn best.",
+    description: "Read through the text lecture at your own pace — go back over any part as many times as you need.",
   },
   {
     number: "04",

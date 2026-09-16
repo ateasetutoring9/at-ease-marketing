@@ -6,7 +6,7 @@ export function FinalCTA() {
   return (
     <section className="bg-accent-soft border-y border-border py-20 px-4 text-center" id="cta">
       <div className="max-w-reading mx-auto">
-        <Eyebrow className="mb-4 !text-accent">247 founding spots remaining</Eyebrow>
+        <Eyebrow className="mb-4 !text-accent">Founding members shape what gets written next</Eyebrow>
         <h2 className="text-section-title text-fg mb-4">
           Start learning for free today
         </h2>

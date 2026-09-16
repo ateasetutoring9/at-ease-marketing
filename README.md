@@ -153,6 +153,20 @@ npm run build
 grep -ri "Wheatbelt\|Mandurah\|FIXTURE" out/   # must print nothing
 ```
 
+## Content accuracy
+
+A 2026-09 review pass fixed several false/overclaiming statements on the
+homepage and footer (a fake national-curriculum-board list, present-tense
+video-lecture claims, a "Humanities fully covered" claim, and a hardcoded
+"247 founding spots remaining" counter), and repointed the "Browse
+subjects" CTA (Hero + Footer) from the app's authenticated `/browse` to
+this repo's own public `/curriculum/` index. See CLAUDE.md's **Content
+accuracy audit** section for the full list of what changed and why, and
+**Known content/UX gaps** for what was found but not yet fixed (no
+privacy/terms page, non-sticky header, one-way guide↔curriculum linking,
+and more) — check both before assuming a piece of homepage copy is safe to
+revert or "simplify."
+
 ## Contact routing (`/contact/`)
 
 `components/ContactRoutes.tsx` renders several `mailto:` links (not a form),

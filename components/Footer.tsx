@@ -40,9 +40,9 @@ export function Footer() {
           <Link href="/contact/" className="text-small text-muted hover:text-fg transition-colors">
             Contact
           </Link>
-          <a href={`${APP_URL}/browse`} className="text-small text-muted hover:text-fg transition-colors">
+          <Link href="/curriculum/" className="text-small text-muted hover:text-fg transition-colors">
             Browse subjects
-          </a>
+          </Link>
           <a href={`${APP_URL}/login`} className="text-small text-muted hover:text-fg transition-colors">
             Log in
           </a>

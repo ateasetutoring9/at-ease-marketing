@@ -17,7 +17,7 @@ export function Hero() {
           <Button variant="primary" size="lg" href={`${APP_URL}/signup`}>
             Start learning for free
           </Button>
-          <Button variant="secondary" size="lg" href={`${APP_URL}/browse`}>
+          <Button variant="secondary" size="lg" href="/curriculum/">
             Browse subjects
           </Button>
         </div>
