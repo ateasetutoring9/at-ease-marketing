@@ -31,9 +31,9 @@ export const founder = {
 export const progress = {
   text:
     'I’m still writing. Year 11 Chemistry is done and Year 12 is about a ' +
-    'third of the way through. Physics is next — Year 11 first, then ' +
-    'Year 12. Founding members tell me what to write first, and I write it.',
-  verified: '2026-07-26',
+    'third of the way through. Physics — Year 11 and Year 12 — is done ' +
+    'too. Founding members tell me what to write first, and I write it.',
+  verified: '2026-10-04',
 } as const;
 
 export const hook =
@@ -81,10 +81,10 @@ export const whatThisIs = {
   ],
   /** Keep this current. It is the most persuasive paragraph on the page. */
   unfinished:
-    'Not finished yet: senior Humanities hasn’t been started, Physics ' +
-    'hasn’t been started, and Chemistry is partway through Year 12. ' +
-    'Everything else — all of Years 7 to 10, all senior Maths, all senior ' +
-    'English, Biology and Human Biology — is written and live.',
+    'Not finished yet: senior Humanities hasn’t been started, and ' +
+    'Chemistry is partway through Year 12. Everything else — all of ' +
+    'Years 7 to 10, all senior Maths, all senior English, Physics, ' +
+    'Biology and Human Biology — is written and live.',
 } as const;
 
 /**
