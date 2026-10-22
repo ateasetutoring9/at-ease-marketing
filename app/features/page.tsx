@@ -17,7 +17,19 @@ import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { Card } from "@/components/ui/Card";
 import { Button } from "@/components/ui/Button";
-import { APP_URL, SITE_NAME, OG_IMAGE } from "@/lib/constants";
+import { YouTubeEmbed } from "@/components/YouTubeEmbed";
+import { JsonLd } from "@/components/JsonLd";
+import {
+  APP_URL,
+  SITE_NAME,
+  OG_IMAGE,
+  ONBOARDING_VIDEO_ID,
+  ONBOARDING_VIDEO_TITLE,
+  ONBOARDING_VIDEO_DESCRIPTION,
+} from "@/lib/constants";
+
+const ONBOARDING_VIDEO_THUMBNAIL = `https://i.ytimg.com/vi/${ONBOARDING_VIDEO_ID}/hqdefault.jpg`;
+const ONBOARDING_VIDEO_EMBED_URL = `https://www.youtube.com/embed/${ONBOARDING_VIDEO_ID}`;
 
 export const metadata: Metadata = {
   title: "Features",
@@ -29,7 +41,21 @@ export const metadata: Metadata = {
     title: `Features — ${SITE_NAME}`,
     description: `Everything ${SITE_NAME} offers students and parents — free lectures, worksheets, progress tracking, and a parent dashboard.`,
     images: [OG_IMAGE],
+    videos: [{ url: ONBOARDING_VIDEO_EMBED_URL, secureUrl: ONBOARDING_VIDEO_EMBED_URL, type: "text/html" }],
   },
+};
+
+// uploadDate is a placeholder (today) — correct it to the actual YouTube
+// upload date if different. duration deliberately omitted: don't assert a
+// runtime we haven't confirmed against the real, final cut.
+const onboardingVideoJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "VideoObject",
+  name: ONBOARDING_VIDEO_TITLE,
+  description: ONBOARDING_VIDEO_DESCRIPTION,
+  thumbnailUrl: [ONBOARDING_VIDEO_THUMBNAIL],
+  uploadDate: "2026-10-22",
+  embedUrl: ONBOARDING_VIDEO_EMBED_URL,
 };
 
 const groups = [
@@ -122,6 +148,7 @@ const groups = [
 export default function FeaturesPage() {
   return (
     <>
+      <JsonLd data={onboardingVideoJsonLd} />
       <Header />
       <main className="flex-1 px-4 py-16">
         <div className="mx-auto max-w-page">
@@ -154,7 +181,15 @@ export default function FeaturesPage() {
             ))}
           </div>
 
-          <div className="mt-20 rounded-2xl border-2 border-accent bg-card p-10 text-center">
+          <div className="mt-20 text-center">
+            <h2 className="text-section-title text-fg mb-2">See it in action</h2>
+            <p className="text-body text-muted mb-8 max-w-md mx-auto">
+              A minute-long look at creating an account, from signup to your first dashboard.
+            </p>
+            <YouTubeEmbed videoId={ONBOARDING_VIDEO_ID} title={ONBOARDING_VIDEO_TITLE} />
+          </div>
+
+          <div className="mt-16 rounded-2xl border-2 border-accent bg-card p-10 text-center">
             <p className="text-section-title text-fg mb-3">Ready to try it?</p>
             <p className="text-body text-muted mb-8 max-w-md mx-auto">
               Create a free account as a student, or link a parent account once your child is set up — no credit card, no trial that expires.

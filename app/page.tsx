@@ -7,6 +7,7 @@ import { Hero } from "./_components/Hero";
 import { WhatsFree } from "./_components/WhatsFree";
 import { FeaturesTeaser } from "./_components/FeaturesTeaser";
 import { HowItWorks } from "./_components/HowItWorks";
+import { OnboardingVideo } from "./_components/OnboardingVideo";
 import { CurriculumCoverage } from "./_components/CurriculumCoverage";
 import { SampleQuestion } from "./_components/SampleQuestion";
 import { ParentDashboardGallery } from "@/components/ParentDashboardGallery";
@@ -42,6 +43,7 @@ export default function Home() {
       <WhatsFree />
       <FeaturesTeaser />
       <HowItWorks />
+      <OnboardingVideo />
       <CurriculumCoverage />
       <SampleQuestion />
       <ParentDashboardGallery />

@@ -8,6 +8,11 @@ export const SITE_NAME = "At Ease Tutoring";
 export const SITE_DESCRIPTION =
   "Free, curriculum-aligned learning for Western Australian students in Years 7–12. WACE and SCSA aligned.";
 
+export const ONBOARDING_VIDEO_ID = "6vazgBYh0n4";
+export const ONBOARDING_VIDEO_TITLE = "Creating a free At Ease Tutoring account";
+export const ONBOARDING_VIDEO_DESCRIPTION =
+  "A minute-long walkthrough of creating a free At Ease Tutoring account, from signup to the first look at your dashboard.";
+
 export const OG_IMAGE = {
   url: "/og-image.png",
   width: 1200,
