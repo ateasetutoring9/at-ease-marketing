@@ -54,7 +54,7 @@ const onboardingVideoJsonLd = {
   name: ONBOARDING_VIDEO_TITLE,
   description: ONBOARDING_VIDEO_DESCRIPTION,
   thumbnailUrl: [ONBOARDING_VIDEO_THUMBNAIL],
-  uploadDate: "2026-10-22",
+  uploadDate: "2026-10-24",
   embedUrl: ONBOARDING_VIDEO_EMBED_URL,
 };
 
