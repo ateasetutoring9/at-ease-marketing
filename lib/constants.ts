@@ -13,6 +13,11 @@ export const ONBOARDING_VIDEO_TITLE = "Creating a free At Ease Tutoring account"
 export const ONBOARDING_VIDEO_DESCRIPTION =
   "A minute-long walkthrough of creating a free At Ease Tutoring account, from signup to the first look at your dashboard.";
 
+export const TOUR_VIDEO_ID = "S87Oe2ibiHM";
+export const TOUR_VIDEO_TITLE = "Touring the At Ease Tutoring platform";
+export const TOUR_VIDEO_DESCRIPTION =
+  "A tour of At Ease Tutoring — browsing the library, reading a lecture, testing yourself with a worksheet, and tracking your results.";
+
 export const OG_IMAGE = {
   url: "/og-image.png",
   width: 1200,

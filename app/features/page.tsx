@@ -26,10 +26,15 @@ import {
   ONBOARDING_VIDEO_ID,
   ONBOARDING_VIDEO_TITLE,
   ONBOARDING_VIDEO_DESCRIPTION,
+  TOUR_VIDEO_ID,
+  TOUR_VIDEO_TITLE,
+  TOUR_VIDEO_DESCRIPTION,
 } from "@/lib/constants";
 
 const ONBOARDING_VIDEO_THUMBNAIL = `https://i.ytimg.com/vi/${ONBOARDING_VIDEO_ID}/hqdefault.jpg`;
 const ONBOARDING_VIDEO_EMBED_URL = `https://www.youtube.com/embed/${ONBOARDING_VIDEO_ID}`;
+const TOUR_VIDEO_THUMBNAIL = `https://i.ytimg.com/vi/${TOUR_VIDEO_ID}/hqdefault.jpg`;
+const TOUR_VIDEO_EMBED_URL = `https://www.youtube.com/embed/${TOUR_VIDEO_ID}`;
 
 export const metadata: Metadata = {
   title: "Features",
@@ -41,7 +46,10 @@ export const metadata: Metadata = {
     title: `Features — ${SITE_NAME}`,
     description: `Everything ${SITE_NAME} offers students and parents — free lectures, worksheets, progress tracking, and a parent dashboard.`,
     images: [OG_IMAGE],
-    videos: [{ url: ONBOARDING_VIDEO_EMBED_URL, secureUrl: ONBOARDING_VIDEO_EMBED_URL, type: "text/html" }],
+    videos: [
+      { url: ONBOARDING_VIDEO_EMBED_URL, secureUrl: ONBOARDING_VIDEO_EMBED_URL, type: "text/html" },
+      { url: TOUR_VIDEO_EMBED_URL, secureUrl: TOUR_VIDEO_EMBED_URL, type: "text/html" },
+    ],
   },
 };
 
@@ -56,6 +64,16 @@ const onboardingVideoJsonLd = {
   thumbnailUrl: [ONBOARDING_VIDEO_THUMBNAIL],
   uploadDate: "2026-10-24",
   embedUrl: ONBOARDING_VIDEO_EMBED_URL,
+};
+
+const tourVideoJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "VideoObject",
+  name: TOUR_VIDEO_TITLE,
+  description: TOUR_VIDEO_DESCRIPTION,
+  thumbnailUrl: [TOUR_VIDEO_THUMBNAIL],
+  uploadDate: "2026-10-24",
+  embedUrl: TOUR_VIDEO_EMBED_URL,
 };
 
 const groups = [
@@ -149,6 +167,7 @@ export default function FeaturesPage() {
   return (
     <>
       <JsonLd data={onboardingVideoJsonLd} />
+      <JsonLd data={tourVideoJsonLd} />
       <Header />
       <main className="flex-1 px-4 py-16">
         <div className="mx-auto max-w-page">
@@ -183,10 +202,19 @@ export default function FeaturesPage() {
 
           <div className="mt-20 text-center">
             <h2 className="text-section-title text-fg mb-2">See it in action</h2>
-            <p className="text-body text-muted mb-8 max-w-md mx-auto">
-              A minute-long look at creating an account, from signup to your first dashboard.
+            <p className="text-body text-muted mb-10 max-w-md mx-auto">
+              Two short looks at the platform — creating an account, and a tour of how it works.
             </p>
-            <YouTubeEmbed videoId={ONBOARDING_VIDEO_ID} title={ONBOARDING_VIDEO_TITLE} />
+            <div className="grid sm:grid-cols-2 gap-10 max-w-2xl mx-auto">
+              <div>
+                <YouTubeEmbed videoId={ONBOARDING_VIDEO_ID} title={ONBOARDING_VIDEO_TITLE} />
+                <p className="text-small text-muted mt-4">Creating your account</p>
+              </div>
+              <div>
+                <YouTubeEmbed videoId={TOUR_VIDEO_ID} title={TOUR_VIDEO_TITLE} />
+                <p className="text-small text-muted mt-4">Touring the platform</p>
+              </div>
+            </div>
           </div>
 
           <div className="mt-16 rounded-2xl border-2 border-accent bg-card p-10 text-center">
