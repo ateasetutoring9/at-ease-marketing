@@ -18,6 +18,11 @@ export const TOUR_VIDEO_TITLE = "Touring the At Ease Tutoring platform";
 export const TOUR_VIDEO_DESCRIPTION =
   "A tour of At Ease Tutoring — browsing the library, reading a lecture, testing yourself with a worksheet, and tracking your results.";
 
+export const PARENT_VIDEO_ID = "kFxIZ24IPH4";
+export const PARENT_VIDEO_TITLE = "Linking a parent account on At Ease Tutoring";
+export const PARENT_VIDEO_DESCRIPTION =
+  "How a parent or guardian links to their child's account on At Ease Tutoring, and what they can see once they do.";
+
 export const OG_IMAGE = {
   url: "/og-image.png",
   width: 1200,

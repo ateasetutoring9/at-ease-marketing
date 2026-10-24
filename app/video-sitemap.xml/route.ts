@@ -6,6 +6,9 @@ import {
   TOUR_VIDEO_ID,
   TOUR_VIDEO_TITLE,
   TOUR_VIDEO_DESCRIPTION,
+  PARENT_VIDEO_ID,
+  PARENT_VIDEO_TITLE,
+  PARENT_VIDEO_DESCRIPTION,
 } from "@/lib/constants";
 
 export const dynamic = "force-static";
@@ -45,12 +48,18 @@ const tourVideo: VideoEntry = {
   description: TOUR_VIDEO_DESCRIPTION,
 };
 
+const parentVideo: VideoEntry = {
+  id: PARENT_VIDEO_ID,
+  title: PARENT_VIDEO_TITLE,
+  description: PARENT_VIDEO_DESCRIPTION,
+};
+
 // Add a page's URL and the video(s) it embeds here whenever a video is
 // placed on (or removed from) a page — one <url> block per page, with one
 // <video:video> per video on that page.
 const pagesWithVideos: { pageUrl: string; videos: VideoEntry[] }[] = [
-  { pageUrl: `${SITE_URL}/`, videos: [onboardingVideo] },
-  { pageUrl: `${SITE_URL}/features/`, videos: [onboardingVideo, tourVideo] },
+  { pageUrl: `${SITE_URL}/`, videos: [onboardingVideo, parentVideo] },
+  { pageUrl: `${SITE_URL}/features/`, videos: [onboardingVideo, tourVideo, parentVideo] },
 ];
 
 export function GET() {

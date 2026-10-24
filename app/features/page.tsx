@@ -29,12 +29,17 @@ import {
   TOUR_VIDEO_ID,
   TOUR_VIDEO_TITLE,
   TOUR_VIDEO_DESCRIPTION,
+  PARENT_VIDEO_ID,
+  PARENT_VIDEO_TITLE,
+  PARENT_VIDEO_DESCRIPTION,
 } from "@/lib/constants";
 
 const ONBOARDING_VIDEO_THUMBNAIL = `https://i.ytimg.com/vi/${ONBOARDING_VIDEO_ID}/hqdefault.jpg`;
 const ONBOARDING_VIDEO_EMBED_URL = `https://www.youtube.com/embed/${ONBOARDING_VIDEO_ID}`;
 const TOUR_VIDEO_THUMBNAIL = `https://i.ytimg.com/vi/${TOUR_VIDEO_ID}/hqdefault.jpg`;
 const TOUR_VIDEO_EMBED_URL = `https://www.youtube.com/embed/${TOUR_VIDEO_ID}`;
+const PARENT_VIDEO_THUMBNAIL = `https://i.ytimg.com/vi/${PARENT_VIDEO_ID}/hqdefault.jpg`;
+const PARENT_VIDEO_EMBED_URL = `https://www.youtube.com/embed/${PARENT_VIDEO_ID}`;
 
 export const metadata: Metadata = {
   title: "Features",
@@ -49,6 +54,7 @@ export const metadata: Metadata = {
     videos: [
       { url: ONBOARDING_VIDEO_EMBED_URL, secureUrl: ONBOARDING_VIDEO_EMBED_URL, type: "text/html" },
       { url: TOUR_VIDEO_EMBED_URL, secureUrl: TOUR_VIDEO_EMBED_URL, type: "text/html" },
+      { url: PARENT_VIDEO_EMBED_URL, secureUrl: PARENT_VIDEO_EMBED_URL, type: "text/html" },
     ],
   },
 };
@@ -74,6 +80,16 @@ const tourVideoJsonLd = {
   thumbnailUrl: [TOUR_VIDEO_THUMBNAIL],
   uploadDate: "2026-10-24",
   embedUrl: TOUR_VIDEO_EMBED_URL,
+};
+
+const parentVideoJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "VideoObject",
+  name: PARENT_VIDEO_TITLE,
+  description: PARENT_VIDEO_DESCRIPTION,
+  thumbnailUrl: [PARENT_VIDEO_THUMBNAIL],
+  uploadDate: "2026-10-24",
+  embedUrl: PARENT_VIDEO_EMBED_URL,
 };
 
 const groups = [
@@ -168,6 +184,7 @@ export default function FeaturesPage() {
     <>
       <JsonLd data={onboardingVideoJsonLd} />
       <JsonLd data={tourVideoJsonLd} />
+      <JsonLd data={parentVideoJsonLd} />
       <Header />
       <main className="flex-1 px-4 py-16">
         <div className="mx-auto max-w-page">
@@ -203,9 +220,9 @@ export default function FeaturesPage() {
           <div className="mt-20 text-center">
             <h2 className="text-section-title text-fg mb-2">See it in action</h2>
             <p className="text-body text-muted mb-10 max-w-md mx-auto">
-              Two short looks at the platform — creating an account, and a tour of how it works.
+              Three short looks at the platform — creating an account, a tour of how it works, and linking a parent.
             </p>
-            <div className="grid sm:grid-cols-2 gap-10 max-w-2xl mx-auto">
+            <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-10 max-w-3xl mx-auto">
               <div>
                 <YouTubeEmbed videoId={ONBOARDING_VIDEO_ID} title={ONBOARDING_VIDEO_TITLE} />
                 <p className="text-small text-muted mt-4">Creating your account</p>
@@ -213,6 +230,10 @@ export default function FeaturesPage() {
               <div>
                 <YouTubeEmbed videoId={TOUR_VIDEO_ID} title={TOUR_VIDEO_TITLE} />
                 <p className="text-small text-muted mt-4">Touring the platform</p>
+              </div>
+              <div>
+                <YouTubeEmbed videoId={PARENT_VIDEO_ID} title={PARENT_VIDEO_TITLE} />
+                <p className="text-small text-muted mt-4">Linking a parent</p>
               </div>
             </div>
           </div>
