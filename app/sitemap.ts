@@ -14,10 +14,11 @@ export const dynamic = "force-static";
 export const routes: { path: string; lastModified: string }[] = [
   { path: "", lastModified: "2026-10-24" },
   { path: "/features", lastModified: "2026-10-24" },
-  { path: "/pricing", lastModified: "2026-07-16" },
+  { path: "/pricing", lastModified: "2026-10-28" },
   { path: "/about", lastModified: "2026-07-26" },
   { path: "/contact", lastModified: "2026-07-26" },
-  { path: "/guides", lastModified: "2026-07-16" },
+  { path: "/guides", lastModified: "2026-08-09" },
+  { path: "/distance-education", lastModified: "2026-10-28" },
   { path: "/guides/the-quadratic-formula", lastModified: "2026-07-29" },
   { path: "/guides/states-of-matter", lastModified: "2026-07-29" },
   { path: "/guides/pythagoras-theorem", lastModified: "2026-07-29" },

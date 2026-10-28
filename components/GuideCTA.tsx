@@ -9,7 +9,7 @@ export function GuideCTA() {
       </p>
       <a
         href={`${APP_URL}/signup`}
-        className="inline-block rounded-lg bg-accent px-6 py-3 text-sm font-medium text-white transition-colors hover:bg-[#235240]"
+        className="inline-block rounded-lg bg-accent px-6 py-3 text-sm font-medium text-[var(--accent-text-on)] transition-colors hover:bg-accent-hover"
       >
         Start learning for free
       </a>

@@ -58,6 +58,17 @@ export const letter: readonly string[] = [
     'nothing held back behind a paid tier.',
 ];
 
+/**
+ * Pull-quote excerpt, lifted verbatim from the second paragraph of `letter`
+ * (the sentence about geographic reach). For standalone pull-quote
+ * treatments elsewhere — e.g. /distance-education/ — that want just this
+ * line rather than the full paragraph. Add new call sites here; don't
+ * retype the sentence into a component a second time.
+ */
+export const pullQuoteAccess =
+  'Further out than Northam it doesn’t buy you anything at all, because ' +
+  'there’s nobody to hire at any price.';
+
 /** Squeezed version, homepage. One paragraph, then the link to /about/. */
 export const letterShort =
   'Most of what I do in a session isn’t teaching. It’s being there at ' +

@@ -31,6 +31,9 @@ export function Footer() {
           <Link href="/guides/" className="text-small text-muted hover:text-fg transition-colors">
             Guides
           </Link>
+          <Link href="/distance-education/" className="text-small text-muted hover:text-fg transition-colors">
+            Distance education
+          </Link>
           <Link href="/pricing/" className="text-small text-muted hover:text-fg transition-colors">
             Pricing
           </Link>

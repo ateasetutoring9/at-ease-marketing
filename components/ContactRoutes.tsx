@@ -33,6 +33,11 @@ const ROUTES: Route[] = [
     subject: "Private tutoring enquiry",
   },
   {
+    title: "Group classes",
+    body: "Interested in small-group sessions. Pricing and format aren't set yet — tell me what you're after.",
+    subject: "Group classes enquiry",
+  },
+  {
     title: "Tutoring on the platform",
     body: "If you teach or tutor a WA course and want to work on this when it opens up.",
     subject: "Tutor application",
