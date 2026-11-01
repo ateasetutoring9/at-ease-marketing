@@ -19,6 +19,9 @@ export function ThemeToggle() {
   const [dark, setDark] = useState(false);
 
   useEffect(() => {
+    // Syncing from the external DOM class the flash-prevention script set
+    // before hydration, not from React state — see the file-level comment.
+    // eslint-disable-next-line react-hooks/set-state-in-effect
     setDark(document.documentElement.classList.contains("dark"));
     setMounted(true);
   }, []);

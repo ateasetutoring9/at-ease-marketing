@@ -34,6 +34,7 @@ export function YouTubeEmbed({ videoId, title }: YouTubeEmbedProps) {
           aria-label={`Play video: ${title}`}
           className="group relative h-full w-full cursor-pointer"
         >
+          {/* eslint-disable-next-line @next/next/no-img-element -- third-party thumbnail; images are unoptimized site-wide under static export anyway */}
           <img
             src={`https://i.ytimg.com/vi/${videoId}/hqdefault.jpg`}
             alt=""

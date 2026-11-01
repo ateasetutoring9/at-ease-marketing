@@ -2,7 +2,7 @@
 // checks the deployed artifact, not the code that's supposed to produce it.
 // Run after `npm run build`. Exits non-zero on any mismatch so this can gate
 // a build later.
-import { readFileSync, readdirSync, statSync } from "node:fs";
+import { readFileSync, readdirSync } from "node:fs";
 import path from "node:path";
 import { SITE_URL } from "../lib/constants.ts";
 

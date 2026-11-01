@@ -61,7 +61,7 @@ export default function ContactRoutes() {
         <div className="text-center">
           <h1 className="text-hero text-fg">Get in touch</h1>
           <p className="mx-auto mt-4 max-w-md text-body text-muted leading-relaxed">
-            There's no support team — it's me. I answer within one school day,
+            There&apos;s no support team — it&apos;s me. I answer within one school day,
             usually sooner.
           </p>
         </div>
@@ -126,7 +126,7 @@ export default function ContactRoutes() {
             {/* · Working With Children Check current */}
           </p>
           <p className="mx-auto max-w-md text-small text-muted leading-relaxed">
-            If you're under 18 and asking about tutoring, please have a parent
+            If you&apos;re under 18 and asking about tutoring, please have a parent
             or guardian email me, or copy them in.
           </p>
         </div>

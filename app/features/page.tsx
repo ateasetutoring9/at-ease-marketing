@@ -191,7 +191,7 @@ export default function FeaturesPage() {
           <div className="mb-16 text-center">
             <h1 className="text-hero text-fg mb-6">Built for students. Visible to parents.</h1>
             <p className="mx-auto max-w-xl text-body text-muted">
-              A student gets free lectures, instant feedback, and a pace that's theirs to set. A parent gets a clear window into how it's going — without either of you paying for it.
+              A student gets free lectures, instant feedback, and a pace that&apos;s theirs to set. A parent gets a clear window into how it&apos;s going — without either of you paying for it.
             </p>
           </div>
 

@@ -26,7 +26,7 @@ export function FeaturesTeaser() {
         <div className="text-center mb-12">
           <h2 className="text-section-title text-fg mb-4">Built for students. Visible to parents.</h2>
           <p className="text-body text-muted max-w-xl mx-auto">
-            A student gets free lectures and instant feedback at their own pace. A parent gets a clear window into how it's going — all in the same free account.
+            A student gets free lectures and instant feedback at their own pace. A parent gets a clear window into how it&apos;s going — all in the same free account.
           </p>
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 mb-10">
