@@ -66,6 +66,15 @@ export default function CurriculumHub({ slug }: { slug: string }) {
           {entry.heading}
         </h1>
         <p className="text-muted mt-4 text-lg leading-relaxed">{entry.intro}</p>
+        {entry.courseName && (
+          <p className="text-muted mt-4 text-sm">
+            School not running this course?{" "}
+            <Link href="/distance-education/" className="text-accent hover:underline">
+              See how students in regional WA and distance education use these lessons
+            </Link>
+            .
+          </p>
+        )}
       </header>
 
       <nav aria-label="On this page" className="border-border mt-10 border-t pt-6">

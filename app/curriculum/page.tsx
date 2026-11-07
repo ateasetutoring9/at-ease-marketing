@@ -48,6 +48,13 @@ export default function CurriculumIndexPage() {
           often get stuck. Years 7–10 follow the Western Australian Curriculum — Maths and Science
           were revised for 2026, English for 2025; Years 11 and 12 follow WACE courses set by SCSA.
         </p>
+        <p className="text-muted mt-4 text-sm">
+          Not offered at your school?{" "}
+          <Link href="/distance-education/" className="text-accent hover:underline">
+            Free WACE lessons for regional and distance-education students
+          </Link>
+          .
+        </p>
       </header>
 
       {stages.map((stage) => (
