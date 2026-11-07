@@ -25,6 +25,7 @@ export const routes: { path: string; lastModified: string }[] = [
   { path: "/guides/trigonometry-finding-a-side", lastModified: "2026-07-29" },
   { path: "/guides/newtons-laws-of-motion", lastModified: "2026-07-29" },
   { path: "/guides/what-is-a-derivative", lastModified: "2026-07-29" },
+  { path: "/guides/maths-methods-or-applications", lastModified: "2026-11-07" },
   { path: "/curriculum", lastModified: "2026-08-09" },
 ];
 

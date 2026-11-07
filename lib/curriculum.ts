@@ -84,6 +84,9 @@ export interface CurriculumEntry {
   /** What assessment looks like at this level. */
   assessment: string[];
   faqs: { q: string; a: string }[];
+  /** Slug of a guide in lib/guides.ts that helps choose between courses,
+   *  linked under the intro. */
+  courseChoiceGuide?: string;
   published: boolean;
   lastModified: string;
 }
@@ -1078,6 +1081,7 @@ export const curriculum: CurriculumEntry[] = [
 
   {
     slug: "year-10-maths",
+    courseChoiceGuide: "maths-methods-or-applications",
     year: 10,
     yearLabel: "Year 10",
     subject: "Maths",
@@ -1782,6 +1786,7 @@ export const curriculum: CurriculumEntry[] = [
 
   {
     slug: "mathematics-methods-year-11",
+    courseChoiceGuide: "maths-methods-or-applications",
     year: 11,
     yearLabel: "Year 11",
     subject: "Maths",
@@ -1987,6 +1992,7 @@ export const curriculum: CurriculumEntry[] = [
 
   {
     slug: "mathematics-applications-year-11",
+    courseChoiceGuide: "maths-methods-or-applications",
     year: 11,
     yearLabel: "Year 11",
     subject: "Maths",

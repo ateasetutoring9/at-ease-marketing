@@ -45,6 +45,10 @@ export default function CurriculumHub({ slug }: { slug: string }) {
     }
   }
 
+  const courseChoiceGuide = entry.courseChoiceGuide
+    ? guides.find((g) => g.href === `/guides/${entry.courseChoiceGuide}/`)
+    : undefined;
+
   return (
     <article>
       <JsonLd data={curriculumBreadcrumbJsonLd(label, href)} />
@@ -66,6 +70,14 @@ export default function CurriculumHub({ slug }: { slug: string }) {
           {entry.heading}
         </h1>
         <p className="text-muted mt-4 text-lg leading-relaxed">{entry.intro}</p>
+        {courseChoiceGuide && (
+          <p className="text-muted mt-4 text-sm">
+            Choosing Year 11 maths?{" "}
+            <Link href={courseChoiceGuide.href} className="text-accent hover:underline">
+              {courseChoiceGuide.title}
+            </Link>
+          </p>
+        )}
         {entry.courseName && (
           <p className="text-muted mt-4 text-sm">
             School not running this course?{" "}

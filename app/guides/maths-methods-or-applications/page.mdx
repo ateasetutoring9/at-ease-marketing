@@ -1,0 +1,146 @@
+import { JsonLd } from "@/components/JsonLd";
+import { BrowseGuidesLink } from "@/components/BrowseGuidesLink";
+import { GuideCTA } from "@/components/GuideCTA";
+import { Breadcrumb } from "@/components/Breadcrumb";
+import { RelatedGuides } from "@/components/RelatedGuides";
+import { SITE_URL, SITE_NAME, OG_IMAGE } from "@/lib/constants";
+import { guideBreadcrumbJsonLd } from "@/lib/breadcrumb";
+
+export const metadata = {
+  title: "Maths Methods or Applications? Choosing Year 11 Maths in WA",
+  description:
+    "How Mathematics Methods and Mathematics Applications differ in WA, what each leaves open for university, and how to choose before Year 11 — for WA Year 10 students and parents.",
+  alternates: {
+    canonical: "/guides/maths-methods-or-applications/",
+  },
+  openGraph: {
+    title: `Maths Methods or Applications? Choosing Year 11 Maths in WA — ${SITE_NAME}`,
+    description:
+      "How Mathematics Methods and Mathematics Applications differ in WA, and how to choose before Year 11.",
+    images: [OG_IMAGE],
+  },
+};
+
+export const articleJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "Article",
+  headline: "Maths Methods or Applications? Choosing Year 11 Maths in WA",
+  description:
+    "How Mathematics Methods and Mathematics Applications differ in WA, and how to choose before Year 11.",
+  author: {
+    "@type": "EducationalOrganization",
+    name: SITE_NAME,
+    url: SITE_URL,
+  },
+  publisher: {
+    "@type": "EducationalOrganization",
+    name: SITE_NAME,
+    logo: {
+      "@type": "ImageObject",
+      url: `${SITE_URL}/logo.png`,
+    },
+  },
+  mainEntityOfPage: `${SITE_URL}/guides/maths-methods-or-applications/`,
+};
+
+export const breadcrumbJsonLd = guideBreadcrumbJsonLd(
+  "Maths Methods or Applications?",
+  "/guides/maths-methods-or-applications/"
+);
+
+<JsonLd data={articleJsonLd} />
+<JsonLd data={breadcrumbJsonLd} />
+
+<Breadcrumb
+  items={[
+    { label: "Home", href: "/" },
+    { label: "Guides", href: "/guides/" },
+    { label: "Maths Methods or Applications?" },
+  ]}
+/>
+
+# Maths Methods or Applications? Choosing Year 11 Maths in WA
+
+In WA Year 10, most students make one choice that shapes more than the others: which maths to take in Year 11. The course names — Methods, Applications, Specialist, Essential — mean little until someone explains them. This guide is for the student and the parent sitting down with the subject selection form.
+
+The courses themselves are WACE courses, so they run in Years 11 and 12 only. Your school's Year 10 handbook is the final word on what it offers and what results it expects.
+
+## The four courses
+
+**Mathematics Methods (ATAR)** is the calculus and statistics course. SCSA describes it as focusing on "the use of calculus and statistical analysis" — functions, derivatives and integrals, and the statistics of uncertainty and variation. It's the course most science, engineering and computing degrees ask for.
+
+**Mathematics Applications (ATAR)** is maths for solving real problems: financial modelling, geometry and trigonometry, networks and graphs, growth and decay in sequences, and statistical investigation of data. SCSA says it's designed for students whose future study or work doesn't require calculus. It still leads to university, including through TAFE pathways.
+
+**Mathematics Specialist (ATAR)** goes beyond Methods: proof, vectors, complex numbers and matrices, and deeper calculus. It's designed to be studied *alongside* Methods, not instead of it — SCSA calls it the only ATAR maths course that shouldn't be taken on its own.
+
+**Mathematics Essential (General)** is a General course, not an ATAR course. It focuses on practical maths for work, further training and everyday decisions. It counts towards the WACE but not towards an ATAR.
+
+## ATAR course or General course?
+
+ATAR courses finish with an external exam, and only ATAR courses contribute to an ATAR. General courses don't. A student taking a General maths course can still achieve the WACE — they just won't have a maths score in their ATAR.
+
+## Why Methods comes up so often
+
+**University prerequisites.** TISC's university admission guide shows every WA university requiring Methods for engineering, and many science and computing degrees ask for it too. Some degrees list "at least Mathematics Applications" instead — and wherever a degree says that, Methods also counts. Look up two or three specific degrees your child is interested in before deciding; prerequisites vary by course and university.
+
+**The maths bonus.** For current Year 12s, TISC adds a bonus of 10% of the scaled score for Methods and for Specialist when it calculates the ATAR. Applications doesn't get this bonus. The rule has been under review, so check TISC's current guide for your child's year. Either way, it isn't a reason on its own to pick a course that doesn't suit the student — TISC itself cautions against choosing courses based on how you expect them to be scaled.
+
+## The one-way door
+
+This is the most useful thing to know. TISC's guide notes that, depending on timetabling, most schools let a student change from Methods to Applications at the end of Year 11 — but not from Applications to Methods, because of the content they'd have missed.
+
+So if a Year 10 student is genuinely unsure, starting in Methods keeps more doors open. That isn't an argument for pushing a student who finds maths a struggle into it — a student who's miserable and failing in Methods isn't better off than one doing well in Applications. It's an argument for choosing deliberately, knowing a change is possible in one direction only.
+
+## Can a student study both?
+
+Yes. Methods and Applications can be studied together, and no more than two maths scaled scores can count towards an ATAR. Specialist and Applications are different: a student can study both, but only the higher of the two scores can be used.
+
+In practice, few students take both Methods and Applications. It's usually one or the other.
+
+## What schools look at in Year 10
+
+Each school sets its own entry rules, and they vary. Common patterns in Year 10 handbooks:
+
+- A minimum grade in Year 10 maths for Methods, a lower one for Applications, and a higher one again for Specialist.
+- Different Year 10 maths classes (for example, a standard and an extension class), with the extension class expected for Methods.
+- A recommendation from the student's Year 10 maths teacher.
+
+Schools usually look at the whole year, not one test, so a shaky term is worth addressing early.
+
+## The Year 9 and 10 skills that matter most for Methods
+
+Three things come up again and again once Methods starts:
+
+- **Algebra** — expanding, factorising and rearranging without getting stuck.
+- **Gradient and straight-line graphs** — the starting point for calculus. See [WA Year 9 Maths](/curriculum/year-9-maths/) and [WA Year 10 Maths](/curriculum/year-10-maths/).
+- **Quadratics** — solving and graphing them in more than one way. See [The Quadratic Formula, Explained](/guides/the-quadratic-formula/).
+
+A student who's solid in these is in a good position for Methods. A student who's shaky is usually better off spending the next term strengthening them than changing their course choice.
+
+## Questions to talk through
+
+1. **What might they want to study after school?** Look up a few specific degrees and check their prerequisites.
+2. **How do they feel about algebra and graphs?** Enjoying a subject matters more than most people expect over two years.
+3. **Does their school offer both?** Smaller and regional schools can't always run every course every year. Ask early in Term 4.
+4. **What does their Year 10 maths teacher recommend?** Ask directly.
+
+## If your school doesn't run the course
+
+Some schools can't run every course every year — usually because of staffing or class numbers, not anything about the student. If the course your child needs isn't offered, ask the school about the School of Isolated and Distance Education (SIDE) or another approved option; that enrolment is what counts for the WACE. We've written more about this on our [distance education page](/distance-education/). Our free lessons for [Methods](/curriculum/mathematics-methods-year-11/) and [Applications](/curriculum/mathematics-applications-year-11/) can sit alongside whichever enrolment you choose, but they don't replace it.
+
+## In short
+
+- Methods is calculus and statistics. Applications is applied maths without calculus. Specialist is studied together with Methods.
+- Engineering and many science and computing degrees need Methods, and Methods also meets any "at least Applications" requirement.
+- Most schools allow a move from Methods to Applications after Year 11, but not the other way.
+- Each school sets its own entry grades — check your Year 10 handbook.
+
+*Sources: SCSA course pages for Mathematics Methods, Applications, Specialist and Essential; TISC's University Admission guide. Last checked 7 November 2026.*
+
+---
+
+<RelatedGuides currentHref="/guides/maths-methods-or-applications/" />
+
+<GuideCTA />
+
+<BrowseGuidesLink />

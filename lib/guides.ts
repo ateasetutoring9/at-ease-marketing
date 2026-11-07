@@ -41,4 +41,11 @@ export const guides = [
     href: "/guides/what-is-a-derivative/",
     subject: "Maths",
   },
+  {
+    title: "Maths Methods or Applications? Choosing Year 11 Maths in WA",
+    description:
+      "How Mathematics Methods and Mathematics Applications differ, and how to choose before Year 11, for WA Year 10 students and parents.",
+    href: "/guides/maths-methods-or-applications/",
+    subject: "Maths",
+  },
 ];
