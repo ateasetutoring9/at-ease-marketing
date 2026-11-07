@@ -5,6 +5,7 @@ import { Breadcrumb } from "@/components/Breadcrumb";
 import { RelatedGuides } from "@/components/RelatedGuides";
 import { SITE_URL, SITE_NAME, OG_IMAGE } from "@/lib/constants";
 import { guideBreadcrumbJsonLd } from "@/lib/breadcrumb";
+import { founderAuthorJsonLd } from "@/lib/author";
 
 export const metadata = {
   title: "Maths Methods or Applications? Choosing Year 11 Maths in WA",
@@ -27,11 +28,7 @@ export const articleJsonLd = {
   headline: "Maths Methods or Applications? Choosing Year 11 Maths in WA",
   description:
     "How Mathematics Methods and Mathematics Applications differ in WA, and how to choose before Year 11.",
-  author: {
-    "@type": "EducationalOrganization",
-    name: SITE_NAME,
-    url: SITE_URL,
-  },
+  author: founderAuthorJsonLd,
   publisher: {
     "@type": "EducationalOrganization",
     name: SITE_NAME,

@@ -5,6 +5,7 @@ import { Breadcrumb } from "@/components/Breadcrumb";
 import { RelatedGuides } from "@/components/RelatedGuides";
 import { SITE_URL, SITE_NAME, OG_IMAGE } from "@/lib/constants";
 import { guideBreadcrumbJsonLd } from "@/lib/breadcrumb";
+import { founderAuthorJsonLd } from "@/lib/author";
 
 export const metadata = {
   title: "How the ATAR Is Calculated in WA",
@@ -27,11 +28,7 @@ export const articleJsonLd = {
   headline: "How the ATAR Is Calculated in WA",
   description:
     "How a Western Australian ATAR is built from WACE course results, in plain English.",
-  author: {
-    "@type": "EducationalOrganization",
-    name: SITE_NAME,
-    url: SITE_URL,
-  },
+  author: founderAuthorJsonLd,
   publisher: {
     "@type": "EducationalOrganization",
     name: SITE_NAME,

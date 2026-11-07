@@ -5,6 +5,7 @@ import { Breadcrumb } from "@/components/Breadcrumb";
 import { RelatedGuides } from "@/components/RelatedGuides";
 import { SITE_URL, SITE_NAME, OG_IMAGE } from "@/lib/constants";
 import { guideBreadcrumbJsonLd } from "@/lib/breadcrumb";
+import { founderAuthorJsonLd } from "@/lib/author";
 
 export const metadata = {
   title: "Pythagoras' Theorem, Explained",
@@ -27,11 +28,7 @@ export const articleJsonLd = {
   headline: "Pythagoras' Theorem, Explained",
   description:
     "A clear, step-by-step guide to Pythagoras' theorem, for WA Year 8 Maths students.",
-  author: {
-    "@type": "EducationalOrganization",
-    name: SITE_NAME,
-    url: SITE_URL,
-  },
+  author: founderAuthorJsonLd,
   publisher: {
     "@type": "EducationalOrganization",
     name: SITE_NAME,

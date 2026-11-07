@@ -5,6 +5,7 @@ import { Breadcrumb } from "@/components/Breadcrumb";
 import { RelatedGuides } from "@/components/RelatedGuides";
 import { SITE_URL, SITE_NAME, OG_IMAGE } from "@/lib/constants";
 import { guideBreadcrumbJsonLd } from "@/lib/breadcrumb";
+import { founderAuthorJsonLd } from "@/lib/author";
 
 export const metadata = {
   title: "Newton's Laws of Motion, Explained",
@@ -27,11 +28,7 @@ export const articleJsonLd = {
   headline: "Newton's Laws of Motion, Explained",
   description:
     "A clear guide to inertia, F = ma, and action-reaction, for WA Year 10 Science students.",
-  author: {
-    "@type": "EducationalOrganization",
-    name: SITE_NAME,
-    url: SITE_URL,
-  },
+  author: founderAuthorJsonLd,
   publisher: {
     "@type": "EducationalOrganization",
     name: SITE_NAME,

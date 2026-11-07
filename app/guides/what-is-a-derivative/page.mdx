@@ -5,6 +5,7 @@ import { Breadcrumb } from "@/components/Breadcrumb";
 import { RelatedGuides } from "@/components/RelatedGuides";
 import { SITE_URL, SITE_NAME, OG_IMAGE } from "@/lib/constants";
 import { guideBreadcrumbJsonLd } from "@/lib/breadcrumb";
+import { founderAuthorJsonLd } from "@/lib/author";
 
 export const metadata = {
   title: "What Is a Derivative?",
@@ -27,11 +28,7 @@ export const articleJsonLd = {
   headline: "What Is a Derivative?",
   description:
     "How the derivative arises as a limit of the difference quotient, for WACE Maths Methods (ATAR) students.",
-  author: {
-    "@type": "EducationalOrganization",
-    name: SITE_NAME,
-    url: SITE_URL,
-  },
+  author: founderAuthorJsonLd,
   publisher: {
     "@type": "EducationalOrganization",
     name: SITE_NAME,

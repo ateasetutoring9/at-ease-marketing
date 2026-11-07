@@ -1,4 +1,5 @@
 import { SITE_NAME, SITE_URL } from "@/lib/constants";
+import { founderAuthorJsonLd } from "@/lib/author";
 
 /**
  * Single source of truth for /curriculum/ — the year-level hub pages.
@@ -2969,6 +2970,7 @@ export const curriculumCourseJsonLd = (entry: CurriculumEntry, href: string) => 
     name: SITE_NAME,
     url: SITE_URL,
   },
+  author: founderAuthorJsonLd,
   educationalLevel: entry.yearLabel,
   about: entry.strands.flatMap((s) => s.topics.map((t) => t.name)),
   url: `${SITE_URL}${href}`,
