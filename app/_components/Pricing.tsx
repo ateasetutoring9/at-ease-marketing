@@ -1,4 +1,4 @@
-import { Check } from "lucide-react";
+import { Check, Circle } from "lucide-react";
 import { Button } from "@/components/ui/Button";
 import { APP_URL } from "@/lib/constants";
 
@@ -7,12 +7,11 @@ const tiers = [
     label: "Private tutoring",
     price: "$80–120",
     unit: "per hour",
-    note: "Market average, Australia 2025",
+    note: "Commonly, in Perth",
     features: [
       "One-on-one attention",
       "Flexible scheduling",
-      "High cost, hard to sustain",
-      "Quality varies widely",
+      "Adds up fast over a school year",
     ],
     highlighted: false,
     cta: null as null | { href: string; label: string },
@@ -20,8 +19,8 @@ const tiers = [
   {
     label: "At Ease Tutoring",
     price: "Free",
-    unit: "forever",
-    note: "No credit card. No premium tier.",
+    unit: "and staying free",
+    note: "No credit card. Nothing held back behind a paid tier.",
     features: [
       "All lectures & worksheets",
       "Instant worksheet feedback",
@@ -33,14 +32,13 @@ const tiers = [
   },
   {
     label: "Online tutoring platforms",
-    price: "$30–60",
-    unit: "per month",
-    note: "Subscription, often paywalled",
+    price: "Monthly",
+    unit: "subscription",
+    note: "Content behind a paywall",
     features: [
       "Large content libraries",
       "Practice questions",
-      "Ongoing subscription cost",
-      "Often not AU curriculum-aligned",
+      "Usually not written for WA's SCSA courses",
     ],
     highlighted: false,
     cta: null as null | { href: string; label: string },
@@ -83,7 +81,11 @@ export function Pricing() {
               <ul className="space-y-2 flex-1">
                 {t.features.map((f) => (
                   <li key={f} className="flex items-start gap-2 text-small text-muted">
-                    <Check className="w-4 h-4 text-success mt-0.5 flex-shrink-0" aria-hidden="true" />
+                    {t.highlighted ? (
+                      <Check className="w-4 h-4 text-success mt-0.5 flex-shrink-0" aria-hidden="true" />
+                    ) : (
+                      <Circle className="w-1.5 h-1.5 mt-2 mx-[5px] fill-current text-muted flex-shrink-0" aria-hidden="true" />
+                    )}
                     {f}
                   </li>
                 ))}
