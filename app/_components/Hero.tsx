@@ -11,7 +11,7 @@ export function Hero() {
           Ace your WACE.<br />Pay nothing.
         </h1>
         <p className="text-body text-muted mb-10 max-w-xl mx-auto">
-          High-quality lectures, auto-graded worksheets, and instant feedback for Year 7–12 Western Australian students — completely free, forever.
+          Written lessons, auto-graded worksheets and instant feedback for Western Australian students in Years 7–12 — free, and staying free.
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <Button variant="primary" size="lg" href={`${APP_URL}/signup`}>
