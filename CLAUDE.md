@@ -383,10 +383,10 @@ From the same audit, real but not yet actioned:
 - **Header is not sticky** on a 14-section homepage — no `sticky`/`fixed`
   positioning anywhere in `Header.tsx`. Once scrolled past the hero there's
   no way back to Sign Up/Log In except scrolling all the way up or down.
-- **Guides and Curriculum only link one direction.** `CurriculumHub.tsx`
-  links out to a matching guide via `topic.guide`; nothing links back from
-  a guide to its curriculum hub, and `/guides/` is missing from
-  `Header.tsx`'s primary nav (footer only).
+- **`/guides/` is missing from `Header.tsx`'s primary nav** (footer only).
+  Guides and curriculum hubs do now link both ways: `CurriculumHub.tsx`
+  links out via `topic.guide`, and each guide has a "Part of [hub]" line
+  under its `#` heading — add one to any new guide.
 - **No content targets the primary acquisition segment's actual search
   intent** — "my WA school doesn't offer this subject," "distance
   education alternative for WACE [subject]." Nothing in `app/curriculum/`
