@@ -3,6 +3,7 @@ import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { JsonLd } from "@/components/JsonLd";
 import { APP_URL, SITE_NAME, OG_IMAGE, CONTACT_EMAIL } from "@/lib/constants";
+import { whatThisIs } from "@/lib/founder-letter";
 
 export const metadata: Metadata = {
   title: "Pricing",
@@ -18,7 +19,7 @@ export const metadata: Metadata = {
 };
 
 const freeFeatures = [
-  "All subjects, all year levels (7–12)",
+  "Every lesson and worksheet written so far, Years 7–12",
   "SCSA and WACE-aligned lectures and worksheets",
   "Auto-marked practice questions with instant feedback",
   "Attempt history and score tracking",
@@ -47,7 +48,7 @@ const groupFeatures = [
 const faqs = [
   {
     q: "Is it really free?",
-    a: "Yes. Every subject, every year level, every lecture and worksheet. No credit card, no trial, no expiry date.",
+    a: `Yes. Every lecture and worksheet that's written is free to use. No credit card, no trial, no expiry date. ${whatThisIs.unfinished}`,
   },
   {
     q: "Will it stay free?",
@@ -94,9 +95,9 @@ export default function PricingPage() {
           <div className="mb-14 text-center">
             <h1 className="text-4xl font-semibold text-fg">Pricing</h1>
             <p className="mx-auto mt-4 max-w-xl text-lg leading-relaxed text-muted">
-              The core platform is free — not a trial, not a freemium hook. Every
-              student in Australia gets access to every subject, every year level,
-              at no cost.
+              The core platform is free — not a trial, not a freemium hook. Any
+              student can read the lessons and use the worksheets written so far,
+              at no cost. The library is still being written, subject by subject.
             </p>
           </div>
 

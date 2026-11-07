@@ -33,7 +33,7 @@ export const progress = {
     'I’m still writing. Year 11 Chemistry is done and Year 12 is about a ' +
     'third of the way through. Physics — Year 11 and Year 12 — is done ' +
     'too. Founding members tell me what to write first, and I write it.',
-  verified: '2026-10-04',
+  verified: '2026-11-07',
 } as const;
 
 export const hook =
@@ -92,10 +92,12 @@ export const whatThisIs = {
   ],
   /** Keep this current. It is the most persuasive paragraph on the page. */
   unfinished:
-    'Not finished yet: senior Humanities hasn’t been started, and ' +
-    'Chemistry is partway through Year 12. Everything else — all of ' +
-    'Years 7 to 10, all senior Maths, all senior English, Physics, ' +
-    'Biology and Human Biology — is written and live.',
+    'Not finished yet: senior Humanities hasn’t been started, and neither ' +
+    'have Year 11 Specialist Maths, Year 11 Human Biology or Year 12 ' +
+    'Biology. Year 11 Biology has Unit 1 so far, and Year 12 Chemistry has ' +
+    'Unit 3. Everything else — all of Years 7 to 10, the rest of senior ' +
+    'Maths, all senior English, Physics, Year 11 Chemistry and Year 12 ' +
+    'Human Biology — is written and live.',
 } as const;
 
 /**
