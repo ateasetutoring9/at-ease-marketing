@@ -48,4 +48,11 @@ export const guides = [
     href: "/guides/maths-methods-or-applications/",
     subject: "Maths",
   },
+  {
+    title: "How the ATAR Is Calculated in WA",
+    description:
+      "How a WA ATAR is built from WACE course results — scaled scores, the best four and the 10% bonuses — for Year 11 and 12 families.",
+    href: "/guides/how-the-atar-is-calculated-in-wa/",
+    subject: "WA senior school",
+  },
 ];

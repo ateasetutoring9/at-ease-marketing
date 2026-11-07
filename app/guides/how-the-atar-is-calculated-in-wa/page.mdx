@@ -1,0 +1,158 @@
+import { JsonLd } from "@/components/JsonLd";
+import { BrowseGuidesLink } from "@/components/BrowseGuidesLink";
+import { GuideCTA } from "@/components/GuideCTA";
+import { Breadcrumb } from "@/components/Breadcrumb";
+import { RelatedGuides } from "@/components/RelatedGuides";
+import { SITE_URL, SITE_NAME, OG_IMAGE } from "@/lib/constants";
+import { guideBreadcrumbJsonLd } from "@/lib/breadcrumb";
+
+export const metadata = {
+  title: "How the ATAR Is Calculated in WA",
+  description:
+    "How a Western Australian ATAR is built from WACE course results — scaled scores, the best four, the 10% bonuses and what the number means. Plain English, checked against TISC.",
+  alternates: {
+    canonical: "/guides/how-the-atar-is-calculated-in-wa/",
+  },
+  openGraph: {
+    title: `How the ATAR Is Calculated in WA — ${SITE_NAME}`,
+    description:
+      "How a Western Australian ATAR is built from WACE course results, in plain English.",
+    images: [OG_IMAGE],
+  },
+};
+
+export const articleJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "Article",
+  headline: "How the ATAR Is Calculated in WA",
+  description:
+    "How a Western Australian ATAR is built from WACE course results, in plain English.",
+  author: {
+    "@type": "EducationalOrganization",
+    name: SITE_NAME,
+    url: SITE_URL,
+  },
+  publisher: {
+    "@type": "EducationalOrganization",
+    name: SITE_NAME,
+    logo: {
+      "@type": "ImageObject",
+      url: `${SITE_URL}/logo.png`,
+    },
+  },
+  mainEntityOfPage: `${SITE_URL}/guides/how-the-atar-is-calculated-in-wa/`,
+};
+
+export const breadcrumbJsonLd = guideBreadcrumbJsonLd(
+  "How the ATAR Is Calculated in WA",
+  "/guides/how-the-atar-is-calculated-in-wa/"
+);
+
+<JsonLd data={articleJsonLd} />
+<JsonLd data={breadcrumbJsonLd} />
+
+<Breadcrumb
+  items={[
+    { label: "Home", href: "/" },
+    { label: "Guides", href: "/guides/" },
+    { label: "How the ATAR Is Calculated in WA" },
+  ]}
+/>
+
+# How the ATAR Is Calculated in WA
+
+For a lot of Western Australian families, the ATAR feels like a number that appears from nowhere in December. It doesn't. It's built in a fixed order from results your child has already earned, and once you know the order it stops being mysterious.
+
+This guide is for families of WACE students in Years 11 and 12. The ATAR is calculated by TISC (the Tertiary Institutions Service Centre) — not by SCSA, and not by your child's school.
+
+## What the ATAR is, and what it isn't
+
+The ATAR is a **rank**, not a mark. It runs from 0 up to 99.95 and shows where a student sits compared with all other students of Year 12 school-leaving age in WA. Roughly, an ATAR of 75 means a student did as well as or better than 75% of that group.
+
+That's why you can't work out an ATAR from the percentages on a school report. It depends on how the whole year's cohort performed, not just your child.
+
+It's also only one way into university. Universities also look at WACE achievement and English competence, and several have entry pathways that don't use an ATAR at all.
+
+## From school marks to a scaled score
+
+Each ATAR course goes through five steps:
+
+1. **School mark.** Your child earns a school-based assessment mark through the year. The school sends it to SCSA.
+2. **Exam.** Every student in that ATAR course sits the same external exam, which gives a raw exam mark.
+3. **Moderation.** SCSA adjusts school marks using how each school's students did in the exam, so no one is helped or hurt by how generously their school marked. The moderated school mark and the exam mark are combined.
+4. **Standardising.** Combined marks in every course are standardised to an average of around 60%, so no one gains or loses from sitting a harder or easier exam that year.
+5. **Scaling.** TISC then scales each course to account for its difficulty relative to the others. The result is a **scaled score** out of 100.
+
+A scaled score only exists if the student sat the external exam for an **ATAR course**. General courses and VET qualifications don't produce one, so they don't count towards an ATAR.
+
+## From scaled scores to the TEA
+
+The ATAR is worked out from the **Tertiary Entrance Aggregate (TEA)**:
+
+- TISC adds together your child's **best four scaled scores**.
+- It then adds a **bonus of 10%** of the scaled score for **Mathematics Methods** and for **Mathematics Specialist** if they were studied, and 10% of the best **Language Other Than English (LOTE)** scaled score.
+- These bonuses are added **even if those courses aren't in the best four**.
+
+The maximum TEA is 430: four scores of 100, plus up to three bonuses of 10.
+
+### A worked example
+
+These numbers are made up, purely to show the method. Priya studies five ATAR courses and gets these scaled scores:
+
+- English: 62.0
+- Mathematics Methods: 58.0
+- Chemistry: 55.0
+- Human Biology: 51.0
+- Geography: 47.0
+
+Her best four add up to 62.0 + 58.0 + 55.0 + 51.0 = **226.0**. Geography isn't used.
+
+She studied Methods, so she gets 10% of its scaled score as a bonus: 0.10 × 58.0 = **5.8**. She didn't study a language, so there's no LOTE bonus.
+
+Priya's TEA is 226.0 + 5.8 = **231.8**.
+
+If she'd taken Mathematics Applications instead of Methods, there would be no maths bonus. That's the whole bonus rule — and it's a small part of choosing a maths course, not the main reason. See [Maths Methods or Applications?](/guides/maths-methods-or-applications/) for the bigger picture.
+
+## From TEA to ATAR
+
+There's no fixed formula. Each year TISC builds a table that converts TEAs to ATARs, based on how all the state's TEAs fall and the number of people of Year 12 school-leaving age. That's why nobody can tell you your child's exact ATAR in advance, and why online ATAR calculators are estimates only.
+
+TISC does give one rule of thumb: a best-four average scaled score of around 55 is likely to give an ATAR of around 70 — the minimum entry most WA universities set.
+
+## The rules that catch people out
+
+- **At least four ATAR courses.** An ATAR needs at least four scaled scores. A student can take fewer ATAR courses — they just won't get an ATAR.
+- **Scores can build up over five years.** Scaled scores can be accumulated over five consecutive years, so a course sat early can count. If a course is repeated, the best score is used.
+- **No more than two maths scores.** Only two mathematics scaled scores can count.
+- **Some pairs don't both count.** For example, Mathematics Applications with Mathematics Specialist, or Physics or Chemistry with Integrated Science. A student can study both, but only the higher score is used.
+- **A previous ATAR isn't lost.** A student with an ATAR from an earlier year gets the benefit of the higher of the two.
+- **WACE and English are separate requirements.** Most WA universities also require the WACE and a minimum English result, on top of the ATAR.
+
+## Will scaling hurt a "hard" or "easy" subject?
+
+TISC specifically cautions against choosing courses based on how you think they'll be scaled. Scaling isn't set in advance — it depends on each year's results. Students generally do best in the courses they can do well in and want to work at.
+
+## Are the bonuses changing?
+
+Possibly — so check before relying on them for future years. In 2024 TISC proposed changing the TEA calculation, including removing the bonuses. In 2026 it postponed that change "until further notice", and its current admission guides still include the bonuses. If your child is choosing courses for a later year, check TISC's website for the current position.
+
+## When do results come out?
+
+TISC lists **Sunday 20 December 2026 at 8.00am** for 2026 WA ATAR results. Dates can change, so check TISC's website closer to the day.
+
+## In short
+
+- The ATAR is a rank against all WA students of Year 12 age, not a mark.
+- Each ATAR course result is moderated, standardised and scaled into a scaled score out of 100.
+- The TEA is your best four scaled scores, plus 10% bonuses for Methods, Specialist and the best language course (maximum 430).
+- TISC converts the TEA to an ATAR using a table it builds each year, so it can't be predicted exactly.
+
+*Sources: TISC's University Admission guides and its "About the ATAR" and key dates pages. Last checked 7 November 2026.*
+
+---
+
+<RelatedGuides currentHref="/guides/how-the-atar-is-calculated-in-wa/" />
+
+<GuideCTA />
+
+<BrowseGuidesLink />

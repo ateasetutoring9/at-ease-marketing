@@ -78,6 +78,14 @@ export default function CurriculumHub({ slug }: { slug: string }) {
             </Link>
           </p>
         )}
+        {entry.courseType === "ATAR" && (
+          <p className="text-muted mt-4 text-sm">
+            How does this course count?{" "}
+            <Link href="/guides/how-the-atar-is-calculated-in-wa/" className="text-accent hover:underline">
+              How the ATAR is calculated in WA
+            </Link>
+          </p>
+        )}
         {entry.courseName && (
           <p className="text-muted mt-4 text-sm">
             School not running this course?{" "}
