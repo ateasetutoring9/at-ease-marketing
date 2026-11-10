@@ -12,7 +12,7 @@ export const dynamic = "force-static";
 // you meaningfully change that page's content, not on every unrelated edit.
 // Exported so scripts/routes.mjs can read it without duplicating the list.
 export const routes: { path: string; lastModified: string }[] = [
-  { path: "", lastModified: "2026-11-07" },
+  { path: "", lastModified: "2026-11-11" },
   { path: "/features", lastModified: "2026-10-24" },
   { path: "/pricing", lastModified: "2026-11-07" },
   { path: "/about", lastModified: "2026-11-07" },

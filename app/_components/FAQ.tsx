@@ -5,7 +5,7 @@ const faqs = [
   {
     question: "Is it really free?",
     answer:
-      "Yes — completely free. No credit card required, no premium tier, no ads. Every lecture, worksheet, and feature is available to every student at no cost. We're committed to keeping it that way.",
+      "Yes. Every lecture and worksheet that's written is free to use — no credit card, no ads, and nothing held back behind a paid tier. 1-on-1 tutoring is a separate, optional paid service; it doesn't unlock any of the free content. We're committed to keeping the platform free.",
   },
   {
     question: "Which year levels and subjects are covered?",
