@@ -52,6 +52,9 @@ export function Footer() {
           <a href={`${APP_URL}/signup`} className="text-small text-muted hover:text-fg transition-colors">
             Sign up
           </a>
+          <a href={`${APP_URL}/privacy`} className="text-small text-muted hover:text-fg transition-colors">
+            Privacy
+          </a>
         </nav>
       </div>
       <p className="mt-10 text-center text-small text-muted">
