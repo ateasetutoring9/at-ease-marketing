@@ -383,8 +383,8 @@ From the same audit, real but not yet actioned:
 - **Header is not sticky** on a 14-section homepage — no `sticky`/`fixed`
   positioning anywhere in `Header.tsx`. Once scrolled past the hero there's
   no way back to Sign Up/Log In except scrolling all the way up or down.
-- **`/guides/` is missing from `Header.tsx`'s primary nav** (footer only).
-  Guides and curriculum hubs do now link both ways: `CurriculumHub.tsx`
+- **Guides and curriculum hubs link both ways** (and `/guides/` is in
+  `Header.tsx`'s primary nav as of 2026-11-11): `CurriculumHub.tsx`
   links out via `topic.guide`, and each guide has a "Part of [hub]" line
   under its `#` heading — add one to any new guide.
 - **No content targets the primary acquisition segment's actual search
