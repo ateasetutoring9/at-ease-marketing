@@ -37,6 +37,7 @@ Emits a fully static site to `out/`, deployed on Cloudflare Pages.
 | `lib/guides.ts` | Guide index data — add new guides here |
 | `lib/curriculum.ts` | Curriculum hub data (much larger) — add new hubs here |
 | `lib/founder-letter.ts` | Single source of truth for all founder-letter prose — see below |
+| `lib/author.ts` | `founderAuthorJsonLd` — the founder as a `Person`, used as `author` in every guide `Article` and hub `Course` JSON-LD |
 | `data/reviews.json`, `data/reviews.dev.json` | Real vs. dev-fixture testimonial data — see below |
 | `app/sitemap.ts`, `app/robots.ts` | Static-exported sitemap/robots |
 | `scripts/generate-og-image.mjs` | Regenerates `public/og-image.png` |
@@ -51,8 +52,16 @@ Emits a fully static site to `out/`, deployed on Cloudflare Pages.
    `<RelatedGuides />`, then `<GuideCTA />` + `<BrowseGuidesLink />` at the
    bottom).
 2. Add an entry to `lib/guides.ts` (title, description, href, subject —
-   "Maths" or "Science"; drives the index, sitemap, and `RelatedGuides`).
+   "Maths", "Science" or "WA senior school"; drives the index, sitemap, and
+   `RelatedGuides`).
 3. Add a `{path, lastModified}` entry to `app/sitemap.ts` with a real date.
+4. In the guide itself: set the `Article` JSON-LD `author` to
+   `founderAuthorJsonLd` (`lib/author.ts`), and put a
+   `*Part of [hub](/curriculum/<slug>/) — see every topic …*` line under the
+   `#` heading so the guide links back to its curriculum hub.
+5. If the guide states facts that change year to year (ATAR rules, exam
+   dates, prerequisites), check them against TISC/SCSA and end with a
+   `*Sources: … Last checked <date>.*` line.
 
 Guides should be original writing fact-checked against real curriculum
 content — not a republish of the app's own lecture/worksheet material. See
@@ -160,12 +169,25 @@ homepage and footer (a fake national-curriculum-board list, present-tense
 video-lecture claims, a "Humanities fully covered" claim, and a hardcoded
 "247 founding spots remaining" counter), and repointed the "Browse
 subjects" CTA (Hero + Footer) from the app's authenticated `/browse` to
-this repo's own public `/curriculum/` index. See CLAUDE.md's **Content
-accuracy audit** section for the full list of what changed and why, and
-**Known content/UX gaps** for what was found but not yet fixed (no
-privacy/terms page, non-sticky header, one-way guide↔curriculum linking,
-and more) — check both before assuming a piece of homepage copy is safe to
-revert or "simplify."
+this repo's own public `/curriculum/` index. A 2026-11 pass fixed the
+pricing page's "every subject, every year level" claim, the founder
+letter's unfinished-courses list, the homepage price comparison's uncited
+figures, and "forever"/"no premium tier" wording. See CLAUDE.md's
+**Content accuracy audit** and **Content accuracy pass (2026-11)**
+sections for the full list, and **Known content/UX gaps** for what was
+found but not yet fixed — check them before assuming a piece of homepage
+copy is safe to revert or "simplify."
+
+## Privacy, analytics and embeds
+
+- The privacy policy is on the app (`app.ateasetutoring.com/privacy`,
+  linked from this site's footer) and covers this site too. Update it if
+  you add any tracking, cookie, form or third-party embed here.
+- Analytics is Cloudflare Web Analytics, switched on in the Pages
+  dashboard — there's no analytics code in this repo.
+- Homepage videos (`components/YouTubeEmbed.tsx`) use
+  `youtube-nocookie.com` behind a click-to-play thumbnail. Keep it that way;
+  the privacy policy relies on it.
 
 ## Contact routing (`/contact/`)
 

@@ -91,7 +91,9 @@ tokens). Static-export compatible — verified end to end.
 
 - **Source of truth for content:** guides are original writing (their own worked examples, own framing), *fact-checked against* real curriculum source material — never a verbatim republish of the app's actual lecture/worksheet content. Republishing the product's own content on the public marketing site would duplicate it and gives a visitor no reason to sign up.
 - **Curriculum accuracy:** WACE is the Years 11–12 senior secondary certificate. Don't call a Year 7–10 guide a "WACE guide" — that's only accurate for Year 11–12 WACE-registered courses (e.g. Maths Methods ATAR). Years 7–10 guides should say "WA Year N" instead.
-- `lib/guides.ts` — single array (title, description, href, subject — "Maths" or "Science") driving the `/guides/` index, the sitemap, and `RelatedGuides`; add new guides here.
+- `lib/guides.ts` — single array (title, description, href, subject — "Maths", "Science" or "WA senior school") driving the `/guides/` index, the sitemap, and `RelatedGuides`; add new guides here. "WA senior school" is for parent-logistics guides that aren't about one subject (e.g. how the ATAR is calculated); `RelatedGuides` renders nothing when a guide is the only one in its subject.
+- **Every guide also needs:** `author: founderAuthorJsonLd` (from `lib/author.ts`) in its `Article` JSON-LD, and a `*Part of [hub](/curriculum/<slug>/) — see every topic …*` line directly under its `#` heading so guides link back to their curriculum hub. Guides that state date-sensitive facts (ATAR bonuses, exam/results dates, prerequisites) end with a `*Sources: … Last checked <date>.*` line — re-check those facts against TISC/SCSA before changing the date.
+- **SCSA's websites return 403 to automated fetch tools** (WebFetch/curl). Read SCSA course pages through a real browser (Claude in Chrome) instead; TISC's site and PDFs fetch fine (`pdftotext` the saved PDF — see Known gotchas).
 - Shared components: `components/GuideCTA.tsx` (sign-up CTA block), `components/BrowseGuidesLink.tsx` (link back to the index), `components/Breadcrumb.tsx` (visible trail) and `components/RelatedGuides.tsx` ("More {subject} guides", filtered from `lib/guides.ts` by matching `subject`, current guide excluded) — all four go on every guide, breadcrumb+related above `<GuideCTA />` + `<BrowseGuidesLink />` at the bottom.
 - `lib/breadcrumb.ts` → `guideBreadcrumbJsonLd(title, href)` builds the matching `BreadcrumbList` JSON-LD for each guide — keep the visible `Breadcrumb` trail and this JSON-LD in sync (same title/href). The `/guides/` and `/curriculum/` **index** pages use the lower-level `breadcrumbJsonLd(trail)` + `breadcrumbItems(trail)` directly (both exported from the same file): build one `{name, href}[]` trail array, pass it to both, and the visible trail and the JSON-LD can't drift apart — the same one-array pattern `FAQ.tsx` uses for its visible/JSON-LD FAQ content. Don't write the visible `<Breadcrumb items={...}>` array by hand next to a separately-written JSON-LD trail; that defeats the point.
 - Every new guide needs: the `.mdx` file, an entry in `lib/guides.ts` (with correct `subject`), and a new `{path, lastModified}` entry in `app/sitemap.ts` (sitemap routes are a manual list, not auto-discovered — `lastModified` should be a real date, e.g. from `git log -1 --format=%ad --date=short -- <file>`, not today's date for every route).
@@ -136,6 +138,21 @@ index and in the footer.
   year, other subject, plus adjacent year same subject" behaviour. Relating
   every course in the same year to every other course produces a long,
   unhelpful list — don't collapse this back to the simpler P-10-only logic.
+- **Hub intro links (`CurriculumHub.tsx`, under the intro paragraph):**
+  every WACE hub (`courseName` set) links to `/distance-education/`; every
+  ATAR hub (`courseType === "ATAR"`) links to
+  `/guides/how-the-atar-is-calculated-in-wa/`; and an entry with the
+  optional `courseChoiceGuide` field (a `lib/guides.ts` slug — currently
+  `year-10-maths`, `mathematics-methods-year-11`,
+  `mathematics-applications-year-11`) gets a "Choosing Year 11 maths?" link
+  to that guide. These are internal-linking/SEO choices from the 2026-11
+  SEO review — keep them when restyling the hub header.
+- **Hub `title`/`description` are search snippets, not page copy** — they
+  only appear in Google results, the browser tab and link previews; the
+  visible `<h1>` is `heading`. The four English hubs' snippets were
+  rewritten 2026-11-11 to lead with "Year N … WA" after 516 page-1
+  impressions earned 1 click; compare CTR in the next Search Console export
+  before rewriting other hubs the same way.
 - **Two different SCSA websites, not one.** P-10 curriculum syllabuses live
   on `k10outline.scsa.wa.edu.au`; WACE senior-secondary course syllabuses
   live on the separate `senior-secondary.scsa.wa.edu.au`.
@@ -372,34 +389,59 @@ change, verify against `lib/founder-letter.ts`'s `progress`/`whatThisIs`
 fields first — that's the single source of truth for what's actually
 finished.
 
+## Content accuracy pass (2026-11)
+
+A second pass, same rule as above — don't reintroduce any of these:
+
+- `app/pricing/page.tsx` claimed "every subject, every year level" and
+  "every student in Australia". Now says "written so far", and its "Is it
+  really free?" FAQ appends `whatThisIs.unfinished` so it can't drift.
+- `lib/founder-letter.ts`'s `whatThisIs.unfinished` said "all senior Maths,
+  Biology and Human Biology" were live. Rewritten to match
+  `lib/curriculum.ts`'s `published` flags (Year 11 Specialist, Year 11
+  Human Biology and Year 12 Biology unpublished; Year 11 Biology Unit 1
+  only; Year 12 Chemistry Unit 3 only). Re-check it against
+  `lib/curriculum.ts` whenever a hub is published.
+- `app/_components/Pricing.tsx` (homepage comparison) had an uncited "Market
+  average, Australia 2025" label, an uncited "$30–60/month", "No premium
+  tier" (contradicts paid tutoring) and green ticks on negative points.
+  Now "Commonly, in Perth", no platform price, "Nothing held back behind a
+  paid tier", grey dots on the non-At-Ease cards.
+- `Hero.tsx` and `FAQ.tsx` said "forever" / "no premium tier". Now "staying
+  free" (matches the founder letter) and "tutoring is a separate, optional
+  paid service".
+- "Australian" wording in `TrustStrip.tsx` and `Footer.tsx` was reviewed
+  and **kept deliberately** (founder's call) — not an open gap.
+
+## Privacy and third parties
+
+- **The privacy policy lives in the app, not here:**
+  `app.ateasetutoring.com/privacy` (Basic app repo,
+  `app/(public)/privacy/content.md`), linked from this site's footer. It
+  describes this site too — if you add any tracking, cookie, form, embed or
+  third-party script here, update that policy in the same change.
+- **Cloudflare Web Analytics is on** (enabled 2026-11-08). It's injected by
+  Cloudflare Pages at deploy time from the dashboard — there is no analytics
+  code in this repo, so don't add any. It's cookieless, which is what lets
+  the site keep saying "no tracking pixels".
+- **`YouTubeEmbed.tsx` uses `youtube-nocookie.com`** (privacy-enhanced
+  mode), behind a click-to-play thumbnail. The privacy policy promises this
+  — don't switch it back to `youtube.com`.
+
 ## Known content/UX gaps — flagged, not yet fixed
 
-From the same audit, real but not yet actioned:
+From the same audits, real but not yet actioned:
 
-- **No privacy policy or terms page anywhere on the site**, despite the
-  site making data-handling claims ("No tracking pixels, no data sold to
-  third parties" — `features/page.tsx`, `WhatsFree.tsx`, `TrustStrip.tsx`).
-  Likely a genuine gap once real signups exist, not just an optics one.
 - **Header is not sticky** on a 14-section homepage — no `sticky`/`fixed`
   positioning anywhere in `Header.tsx`. Once scrolled past the hero there's
   no way back to Sign Up/Log In except scrolling all the way up or down.
-- **Guides and curriculum hubs link both ways** (and `/guides/` is in
-  `Header.tsx`'s primary nav as of 2026-11-11): `CurriculumHub.tsx`
-  links out via `topic.guide`, and each guide has a "Part of [hub]" line
-  under its `#` heading — add one to any new guide.
-- **No content targets the primary acquisition segment's actual search
-  intent** — "my WA school doesn't offer this subject," "distance
-  education alternative for WACE [subject]." Nothing in `app/curriculum/`
-  or `app/guides/` is organized around access/availability rather than
-  subject/year.
-- **`Pricing.tsx`'s "$80–120/hr market average" has no citation** — same
-  category of unbacked-specific-number risk as the fixed items above.
-- **`TrustStrip.tsx` says "Australian Curriculum Aligned"**, collapsing
-  the WA-curriculum (Years 7–10) / SCSA-WACE (Years 11–12) distinction the
-  rest of the site is careful about.
-- **`Footer.tsx` says "Australian students"** where `SITE_DESCRIPTION` and
-  everywhere else says "Western Australian" — undersells the actual
-  differentiator.
+- **`WhatsFree.tsx` still says "Every feature… is available to every
+  student at no cost. Always."** — same contradiction with paid tutoring as
+  the `FAQ.tsx` fix above.
+- **`/distance-education/` is thin on regional/SIDE wording** and has no
+  parent-facing regional FAQ (SEO review 2026-11). It exists and is now
+  linked from every senior hub and the `/curriculum/` index — wait for
+  those links to be crawled before reworking it.
 - **CTA copy for the identical signup action is inconsistent** across the
   funnel — four different phrasings ("Start learning for free" / "Sign up
   free" / "Get started free" / "Create your free account").
@@ -543,7 +585,8 @@ From the same audit, real but not yet actioned:
 - Supabase client or any database library
 - Any environment variable (not even `NEXT_PUBLIC_*`)
 - A contact form or any form that submits data
-- Sentry or any analytics that blocks render
+- Sentry or any analytics script — analytics is Cloudflare Web Analytics,
+  injected from the Pages dashboard (see **Privacy and third parties**)
 - `cookies()`, `headers()`, `redirect()` in server components
 - `'use client'` data fetching — `'use client'` itself is fine for local UI state
   (e.g. `components/Header.tsx` uses it for the mobile menu's open/closed toggle,
