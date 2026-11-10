@@ -332,7 +332,7 @@ package would create a dependency that defeats the hard constraint above.
   on the platform). Future-tense roadmap language ("tutoring is coming") is
   fine and already used correctly on Pricing/About — the distinction is
   present-tense fact vs. future-tense plan.
-- **The homepage/footer "Browse subjects" CTA links to this repo's own
+- **The homepage "Browse subjects" CTA links to this repo's own
   `/curriculum/` index, not `${APP_URL}/browse`.** The app's `/browse` sits
   behind auth (`app/(app)/` route group) — an anonymous visitor clicking it
   gets bounced to `/login`, directly contradicting adjacent copy ("No
@@ -406,9 +406,6 @@ From the same audit, real but not yet actioned:
 - **The founder letter (arguably the strongest trust asset on the site)
   sits at position 12 of 15 on the homepage**, right after a testimonials
   carousel that currently renders nothing (`data/reviews.json` is `[]`).
-- **Footer now has two links to the identical `/curriculum/` destination**
-  ("Curriculum" and "Browse subjects") since the CTA fix above — candidate
-  for removing the redundancy or repointing one.
 - **Accessibility:** 3 CTA buttons (`pricing/page.tsx`, `GuideCTA.tsx`,
   `not-found.tsx`) hardcode `text-white` instead of the design-token
   pattern `components/ui/Button.tsx` already gets right, producing a

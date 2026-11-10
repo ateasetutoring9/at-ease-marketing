@@ -23,7 +23,7 @@ export function Footer() {
         </div>
         <nav
           aria-label="Footer"
-          className="flex flex-wrap justify-center gap-x-6 gap-y-3 max-w-2xl"
+          className="grid grid-cols-2 sm:grid-cols-5 justify-items-center gap-x-8 gap-y-3 text-center"
         >
           <Link href="/features/" className="text-small text-muted hover:text-fg transition-colors">
             Features
@@ -45,9 +45,6 @@ export function Footer() {
           </Link>
           <Link href="/contact/" className="text-small text-muted hover:text-fg transition-colors">
             Contact
-          </Link>
-          <Link href="/curriculum/" className="text-small text-muted hover:text-fg transition-colors">
-            Browse subjects
           </Link>
           <a href={`${APP_URL}/login`} className="text-small text-muted hover:text-fg transition-colors">
             Log in
