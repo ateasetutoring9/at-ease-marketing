@@ -1658,9 +1658,9 @@ export const curriculum: CurriculumEntry[] = [
     yearLabel: "Year 10",
     subject: "English",
     stage: "lower",
-    title: "WA Year 10 English: Every Topic Covered",
+    title: "WA Year 10 English Curriculum: Essays & Source Synthesis",
     description:
-      "What Year 10 students cover in English in Western Australia — rhetoric, critical media literacy, synthesising sources and sustained essay writing — in plain English, and why Year 10 shapes readiness for ATAR English.",
+      "WA Year 10 English is where essays get long and sources pile up. See what's covered, how sources become one argument, and how it feeds ATAR English. Free.",
     heading: "WA Year 10 English: what your child covers this year",
     intro:
       "Year 10 English in Western Australia is the year writing is expected to sustain an argument across a genuinely extended piece, not just a few paragraphs, and the last year before English splits into ATAR and General pathways. Rhetoric and media literacy are examined critically rather than descriptively, several sources have to be synthesised into one coherent argument rather than addressed one at a time, and grammar and syntax become tools for control and precision rather than correctness for its own sake. How a student handles sustained, evidence-synthesising writing this year is one of the clearer signals for whether ATAR English will suit them.",
@@ -1782,7 +1782,7 @@ export const curriculum: CurriculumEntry[] = [
       },
     ],
     published: true,
-    lastModified: "2026-08-09",
+    lastModified: "2026-11-11",
   },
 
   {
@@ -2656,9 +2656,9 @@ export const curriculum: CurriculumEntry[] = [
     courseName: "English",
     courseType: "ATAR",
     unitLabel: "Units 1 and 2",
-    title: "WACE English ATAR (Units 1 & 2)",
+    title: "Year 11 English ATAR WA: Units 1 & 2 Topics, Free",
     description:
-      "What Year 11 English ATAR covers in WA — the purpose-context-audience triad, text types, stylistic analysis and creating original texts — unit by unit, in plain English.",
+      "Doing English ATAR in Year 11 in WA? See what Units 1 and 2 cover, how comparing texts works, and where students get stuck. Free and plain-English.",
     heading: "WACE English ATAR, Year 11 (Units 1 and 2)",
     intro:
       "English ATAR formalises something Years 7-10 have been building toward all along: reading and writing a text as a deliberate response to purpose, audience and context, not in isolation. Unit 1 establishes that triad as the lens for everything else in the course, then works through imaginative, interpretive and persuasive text types in turn. Unit 2 shifts to comparison — reading two texts against each other and analysing how genre, rhetoric and representation shape meaning. It's the ATAR English pathway, distinct from General, and it assumes a student is comfortable with sustained analytical writing already.",
@@ -2706,7 +2706,7 @@ export const curriculum: CurriculumEntry[] = [
       { q: "How is English ATAR different from English General?", a: "ATAR is built around sustained literary and textual analysis and contributes to the ATAR; General is built around everyday, workplace and media texts and doesn't contribute to the ATAR. The right choice depends on whether a student's post-school plans need an ATAR-contributing English result, and how much they enjoy sustained literary analysis specifically." },
     ],
     published: true,
-    lastModified: "2026-08-09",
+    lastModified: "2026-11-11",
   },
 
   {
@@ -2718,9 +2718,9 @@ export const curriculum: CurriculumEntry[] = [
     courseName: "English",
     courseType: "ATAR",
     unitLabel: "Units 3 and 4",
-    title: "WACE English ATAR (Units 3 & 4)",
+    title: "Year 12 English ATAR WA: Units 3 & 4 Topics, Exam Technique",
     description:
-      "What Year 12 English ATAR covers in WA — perspectives and representation, intertextuality, synthesis and exam technique — unit by unit, in plain English.",
+      "Year 12 English ATAR has an external exam. See what Units 3 and 4 cover, why exam technique gets its own topic, and what trips students up. Free to read.",
     heading: "WACE English ATAR, Year 12 (Units 3 and 4)",
     intro:
       "Unit 3 and 4 English ATAR pushes the analysis from Year 11 toward genuinely critical reading — ideology, assumption and the deliberate manipulation of genre convention all become explicit topics, not just close-reading exercises. Unit 4 turns outward to synthesis across multiple texts and, distinctively, to exam technique itself as a taught skill: responding under timed conditions is treated as something to practise deliberately, not something that just happens on the day. This is the year with the external written exam, so writing at speed without losing analytical depth is the real, practical challenge.",
@@ -2763,7 +2763,7 @@ export const curriculum: CurriculumEntry[] = [
       { q: "What's the difference between Unit 3's \"critical reading\" and ordinary analysis?", a: "Ordinary analysis explains what a text does and how. Critical reading in Unit 3 goes a layer further — it asks what the text assumes is true or normal without saying so, and whose perspective that assumption serves. It's a more demanding, more adult way of reading than anything asked for in earlier years." },
     ],
     published: true,
-    lastModified: "2026-08-09",
+    lastModified: "2026-11-11",
   },
 
   {
@@ -2775,9 +2775,9 @@ export const curriculum: CurriculumEntry[] = [
     courseName: "English",
     courseType: "General",
     unitLabel: "Units 1 and 2",
-    title: "WACE English General (Units 1 & 2)",
+    title: "Year 11 English General WA: Units 1 & 2 Topics, Free",
     description:
-      "What Year 11 English General covers in WA — everyday and workplace texts, media literacy and creating informative and persuasive texts — unit by unit, in plain English.",
+      "Is English General right for your Year 11? See what Units 1 and 2 cover, from workplace texts to media literacy, and how it differs from ATAR. Free.",
     heading: "WACE English General, Year 11 (Units 1 and 2)",
     intro:
       "English General is built around the texts students will actually encounter day to day and at work — everyday and workplace documents, media texts, advertising — rather than the sustained literary analysis ATAR English is built around. Unit 1 establishes comprehension and creation of informative and persuasive texts; Unit 2 shifts to media specifically, including how advertising and news framing persuade and represent issues. It's a genuinely practical course, well suited to a student whose interests and post-school plans lean toward direct communication rather than literary criticism.",
@@ -2819,7 +2819,7 @@ export const curriculum: CurriculumEntry[] = [
       { q: "Is the media literacy content in Unit 2 just about spotting fake news?", a: "That's part of it, but it goes further — analysing how legitimate, non-deceptive media still frames and represents issues through genuine editorial choices (what's included, what's left out, which voices are centred) is the deeper skill, and it's more broadly useful than simply flagging obviously false content." },
     ],
     published: true,
-    lastModified: "2026-08-09",
+    lastModified: "2026-11-11",
   },
 
   {
