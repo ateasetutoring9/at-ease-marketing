@@ -4,8 +4,8 @@ import { APP_URL } from "@/lib/constants";
 export function Footer() {
   return (
     <footer className="py-12 px-4 border-t border-border bg-page">
-      <div className="max-w-page mx-auto flex flex-col md:flex-row items-center md:items-start justify-between gap-8">
-        <div className="flex flex-col items-center md:items-start gap-3">
+      <div className="max-w-page mx-auto flex flex-col items-center gap-8">
+        <div className="flex flex-col items-center gap-3">
           <Link href="/" className="flex items-center gap-2.5">
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
@@ -17,11 +17,14 @@ export function Footer() {
             />
             <span className="font-display font-medium text-fg">At Ease Tutoring</span>
           </Link>
-          <p className="text-small text-muted max-w-xs text-center md:text-left">
+          <p className="text-small text-muted max-w-xs text-center">
             Free, high-quality education for Year 7–12 Australian students.
           </p>
         </div>
-        <nav className="flex flex-wrap justify-center md:justify-end gap-x-8 gap-y-3">
+        <nav
+          aria-label="Footer"
+          className="flex flex-wrap justify-center gap-x-6 gap-y-3 max-w-2xl"
+        >
           <Link href="/features/" className="text-small text-muted hover:text-fg transition-colors">
             Features
           </Link>
