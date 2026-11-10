@@ -12,7 +12,8 @@ interface YouTubeEmbedProps {
  * Click-to-play facade — loads only a static thumbnail until clicked, then
  * swaps in the real iframe. Avoids shipping YouTube's embed JS/iframe to
  * every visitor just to show a thumbnail (this site's PageSpeed discipline,
- * see CLAUDE.md).
+ * see CLAUDE.md). Uses youtube-nocookie.com (privacy-enhanced mode) — the
+ * privacy policy relies on this, so don't switch it back to youtube.com.
  */
 export function YouTubeEmbed({ videoId, title }: YouTubeEmbedProps) {
   const [playing, setPlaying] = useState(false);
@@ -22,7 +23,7 @@ export function YouTubeEmbed({ videoId, title }: YouTubeEmbedProps) {
       {playing ? (
         <iframe
           className="h-full w-full"
-          src={`https://www.youtube.com/embed/${videoId}?autoplay=1`}
+          src={`https://www.youtube-nocookie.com/embed/${videoId}?autoplay=1`}
           title={title}
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
           allowFullScreen
