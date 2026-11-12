@@ -73,7 +73,7 @@ export default function CurriculumHub({ slug }: { slug: string }) {
         {courseChoiceGuide && (
           <p className="text-muted mt-4 text-sm">
             Choosing Year 11 maths?{" "}
-            <Link href={courseChoiceGuide.href} className="text-accent hover:underline">
+            <Link href={courseChoiceGuide.href} className="text-accent underline hover:no-underline">
               {courseChoiceGuide.title}
             </Link>
           </p>
@@ -81,7 +81,7 @@ export default function CurriculumHub({ slug }: { slug: string }) {
         {entry.courseType === "ATAR" && (
           <p className="text-muted mt-4 text-sm">
             How does this course count?{" "}
-            <Link href="/guides/how-the-atar-is-calculated-in-wa/" className="text-accent hover:underline">
+            <Link href="/guides/how-the-atar-is-calculated-in-wa/" className="text-accent underline hover:no-underline">
               How the ATAR is calculated in WA
             </Link>
           </p>
@@ -89,7 +89,7 @@ export default function CurriculumHub({ slug }: { slug: string }) {
         {entry.courseName && (
           <p className="text-muted mt-4 text-sm">
             School not running this course?{" "}
-            <Link href="/distance-education/" className="text-accent hover:underline">
+            <Link href="/distance-education/" className="text-accent underline hover:no-underline">
               See how students in regional WA and distance education use these lessons
             </Link>
             .

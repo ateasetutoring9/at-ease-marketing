@@ -26,7 +26,7 @@ export function Header() {
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
             src="/logo.png"
-            alt="At Ease Tutoring"
+            alt=""
             width={36}
             height={36}
             className="rounded-full"
@@ -34,7 +34,7 @@ export function Header() {
           <span className="font-medium text-fg text-base">At Ease Tutoring</span>
         </Link>
 
-        <nav className="hidden lg:flex items-center gap-3">
+        <nav aria-label="Main" className="hidden lg:flex items-center gap-3">
           {navLinks.map((link) => (
             <Button key={link.href} variant="ghost" size="sm" href={link.href}>
               {link.label}
@@ -64,7 +64,7 @@ export function Header() {
       </div>
 
       {open && (
-        <nav className="lg:hidden mt-4 max-w-page mx-auto flex flex-col gap-1 pt-4 border-t border-border">
+        <nav aria-label="Main mobile" className="lg:hidden mt-4 max-w-page mx-auto flex flex-col gap-1 pt-4 border-t border-border">
           {navLinks.map((link) => (
             <Link
               key={link.href}

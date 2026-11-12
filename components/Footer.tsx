@@ -10,7 +10,7 @@ export function Footer() {
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
               src="/logo.png"
-              alt="At Ease Tutoring"
+              alt=""
               width={32}
               height={32}
               className="rounded-full"
