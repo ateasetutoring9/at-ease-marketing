@@ -407,7 +407,7 @@ A second pass, same rule as above — don't reintroduce any of these:
   tier" (contradicts paid tutoring) and green ticks on negative points.
   Now "Commonly, in Perth", no platform price, "Nothing held back behind a
   paid tier", grey dots on the non-At-Ease cards.
-- `Hero.tsx` and `FAQ.tsx` said "forever" / "no premium tier". Now "staying
+- `Hero.tsx`, `FAQ.tsx` and `WhatsFree.tsx` said "forever" / "no premium tier" / "every feature… no cost. Always." Now "staying
   free" (matches the founder letter) and "tutoring is a separate, optional
   paid service".
 - "Australian" wording in `TrustStrip.tsx` and `Footer.tsx` was reviewed
@@ -435,9 +435,6 @@ From the same audits, real but not yet actioned:
 - **Header is not sticky** on a 14-section homepage — no `sticky`/`fixed`
   positioning anywhere in `Header.tsx`. Once scrolled past the hero there's
   no way back to Sign Up/Log In except scrolling all the way up or down.
-- **`WhatsFree.tsx` still says "Every feature… is available to every
-  student at no cost. Always."** — same contradiction with paid tutoring as
-  the `FAQ.tsx` fix above.
 - **`/distance-education/` is thin on regional/SIDE wording** and has no
   parent-facing regional FAQ (SEO review 2026-11). It exists and is now
   linked from every senior hub and the `/curriculum/` index — wait for

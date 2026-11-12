@@ -33,9 +33,10 @@ export function WhatsFree() {
     <section className="py-16 md:py-24 px-4">
       <div className="max-w-page mx-auto">
         <div className="text-center mb-12">
-          <h2 className="text-section-title text-fg mb-4">Everything&apos;s free. No catch.</h2>
+          <h2 className="text-section-title text-fg mb-4">The learning is free. No catch.</h2>
           <p className="text-body text-muted max-w-xl mx-auto">
-            Every feature on At Ease Tutoring is available to every student at no cost. Always.
+            Every lesson, worksheet and progress tool is free for every student, and staying
+            free. 1-on-1 tutoring is a separate, optional paid service.
           </p>
         </div>
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
