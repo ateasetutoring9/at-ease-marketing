@@ -186,7 +186,7 @@ export default function FeaturesPage() {
       <JsonLd data={tourVideoJsonLd} />
       <JsonLd data={parentVideoJsonLd} />
       <Header />
-      <main className="flex-1 px-4 py-16">
+      <main id="main-content" tabIndex={-1} className="flex-1 px-4 py-16">
         <div className="mx-auto max-w-page">
           <div className="mb-16 text-center">
             <h1 className="text-hero text-fg mb-6">Built for students. Visible to parents.</h1>

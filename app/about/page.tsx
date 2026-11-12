@@ -24,7 +24,7 @@ export default function AboutPage() {
   return (
     <>
       <Header />
-      <main className="flex-1">
+      <main id="main-content" tabIndex={-1} className="flex-1">
         <FounderLetter />
       </main>
       <Footer />

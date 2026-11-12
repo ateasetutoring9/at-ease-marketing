@@ -91,7 +91,7 @@ export default function DistanceEducationPage() {
   return (
     <>
       <Header />
-      <main className="flex-1">
+      <main id="main-content" tabIndex={-1} className="flex-1">
         <JsonLd data={faqJsonLd} />
 
         {/* Hero */}

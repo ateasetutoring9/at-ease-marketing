@@ -21,7 +21,7 @@ export default function ContactPage() {
   return (
     <>
       <Header />
-      <main className="flex-1">
+      <main id="main-content" tabIndex={-1} className="flex-1">
         <ContactRoutes />
       </main>
       <Footer />

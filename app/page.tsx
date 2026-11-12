@@ -76,10 +76,11 @@ export const metadata: Metadata = {
 
 export default function Home() {
   return (
-    <main>
+    <>
       <JsonLd data={onboardingVideoJsonLd} />
       <JsonLd data={parentVideoJsonLd} />
       <Header />
+      <main id="main-content" tabIndex={-1}>
       <FoundingBanner />
       <Hero />
       <WhatsFree />
@@ -96,7 +97,8 @@ export default function Home() {
       <FounderLetterHome />
       <FAQ />
       <FinalCTA />
+      </main>
       <Footer />
-    </main>
+    </>
   );
 }

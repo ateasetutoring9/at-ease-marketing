@@ -89,7 +89,7 @@ export default function PricingPage() {
   return (
     <>
       <Header />
-      <main className="flex-1 px-4 py-16">
+      <main id="main-content" tabIndex={-1} className="flex-1 px-4 py-16">
         <JsonLd data={faqJsonLd} />
         <div className="mx-auto max-w-[1120px]">
           <div className="mb-14 text-center">
@@ -103,10 +103,10 @@ export default function PricingPage() {
 
           <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
             {/* Free tier */}
-            <div className="rounded-2xl border-2 border-accent bg-card p-8">
+            <div role="group" aria-labelledby="plan-free" className="rounded-2xl border-2 border-accent bg-card p-8">
               <div className="flex items-start justify-between gap-4">
                 <div>
-                  <p className="text-sm font-medium uppercase tracking-widest text-accent">
+                  <p id="plan-free" className="text-sm font-medium uppercase tracking-widest text-accent">
                     Always free
                   </p>
                   <h2 className="mt-2 text-3xl font-semibold text-fg">$0</h2>
@@ -148,10 +148,10 @@ export default function PricingPage() {
             </div>
 
             {/* Coming soon */}
-            <div className="rounded-2xl border-2 border-accent bg-card p-8">
+            <div role="group" aria-labelledby="plan-tutoring" className="rounded-2xl border-2 border-accent bg-card p-8">
               <div className="flex items-start justify-between gap-4">
                 <div>
-                  <p className="text-sm font-medium uppercase tracking-widest text-accent">
+                  <p id="plan-tutoring" className="text-sm font-medium uppercase tracking-widest text-accent">
                     Tutoring
                   </p>
                   <h2 className="mt-2 text-3xl font-semibold text-fg">From $55</h2>
@@ -224,10 +224,10 @@ export default function PricingPage() {
             </div>
 
             {/* Group classes */}
-            <div className="rounded-2xl border border-border bg-card p-8 opacity-80">
+            <div role="group" aria-labelledby="plan-group" className="rounded-2xl border border-border bg-card p-8 opacity-80">
               <div className="flex items-start justify-between gap-4">
                 <div>
-                  <p className="text-sm font-medium uppercase tracking-widest text-muted">
+                  <p id="plan-group" className="text-sm font-medium uppercase tracking-widest text-muted">
                     Group classes
                   </p>
                   <h2 className="mt-2 text-3xl font-semibold text-fg">TBD</h2>
