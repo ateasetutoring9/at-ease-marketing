@@ -145,7 +145,7 @@ export const curriculum: CurriculumEntry[] = [
     stage: "lower",
     title: "WA Year 7 Maths: Every Topic Covered",
     description:
-      "What Year 7 students actually cover in Maths in Western Australia, topic by topic, in plain English — plus where most students get stuck in the first year of high school.",
+      "WA Year 7 Maths: negative numbers, proportional reasoning, first algebra, geometry and probability in plain English, and where students get stuck. Free.",
     heading: "WA Year 7 Maths: what your child covers this year",
     intro:
       "Year 7 Maths in Western Australia is the year arithmetic turns into algebra. Students extend their number work to include negative numbers, start reasoning proportionally rather than by counting, and meet letters standing in for numbers for the first time. Geometry and measurement get formal names and notation, and probability stops being about the word \"likely\" and starts being about numbers between 0 and 1.",
@@ -256,7 +256,7 @@ export const curriculum: CurriculumEntry[] = [
       },
     ],
     published: true,
-    lastModified: "2026-08-09",
+    lastModified: "2026-11-13",
   },
 
   {
@@ -267,7 +267,7 @@ export const curriculum: CurriculumEntry[] = [
     stage: "lower",
     title: "WA Year 8 Science: Every Topic Covered",
     description:
-      "What Year 8 students cover in Science in Western Australia — cells, atoms, plate tectonics and energy — in plain English, with the parts students most often find hard.",
+      "WA Year 8 Science: cells, atoms, plate tectonics and energy explained in plain English, with the parts students most often find hard. Free to read.",
     heading: "WA Year 8 Science: what your child covers this year",
     intro:
       "Year 8 Science in Western Australia is the year science goes invisible. Cells, atoms and energy transfer are all things students cannot see, and each one has to be understood through a model rather than an observation. That is a genuine step up in abstraction from Year 7, and it is the most common point at which a student who liked science stops liking it.",
@@ -407,7 +407,7 @@ export const curriculum: CurriculumEntry[] = [
       },
     ],
     published: true,
-    lastModified: "2026-08-09",
+    lastModified: "2026-11-13",
   },
 
   {
@@ -418,7 +418,7 @@ export const curriculum: CurriculumEntry[] = [
     stage: "lower",
     title: "WA Year 9 Maths: Every Topic Covered",
     description:
-      "What Year 9 students cover in Maths in Western Australia — linear graphs, Pythagoras, trigonometry and simple interest — in plain English, and why Year 9 is the year that decides Year 11 options.",
+      "WA Year 9 Maths: linear graphs, Pythagoras, trigonometry and simple interest in plain English, and why Year 9 shapes Year 11 maths options. Free.",
     heading: "WA Year 9 Maths: what your child covers this year",
     intro:
       "Year 9 Maths in Western Australia is the year that quietly determines which senior maths courses stay open. Students work with linear relationships both algebraically and graphically, meet gradient, apply Pythagoras' theorem to real problems, and are introduced to the trigonometric ratios. A student who leaves Year 9 shaky on gradient and on Pythagoras will find Mathematics Methods difficult in a way that is hard to recover from later.",
@@ -527,7 +527,7 @@ export const curriculum: CurriculumEntry[] = [
       },
     ],
     published: true,
-    lastModified: "2026-08-09",
+    lastModified: "2026-11-13",
   },
 
   /* ---------------------------------------------------------------- */
@@ -541,7 +541,7 @@ export const curriculum: CurriculumEntry[] = [
     stage: "lower",
     title: "WA Year 7 Science: Every Topic Covered",
     description:
-      "What Year 7 students cover in Science in Western Australia — classification, ecosystems, the particle model of matter, and forces — in plain English, with the parts students most often find hard in their first year of high school science.",
+      "WA Year 7 Science: classification, ecosystems, the particle model of matter and forces in plain English, and where students get stuck. Free.",
     heading: "WA Year 7 Science: what your child covers this year",
     intro:
       "Year 7 Science in Western Australia is the year science stops being a single subject and splits into the four strands your child will keep meeting all the way to Year 12: biology, chemistry, earth and space, and physics. Classification brings order to the diversity of living things, the particle model explains why matter behaves the way it does, the Earth-Sun-Moon system gets modelled properly for the first time, and forces are described precisely rather than just observed. Underneath all four sits a new expectation: writing up an investigation properly, not just doing it.",
@@ -659,7 +659,7 @@ export const curriculum: CurriculumEntry[] = [
       },
     ],
     published: true,
-    lastModified: "2026-08-09",
+    lastModified: "2026-11-13",
   },
 
   {
@@ -670,7 +670,7 @@ export const curriculum: CurriculumEntry[] = [
     stage: "lower",
     title: "WA Year 9 Science: Every Topic Covered",
     description:
-      "What Year 9 students cover in Science in Western Australia — atomic structure, the periodic table, ecosystems and energy, plate tectonics and waves — in plain English, and the parts students most often get stuck on.",
+      "WA Year 9 Science: atomic structure, the periodic table, ecosystems, plate tectonics and waves in plain English, and where students get stuck. Free.",
     heading: "WA Year 9 Science: what your child covers this year",
     intro:
       "Year 9 Science in Western Australia is the year chemistry gets its real foundations: atomic structure and the periodic table arrive properly, and everything in Year 10 and senior Chemistry assumes they're solid. Alongside that, ecosystems are studied as systems that respond to change rather than static diagrams, Earth's carbon and water cycles connect biology to geology, and energy transfer through waves — light and sound — gets its first formal treatment. It's a genuinely broad year, and the strand that gets shaky first is usually chemistry, because it's the most abstract of the four.",
@@ -790,7 +790,7 @@ export const curriculum: CurriculumEntry[] = [
       },
     ],
     published: true,
-    lastModified: "2026-08-09",
+    lastModified: "2026-11-13",
   },
 
   {
@@ -801,7 +801,7 @@ export const curriculum: CurriculumEntry[] = [
     stage: "lower",
     title: "WA Year 10 Science: Every Topic Covered",
     description:
-      "What Year 10 students cover in Science in Western Australia — genetics, evolution, chemical reactions, motion and the origins of the universe — in plain English, and why Year 10 is the year that shapes ATAR science choices.",
+      "WA Year 10 Science: genetics, evolution, chemical reactions, motion and the origins of the universe in plain English. Free, and how it shapes ATAR choices.",
     heading: "WA Year 10 Science: what your child covers this year",
     intro:
       "Year 10 Science in Western Australia is the last year of a single combined Science subject before it splits into Biology, Chemistry, Physics and Human Biology in Year 11. Each strand this year is effectively a preview of one of those courses: genetics and evolution anticipate Biology and Human Biology, reaction rates and energy anticipate Chemistry, and motion and forces anticipate Physics. How a student finds each strand this year is genuinely informative for subject selection — a student who finds the physics content easy and the genetics content a slog is telling you something real about which Year 11 sciences will suit them.",
@@ -920,7 +920,7 @@ export const curriculum: CurriculumEntry[] = [
       },
     ],
     published: true,
-    lastModified: "2026-08-09",
+    lastModified: "2026-11-13",
   },
 
   {
@@ -931,7 +931,7 @@ export const curriculum: CurriculumEntry[] = [
     stage: "lower",
     title: "WA Year 8 Maths: Every Topic Covered",
     description:
-      "What Year 8 students cover in Maths in Western Australia — rational and irrational numbers, algebra, Pythagoras' theorem and probability — in plain English, and where students most often get stuck.",
+      "WA Year 8 Maths: rational and irrational numbers, algebra, Pythagoras' theorem and probability in plain English, and where students get stuck. Free.",
     heading: "WA Year 8 Maths: what your child covers this year",
     intro:
       "Year 8 Maths in Western Australia is a consolidation year sitting between two bigger shifts: Year 7's introduction to algebra and negative numbers, and Year 9's move into linear graphs and trigonometry. Numbers extend to include irrational values, algebraic manipulation becomes fluent rather than tentative, and two genuinely useful results — Pythagoras' theorem and the properties of quadrilaterals — get applied for the first time. A student who leaves Year 8 comfortable manipulating algebraic expressions and confident with Pythagoras has the two things Year 9 assumes are already solid.",
@@ -1077,7 +1077,7 @@ export const curriculum: CurriculumEntry[] = [
       },
     ],
     published: true,
-    lastModified: "2026-08-09",
+    lastModified: "2026-11-13",
   },
 
   {
@@ -1089,7 +1089,7 @@ export const curriculum: CurriculumEntry[] = [
     stage: "lower",
     title: "WA Year 10 Maths: Every Topic Covered",
     description:
-      "What Year 10 students cover in Maths in Western Australia — quadratics, simultaneous equations, trigonometry and bivariate data — in plain English, and why Year 10 results are what schools actually use to advise on Year 11 Maths.",
+      "WA Year 10 Maths: quadratics, simultaneous equations, trigonometry and bivariate data in plain English, and how results guide Year 11 Maths. Free.",
     heading: "WA Year 10 Maths: what your child covers this year",
     intro:
       "Year 10 Maths in Western Australia is the year that functions as an entrance exam for senior mathematics, even though no single exam is labelled that way. Quadratics are solved by every available method, simultaneous equations and exponential functions extend the algebra, and trigonometry moves from finding a side length to full triangle problems involving bearings and elevation. Schools use performance across this year — not one test — to advise whether a student is ready for Mathematics Methods or Specialist, or better suited to Mathematics Applications, so a shaky Year 10 is worth addressing before Year 11 starts, not during it.",
@@ -1238,7 +1238,7 @@ export const curriculum: CurriculumEntry[] = [
       },
     ],
     published: true,
-    lastModified: "2026-08-09",
+    lastModified: "2026-11-13",
   },
 
   {
@@ -1249,7 +1249,7 @@ export const curriculum: CurriculumEntry[] = [
     stage: "lower",
     title: "WA Year 7 English: Every Topic Covered",
     description:
-      "What Year 7 students cover in English in Western Australia — text structure, literary devices, persuasive language and creating their own texts — in plain English, and where students most often get stuck.",
+      "WA Year 7 English: text structure, literary devices, audience and purpose, and creating texts in plain English, and where students get stuck. Free.",
     heading: "WA Year 7 English: what your child covers this year",
     intro:
       "Year 7 English in Western Australia asks students to start noticing how a text is built, not just what it says. They learn that structure and language choices shift with audience and purpose, meet literary devices as tools an author chose deliberately rather than decoration, and are expected to create their own texts — imaginative, persuasive, informative — to a real standard rather than just complete them. The shift from primary school is less about new content and more about a new expectation: explaining why a text works, not just what happens in it.",
@@ -1373,7 +1373,7 @@ export const curriculum: CurriculumEntry[] = [
       },
     ],
     published: true,
-    lastModified: "2026-08-09",
+    lastModified: "2026-11-13",
   },
 
   {
@@ -1384,7 +1384,7 @@ export const curriculum: CurriculumEntry[] = [
     stage: "lower",
     title: "WA Year 8 English: Every Topic Covered",
     description:
-      "What Year 8 students cover in English in Western Australia — genre, intertextuality, figurative language and academic vocabulary — in plain English, and the parts students most often find hard.",
+      "WA Year 8 English: genre, intertextuality, figurative language and academic vocabulary in plain English, and the parts students find hard. Free.",
     heading: "WA Year 8 English: what your child covers this year",
     intro:
       "Year 8 English in Western Australia is where texts stop being read in isolation. Intertextuality — how one text references or echoes another — genre conventions, and the way texts position a reader to feel a certain way all become explicit topics, not incidental observations. Sentence-level control gets more sophisticated too, with embedded clauses and nominalisation (turning verbs into nouns for a more formal, academic register) both new. It's a year that rewards a wider reading habit more than almost any other, since intertextual and genre-based analysis is hard to fake without having read reasonably widely.",
@@ -1515,7 +1515,7 @@ export const curriculum: CurriculumEntry[] = [
       },
     ],
     published: true,
-    lastModified: "2026-08-09",
+    lastModified: "2026-11-13",
   },
 
   {
@@ -1526,7 +1526,7 @@ export const curriculum: CurriculumEntry[] = [
     stage: "lower",
     title: "WA Year 9 English: Every Topic Covered",
     description:
-      "What Year 9 students cover in English in Western Australia — register and style, narrative voice, persuasive technique and comparing texts — in plain English, and where students most often get stuck.",
+      "WA Year 9 English: register and style, narrative voice, persuasive technique and comparing texts in plain English, and where students get stuck. Free.",
     heading: "WA Year 9 English: what your child covers this year",
     intro:
       "Year 9 English in Western Australia moves from analysing individual texts to comparing them, and from identifying technique to evaluating how well it works. Register and style become deliberate choices a student is expected to control in their own writing, not just recognise in someone else's. Persuasive analysis gets more rigorous — evaluating the quality of evidence and reasoning, not just spotting the techniques — and narrative voice is studied as a construction an author builds, not a neutral window onto events.",
@@ -1649,7 +1649,7 @@ export const curriculum: CurriculumEntry[] = [
       },
     ],
     published: true,
-    lastModified: "2026-08-09",
+    lastModified: "2026-11-13",
   },
 
   {
@@ -1797,7 +1797,7 @@ export const curriculum: CurriculumEntry[] = [
     unitLabel: "Units 1 and 2",
     title: "WACE Mathematics Methods (Units 1 & 2)",
     description:
-      "What Year 11 Mathematics Methods covers in WA — functions, calculus foundations and probability — unit by unit, in plain English, for families deciding if this ATAR course is the right fit.",
+      "WA Year 11 Maths Methods: functions, calculus foundations and probability, unit by unit in plain English, to help decide if this ATAR course fits. Free.",
     heading: "WACE Mathematics Methods, Year 11 (Units 1 and 2)",
     intro:
       "Mathematics Methods is the ATAR course most Year 11s who were comfortable with Year 10 Maths default toward, and Units 1 and 2 exist to test whether that comfort holds up. Functions are treated far more formally than in Year 10, the first real calculus content — the derivative, building from a limit rather than a formula to memorise — arrives in Unit 2, and probability is developed with genuine rigour. A student who finds Unit 1 functions and counting techniques straightforward is well placed for the calculus in Unit 2 and beyond; a student who's finding both a struggle is worth having an honest conversation with before Year 12.",
@@ -1854,7 +1854,7 @@ export const curriculum: CurriculumEntry[] = [
       { q: "How much does the calculus in Unit 2 actually matter for the rest of the course?", a: "A great deal — the derivative introduced here, from first principles, is the foundation for all of Unit 3 and 4 calculus. A student who gets through Unit 2 by memorising the power rule without understanding where it comes from tends to struggle when Year 12 calculus moves faster and assumes that foundation is solid." },
     ],
     published: true,
-    lastModified: "2026-08-09",
+    lastModified: "2026-11-13",
   },
 
   {
@@ -1868,7 +1868,7 @@ export const curriculum: CurriculumEntry[] = [
     unitLabel: "Units 3 and 4",
     title: "WACE Mathematics Methods (Units 3 & 4)",
     description:
-      "What Year 12 Mathematics Methods covers in WA — calculus of exponential, logarithmic and trigonometric functions, integration, and statistical inference — unit by unit, in plain English.",
+      "WA Year 12 Mathematics Methods: exponential, logarithmic and trigonometric calculus, integration and statistical inference, unit by unit. Free.",
     heading: "WACE Mathematics Methods, Year 12 (Units 3 and 4)",
     intro:
       "Unit 3 and 4 Mathematics Methods is where the calculus foundations from Year 11 get applied to every function type the course covers — exponential, logarithmic, trigonometric — and integration arrives as the reverse process of differentiation. Statistics shifts from descriptive to inferential: confidence intervals ask a genuinely different kind of question than anything earlier in the course. This is also the year with an external exam, so fluency under time pressure matters as much as understanding — a student who can do every technique given unlimited time but not in an exam-paced sitting has a real, fixable gap.",
@@ -1912,7 +1912,7 @@ export const curriculum: CurriculumEntry[] = [
       { q: "Why does confidence interval interpretation get so much attention?", a: "Because it's the one place in the course where a mechanically correct calculation can still earn a wrong mark, if the interpretation sentence misstates what the interval means. It's a small piece of the course by content volume but a disproportionately common source of lost marks in the external exam." },
     ],
     published: true,
-    lastModified: "2026-08-09",
+    lastModified: "2026-11-13",
   },
 
   {
@@ -1926,7 +1926,7 @@ export const curriculum: CurriculumEntry[] = [
     unitLabel: "Units 3 and 4",
     title: "WACE Mathematics Specialist (Units 3 & 4)",
     description:
-      "What Year 12 Mathematics Specialist covers in WA — complex numbers, vectors, advanced integration and differential equations — unit by unit, in plain English, for families weighing this course alongside Methods.",
+      "WA Year 12 Maths Specialist: complex numbers, vectors, advanced integration and differential equations, unit by unit, and how it pairs with Methods. Free.",
     heading: "WACE Mathematics Specialist, Year 12 (Units 3 and 4)",
     intro:
       "Mathematics Specialist is only ever studied alongside Mathematics Methods, never alone, and Units 3 and 4 make that dependency obvious — nearly every topic here extends a Methods idea into territory Methods doesn't go. Complex numbers, three-dimensional vectors, differential equations and integration techniques well beyond Methods' scope make up the bulk of the course. This is the course for students planning engineering, physical science or actuarial-adjacent degrees, and it rewards students who found Methods' calculus genuinely satisfying rather than merely manageable.",
@@ -1968,7 +1968,7 @@ export const curriculum: CurriculumEntry[] = [
       { q: "Can a student take Specialist without also taking Methods?", a: "No — Specialist is designed to be studied alongside Methods, not instead of it, and its content assumes Methods' calculus and functions work is being covered in parallel. It's not a standalone alternative to Methods; it's an addition for students who want more mathematical depth." },
     ],
     published: true,
-    lastModified: "2026-08-09",
+    lastModified: "2026-11-13",
   },
 
   {
@@ -2003,7 +2003,7 @@ export const curriculum: CurriculumEntry[] = [
     unitLabel: "Units 1 and 2",
     title: "WACE Mathematics Applications (Units 1 & 2)",
     description:
-      "What Year 11 Mathematics Applications covers in WA — matrices, measurement, statistics and trigonometry — unit by unit, in plain English, for families weighing this ATAR course against Methods.",
+      "WA Year 11 Maths Applications: matrices, measurement, statistics and trigonometry, unit by unit in plain English, and how it compares with Methods. Free.",
     heading: "WACE Mathematics Applications, Year 11 (Units 1 and 2)",
     intro:
       "Mathematics Applications is the ATAR maths course built for genuine real-world application rather than the abstract function-and-calculus track Methods follows, and it's a legitimate, rigorous ATAR choice in its own right — not a fallback. Unit 1 covers everyday financial and geometric maths at real depth, including a first look at matrices, which nothing in Year 10 previews. Unit 2 moves into full statistical investigation and non-right-angled trigonometry. It suits students who want maths to stay connected to concrete, calculable situations rather than pure abstraction.",
@@ -2052,7 +2052,7 @@ export const curriculum: CurriculumEntry[] = [
       { q: "Why do matrices suddenly appear with no lead-in from Year 10?", a: "Because they genuinely are new — nothing in the WA Year 7-10 curriculum previews matrix notation or arithmetic. It's worth treating as a fresh topic requiring real practice time, not something a student should expect to pick up quickly just because the rest of Unit 1 feels familiar." },
     ],
     published: true,
-    lastModified: "2026-08-09",
+    lastModified: "2026-11-13",
   },
 
   {
@@ -2123,7 +2123,7 @@ export const curriculum: CurriculumEntry[] = [
     unitLabel: "Units 1 and 2",
     title: "WACE Mathematics Essential (Units 1 & 2)",
     description:
-      "What Year 11 Mathematics Essential covers in WA — practical calculation, measurement and data — unit by unit, in plain English, for families weighing this General maths pathway.",
+      "WA Year 11 Maths Essential: practical calculation, measurement and data, unit by unit in plain English, for families weighing this General pathway. Free.",
     heading: "WACE Mathematics Essential, Year 11 (Units 1 and 2)",
     intro:
       "Mathematics Essential is a General course, not an ATAR one — it doesn't contribute to the ATAR, but it's a legitimate, useful pathway for students whose plans after school don't depend on a maths-heavy university entry score. Units 1 and 2 focus on calculation students will genuinely use: estimation, percentages and rates in real contexts, practical measurement, and reading formulas and graphs rather than manipulating them abstractly. It suits students who want maths that stays close to daily life and the workplace.",
@@ -2156,7 +2156,7 @@ export const curriculum: CurriculumEntry[] = [
       { q: "Is Essential just an easier version of Applications?", a: "Not quite — it's a differently purposed course, focused on functional, everyday numeracy rather than the more abstract statistical and geometric reasoning Applications builds toward. A student who finds Applications genuinely too fast-paced may do better with Essential's pace and practical focus, rather than thinking of it purely as a difficulty downgrade." },
     ],
     published: true,
-    lastModified: "2026-08-09",
+    lastModified: "2026-11-13",
   },
 
   {
@@ -2217,7 +2217,7 @@ export const curriculum: CurriculumEntry[] = [
     unitLabel: "Units 1 and 2",
     title: "WACE Mathematics Foundation (Units 1 & 2)",
     description:
-      "What Year 11 Mathematics Foundation covers in WA — whole numbers, money, measurement and time — unit by unit, in plain English, for families whose child hasn't yet met the Year 10 numeracy standard.",
+      "WA Year 11 Maths Foundation: whole numbers, money, measurement and time, unit by unit in plain English, for families after the numeracy standard. Free.",
     heading: "WACE Mathematics Foundation, Year 11 (Units 1 and 2)",
     intro:
       "Mathematics Foundation exists for students who haven't yet met the Year 10 numeracy achievement standard, and it's built entirely around functional numeracy for daily life — whole number operations, handling money confidently, and measurement and time in contexts a student will genuinely encounter after school. It doesn't contribute to the ATAR and isn't meant to; its purpose is making sure a student leaves school able to manage everyday numeracy demands confidently, which is a real and worthwhile goal in its own right.",
@@ -2247,7 +2247,7 @@ export const curriculum: CurriculumEntry[] = [
       { q: "Is Unit 2 really only one listed topic — is that accurate?", a: "That reflects what's in our current source data specifically, not necessarily the complete official unit content — this page may understate Unit 2's actual scope. Treat this as a partial picture and check the SCSA syllabus directly for the full unit content." },
     ],
     published: true,
-    lastModified: "2026-08-09",
+    lastModified: "2026-11-13",
   },
 
   {
