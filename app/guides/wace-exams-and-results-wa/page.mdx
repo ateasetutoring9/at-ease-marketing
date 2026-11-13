@@ -1,0 +1,160 @@
+import { JsonLd } from "@/components/JsonLd";
+import { BrowseGuidesLink } from "@/components/BrowseGuidesLink";
+import { GuideCTA } from "@/components/GuideCTA";
+import { Breadcrumb } from "@/components/Breadcrumb";
+import { RelatedGuides } from "@/components/RelatedGuides";
+import { SITE_URL, SITE_NAME, OG_IMAGE } from "@/lib/constants";
+import { guideBreadcrumbJsonLd } from "@/lib/breadcrumb";
+import { founderAuthorJsonLd } from "@/lib/author";
+
+export const metadata = {
+  title: "WACE Exams 2026: Dates, Results and What Happens Next",
+  description:
+    "WA Year 12 exam dates, when results and ATAR are released (20 Dec 2026), and what happens next: certificates, TISC offers and next steps.",
+  alternates: {
+    canonical: "/guides/wace-exams-and-results-wa/",
+  },
+  openGraph: {
+    title: `WACE Exams 2026: Dates, Results and What Happens Next — ${SITE_NAME}`,
+    description:
+      "When WACE exams finish, when results and ATARs are released, and what happens next, in plain English.",
+    images: [OG_IMAGE],
+  },
+};
+
+export const articleJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "Article",
+  headline: "WACE Exams 2026: Dates, Results and What Happens Next",
+  description:
+    "When WACE exams finish, when results and ATARs are released, and what happens next, in plain English.",
+  author: founderAuthorJsonLd,
+  publisher: {
+    "@type": "EducationalOrganization",
+    name: SITE_NAME,
+    logo: {
+      "@type": "ImageObject",
+      url: `${SITE_URL}/logo.png`,
+    },
+  },
+  mainEntityOfPage: `${SITE_URL}/guides/wace-exams-and-results-wa/`,
+};
+
+export const breadcrumbJsonLd = guideBreadcrumbJsonLd(
+  "WACE Exams 2026: Dates, Results and What Happens Next",
+  "/guides/wace-exams-and-results-wa/"
+);
+
+<JsonLd data={articleJsonLd} />
+<JsonLd data={breadcrumbJsonLd} />
+
+<Breadcrumb
+  items={[
+    { label: "Home", href: "/" },
+    { label: "Guides", href: "/guides/" },
+    { label: "WACE Exams 2026: Dates, Results and What Happens Next" },
+  ]}
+/>
+
+# WACE Exams 2026: Dates, Results and What Happens Next
+
+*Part of the [WA curriculum library](/curriculum/) — see every topic in each Year 11 and 12 course.*
+
+The weeks around the end of Year 12 can feel like a lot of moving parts: exams, then a wait, then results, then university offers. Taken in order, they are quite manageable. This guide walks through that order for Western Australian Year 12 students and the families supporting them.
+
+It covers the senior school WACE (Western Australian Certificate of Education) process. Dates are for 2026 and can change, so treat the official sources at the bottom as the final word.
+
+## 2026 key dates at a glance
+
+| What | When |
+|---|---|
+| Practical exams | Saturday 26 September to Sunday 25 October 2026 (SCSA) |
+| Written ATAR exams | Wednesday 28 October to Thursday 19 November 2026 (SCSA) |
+| Year 12 results available to students | Sunday 20 December 2026, through the SCSA student portal |
+| 2026 WA ATAR results and Universities Admission Advice Letters | Sunday 20 December 2026, 8.00am, on TISCOnline (TISC) |
+| Deadline to apply, add or rearrange preferences before the Main round | 11:59pm, Sunday 20 December 2026 (TISC) |
+| Main round offers | Thursday 24 December 2026 (TISC) |
+| Deadline to request an ATAR check | Monday 4 January 2027 (TISC) |
+| Second round apply/preferences deadline | 11:59pm, Wednesday 13 January 2027 (TISC) |
+| Second round offers | Wednesday 20 January 2027 (TISC) |
+| TISCOnline 2026 results viewable until | Sunday 28 February 2027 (TISC) |
+
+These dates were checked against the SCSA and TISC websites on 13 November 2026. They can change, so check the official sources before relying on them.
+
+## How the timetable works
+
+Each student's exam timetable is personal: it depends on which courses they sit. SCSA publishes the overall exam schedule, and students download their personalised exam timetable from the SCSA student portal.
+
+Some students have two exams close together, or on the same day. If that happens, ask your school for the current process. It is worth checking your child's personal timetable carefully when it is issued, rather than relying on a friend's.
+
+## Exam-day basics
+
+Your school and SCSA will give the specific rules for each exam, and they are worth reading once, early. Check the SCSA student portal or ask your school for what is permitted in each exam, because it differs from course to course.
+
+If a student is unwell or something serious happens around an exam, tell the school as soon as possible rather than waiting until results day. Ask your school, or check the SCSA student portal, for the current process and its deadlines.
+
+## After the last exam
+
+Once the exams finish, three things happen behind the scenes before anyone sees a number:
+
+1. **Marking.** The written exams are marked.
+2. **Moderation and standardising.** SCSA combines each student's school mark with their exam mark and standardises the results for each course.
+3. **Scaling.** TISC, not SCSA, scales courses against each other and calculates the ATAR.
+
+That is why the ATAR can't be worked out at home from a school report. For the full method, see [How the ATAR Is Calculated in WA](/guides/how-the-atar-is-calculated-in-wa/).
+
+## Results day
+
+Two sets of results arrive, from two different organisations:
+
+- **WACE results** (course results, and whether the student has achieved the WACE) come from SCSA. Year 12 students can check their results on **Sunday 20 December 2026** through the SCSA student portal.
+- **ATAR results** come through TISC. TISC lists **Sunday 20 December 2026 at 8.00am** for 2026 WA ATAR results and Universities Admission Advice Letters, online on TISCOnline. Dates can change, so check TISC's website closer to the day.
+
+It's a good idea to have the login details for both sorted out in advance, so nothing needs sorting out on the morning.
+
+## What the results mean
+
+- **WACE achievement.** Whether the student has met the requirements for the certificate. This includes the literacy and numeracy standard and the course requirements.
+- **ATAR.** A rank, not a mark, and only for students with enough ATAR course results. Not every student has one, and not every pathway needs one.
+- **Course results and certificates.** Each course has its own result, and VET qualifications show up separately.
+
+A student can achieve the WACE without an ATAR. For many pathways, the WACE is the key outcome.
+
+## After results
+
+For students aiming for university:
+
+- **TISC offer rounds.** Offers come in rounds. The Main round offers are on Thursday 24 December 2026. To be included, apply or add or rearrange your preferences by 11:59pm on Sunday 20 December 2026. The Second round has an 11:59pm deadline on Wednesday 13 January 2027, with offers on Wednesday 20 January 2027. If you want an ATAR check, the request deadline is Monday 4 January 2027. Courses are offered based on each university's own requirements, so a lower-than-hoped ATAR does not always mean no offer.
+- **Deferral.** Rules on deferring an offer vary by university, so ask the university directly.
+- **Reviewing a result.** Check the SCSA student portal or ask your school for the current process for querying a WACE result.
+
+## If results are not what you hoped
+
+It's a hard moment, and it is also not the end of the road. There are several real routes:
+
+- Universities have alternative entry pathways and bridging options, and some don't use the ATAR at all.
+- TAFE courses and apprenticeships are a legitimate first step, and can lead on to university study.
+- Students can repeat courses. For the ATAR, TISC uses the best score where a course is repeated, and scores can be accumulated over five years.
+
+Ring the university admissions team before deciding anything. They deal with this every year and are usually generous with time.
+
+## Planning next year
+
+If your child is in Year 11 now, the useful thing to take from this is the sequence: exams, results, offers. Use the quiet time to check course choices and requirements early, including [Year 12 maths pathways](/guides/maths-methods-or-applications/). If you're a family in regional or remote WA, our [distance education page](/distance-education/) covers study options beyond your local school.
+
+## In short
+
+- Written ATAR exams run from 28 October to 19 November 2026, and results follow on Sunday 20 December.
+- TISC lists WA ATAR results for Sunday 20 December 2026 at 8.00am, with Main round offers on Thursday 24 December.
+- SCSA delivers WACE results; TISC delivers the ATAR and university offers.
+- A less-than-hoped result still leaves several pathways open.
+
+*Sources: SCSA 2026 Year 12 exam and results information (student portal); TISC key dates and ATAR results pages. Last checked 13 November 2026.*
+
+---
+
+<RelatedGuides currentHref="/guides/wace-exams-and-results-wa/" />
+
+<GuideCTA />
+
+<BrowseGuidesLink />

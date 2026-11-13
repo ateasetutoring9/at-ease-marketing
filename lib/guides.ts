@@ -55,4 +55,11 @@ export const guides = [
     href: "/guides/how-the-atar-is-calculated-in-wa/",
     subject: "WA senior school",
   },
+  {
+    title: "WACE Exams 2026: Dates, Results and What Happens Next",
+    description:
+      "WA Year 12 exam dates, when results and ATAR are released (20 Dec 2026), and what happens next: certificates, TISC offers and next steps.",
+    href: "/guides/wace-exams-and-results-wa/",
+    subject: "WA senior school",
+  },
 ];

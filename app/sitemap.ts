@@ -27,6 +27,7 @@ export const routes: { path: string; lastModified: string }[] = [
   { path: "/guides/what-is-a-derivative", lastModified: "2026-07-29" },
   { path: "/guides/maths-methods-or-applications", lastModified: "2026-11-13" },
   { path: "/guides/how-the-atar-is-calculated-in-wa", lastModified: "2026-11-13" },
+  { path: "/guides/wace-exams-and-results-wa", lastModified: "2026-11-13" },
   { path: "/curriculum", lastModified: "2026-11-13" },
 ];
 
