@@ -13,7 +13,7 @@ import { founder, pullQuoteAccess, whatThisIs } from "@/lib/founder-letter";
 
 const TITLE = "WACE Subject Not Offered at Your School?";
 const DESCRIPTION =
-  "If your school doesn't run the WACE subject you need — or you're enrolled in distance education — free, SCSA-aligned lessons and worksheets for Years 11–12. No sign-up required to browse.";
+  "Free WACE study material for Years 11–12 if your school doesn't run the subject or you study by distance education. SCSA-aligned; no sign-up to browse.";
 
 export const metadata: Metadata = {
   title: TITLE,

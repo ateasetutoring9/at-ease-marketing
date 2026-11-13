@@ -4,15 +4,18 @@ import { Footer } from "@/components/Footer";
 import ContactRoutes from "@/components/ContactRoutes";
 import { SITE_NAME, OG_IMAGE } from "@/lib/constants";
 
+const DESCRIPTION =
+  "Contact At Ease Tutoring: report a lesson error, ask about private tutoring in Perth or online (Years 7-12) or anything else. Replies within a school day.";
+
 export const metadata: Metadata = {
   title: "Contact",
-  description: `Get in touch with the ${SITE_NAME} team.`,
+  description: DESCRIPTION,
   alternates: {
     canonical: "/contact/",
   },
   openGraph: {
     title: `Contact — ${SITE_NAME}`,
-    description: `Get in touch with the ${SITE_NAME} team.`,
+    description: DESCRIPTION,
     images: [OG_IMAGE],
   },
 };

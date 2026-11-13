@@ -2303,7 +2303,7 @@ export const curriculum: CurriculumEntry[] = [
     unitLabel: "Unit 1",
     title: "WACE Biology (Unit 1)",
     description:
-      "What Year 11 Biology covers in WA — classification, ecosystems, energy flow and human impact — unit by unit, in plain English. Currently covers Unit 1 only; Unit 2 isn't yet in our content.",
+      "WA Year 11 Biology ATAR, Unit 1 only: classification, ecosystems, energy flow and human impact in plain English. Free. Unit 2 is not yet written.",
     heading: "WACE Biology, Year 11 (Unit 1)",
     intro:
       "Biology ATAR opens by zooming out to the whole-ecosystem scale before it zooms in — Unit 1 is about how living things are classified, how energy and matter move through an ecosystem, and how populations and communities change over time. It's a genuinely different starting point from Human Biology, which goes straight to the human body — Biology's Unit 1 is closer to environmental science, and suits a student who finds systems and field-based thinking more engaging than physiology specifically. Note: this page currently covers Unit 1 only — Unit 2 content isn't yet in our dataset, so treat this as a partial picture of the full Year 11 course.",
@@ -2333,7 +2333,7 @@ export const curriculum: CurriculumEntry[] = [
       { q: "How is Biology different from Human Biology?", a: "They're two separate WACE courses, not the same course under different names. Biology (this course) is broader ecosystem and organism-level biology; Human Biology focuses specifically on human body systems and genetics. A student can take either, both, or neither — they don't have to be taken as a pair the way Methods and Specialist do." },
     ],
     published: true,
-    lastModified: "2026-08-09",
+    lastModified: "2026-11-13",
   },
 
   {
@@ -2447,7 +2447,7 @@ export const curriculum: CurriculumEntry[] = [
     unitLabel: "Units 1 and 2",
     title: "WACE Chemistry (Units 1 & 2)",
     description:
-      "What Year 11 Chemistry covers in WA — atomic structure, bonding, the mole concept, solutions, rates of reaction and acids and bases — unit by unit, in plain English.",
+      "WA Year 11 Chemistry ATAR: atomic structure, bonding, the mole concept, solutions, rates of reaction and acids and bases, unit by unit. Free to read.",
     heading: "WACE Chemistry, Year 11 (Units 1 and 2)",
     intro:
       "Chemistry ATAR Units 1 and 2 build the foundation every later chemistry topic assumes is solid: atomic structure and bonding first, then the mole concept — the single idea most Year 11 Chemistry students find hardest to internalise, since it requires thinking in terms of colossal numbers of particles rather than the tangible quantities Year 10 dealt with. Unit 2 shifts to solutions, reaction rates and acid-base chemistry, all of which lean heavily on quantitative calculation. A student who gets genuinely comfortable with moles in Unit 1 finds almost everything downstream easier; a student who doesn't tends to struggle at every subsequent calculation-heavy topic.",
@@ -2488,7 +2488,7 @@ export const curriculum: CurriculumEntry[] = [
       { q: "Is Chemistry Unit 1 and 2 mostly memorisation or mostly calculation?", a: "More calculation than most students expect coming from Year 10 Science, particularly from the mole concept onward. There's genuine content to learn — bonding types, periodic trends — but a large share of the marks in Unit 1 and 2 assessments come from multi-step numerical problems, not recall." },
     ],
     published: true,
-    lastModified: "2026-08-09",
+    lastModified: "2026-11-13",
   },
 
   {
@@ -2502,7 +2502,7 @@ export const curriculum: CurriculumEntry[] = [
     unitLabel: "Unit 3",
     title: "WACE Chemistry (Unit 3)",
     description:
-      "What Year 12 Chemistry covers in WA — equilibrium, acid-base calculations and electrochemistry — unit by unit, in plain English. Currently covers Unit 3 only; Unit 4 isn't yet in our content.",
+      "WA Year 12 Chemistry ATAR, Unit 3 only: equilibrium, acid-base calculations and electrochemistry in plain English. Free. Unit 4 is not yet written.",
     heading: "WACE Chemistry, Year 12 (Unit 3)",
     intro:
       "Unit 3 Chemistry moves into equilibrium — reactions that don't go to completion but settle into a dynamic balance — and this reframing trips up students who spent Year 11 assuming every reaction runs to completion. Le Chatelier's principle, acid-base equilibria and pH calculations, and electrochemistry (galvanic cells, electrolysis) round out the unit, all building on Unit 1 and 2's bonding and stoichiometry foundations. Note: this page currently covers Unit 3 only — Unit 4 content isn't yet in our dataset, so treat this as a partial picture of the full Year 12 course.",
@@ -2530,7 +2530,7 @@ export const curriculum: CurriculumEntry[] = [
       { q: "What's the biggest conceptual shift from Year 11 into Unit 3?", a: "Accepting that not every reaction goes to completion. Year 11 stoichiometry treats reactions as running until a reactant runs out; equilibrium chemistry in Unit 3 is built around reactions that reach a stable balance instead, and a lot of early Unit 3 confusion traces back to still thinking in Year 11 terms." },
     ],
     published: true,
-    lastModified: "2026-08-09",
+    lastModified: "2026-11-13",
   },
 
   {
@@ -2542,7 +2542,7 @@ export const curriculum: CurriculumEntry[] = [
     courseName: "Physics",
     courseType: "ATAR",
     unitLabel: "Units 1 and 2",
-    title: "WACE Physics (Units 1 & 2)",
+    title: "Year 11 Physics WA: Motion, Forces, Waves and Electricity",
     description:
       "What Year 11 Physics covers in WA — motion, forces, momentum and energy, then waves, sound, light and electricity — unit by unit, in plain English.",
     heading: "WACE Physics, Year 11 (Units 1 and 2)",
@@ -2589,7 +2589,7 @@ export const curriculum: CurriculumEntry[] = [
       { q: "My child is strong in the Unit 1 mechanics but finding Unit 2 harder. Is that unusual?", a: "Not at all — the two units reward genuinely different strengths. Unit 1 is heavily mathematical and procedural; Unit 2's waves and nuclear content is more about building and reasoning from a correct mental model. Being strong in one and weaker in the other is common, not a sign of a broader problem." },
     ],
     published: true,
-    lastModified: "2026-08-09",
+    lastModified: "2026-11-13",
   },
 
   {
@@ -2833,7 +2833,7 @@ export const curriculum: CurriculumEntry[] = [
     unitLabel: "Units 3 and 4",
     title: "WACE English General (Units 3 & 4)",
     description:
-      "What Year 12 English General covers in WA — persuasive technique, media representation and creating texts for community and workplace contexts — unit by unit, in plain English.",
+      "WA Year 12 English General: persuasive technique, media representation and creating texts for community and workplace contexts, unit by unit. Free to read.",
     heading: "WACE English General, Year 12 (Units 3 and 4)",
     intro:
       "Unit 3 and 4 English General extends Year 11's practical focus into longer, more sustained texts and a sharper critical edge on media representation and reliability. Unit 4 turns toward texts genuinely useful beyond school — community, workplace and further-study contexts — and closes with reflecting on and improving a student's own writing, treating revision as a real, transferable skill rather than an assessment formality.",
@@ -2871,7 +2871,7 @@ export const curriculum: CurriculumEntry[] = [
       { q: "Does this course prepare a student for workplace writing after school?", a: "Genuinely, yes — Unit 4 in particular is explicitly built around texts for community, workplace and further-study contexts, which makes it one of the more directly transferable English courses on offer, independent of its WACE contribution." },
     ],
     published: true,
-    lastModified: "2026-08-09",
+    lastModified: "2026-11-13",
   },
 ];
 

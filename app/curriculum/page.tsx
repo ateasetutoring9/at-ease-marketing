@@ -15,7 +15,7 @@ const breadcrumbTrail = [
 
 const TITLE = "WA Curriculum: English, Maths and Science, Years 7–12";
 const DESCRIPTION =
-  "What Western Australian students cover in English, Maths and Science at each year level, in plain English — every topic explained, and where students most often get stuck.";
+  "WA curriculum for Years 7 to 12: English, Maths and Science topics by year level and WACE course, in plain English. Free to browse, no sign-up needed.";
 
 export const metadata: Metadata = {
   title: TITLE,
